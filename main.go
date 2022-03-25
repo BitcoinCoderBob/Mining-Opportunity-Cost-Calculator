@@ -46,8 +46,12 @@ func main() {
 	fmt.Printf("Total electric costs: $%s\n", fmt.Sprintf("%.2f", electricCosts))
 	percentPaidOff := PercentPaidOff(dollarinosEarned, fixedCosts, electricCosts)
 	fmt.Printf("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
+	fmt.Printf("Bitcoin percentage increase needed to be breakeven: %s%%\n", fmt.Sprintf("%.2f", ((100/percentPaidOff)-1)*100))
+	breakevenPrice := BreakEvenPrice(percentPaidOff, price)
+	fmt.Printf("Breakeven price: $%s\n", fmt.Sprintf("%.2f", breakevenPrice))
 	daysUntilBreakeven := DaysUntilBreakeven(daysSinceStart, percentPaidOff)
 	fmt.Printf("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
+	fmt.Printf("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+daysSinceStart))
 	futureDate, err := DateFromDaysNow(daysUntilBreakeven)
 	if err != nil {
 		fmt.Printf("Error with DateFromDaysNow. Error: %s\n", err.Error())
@@ -110,6 +114,9 @@ func DaysSinceStart(startDate string) (days float64, err error) {
 	days = durationSinceStart.Hours() / 24
 	return
 }
+func BreakEvenPrice(percentPaidOff, bitcoinPrice float64) (breakevenPrice float64) {
+	return bitcoinPrice * (1 / (percentPaidOff / 100))
+}
 
 func GetUserMinedCoinsTotal(token string) (coins float64, err error) {
 	client := &http.Client{
@@ -135,13 +142,13 @@ func GetUserMinedCoinsTotal(token string) (coins float64, err error) {
 	value := gjson.GetBytes(body, "btc")
 	allTimeReward, err := strconv.ParseFloat(value.Get("all_time_reward").String(), 64)
 	if err != nil {
-		fmt.Printf("Error converting to float: %s\n", err.Error())
+		fmt.Printf("Error converting all_time_reward to float: %s\n", err.Error())
 		return
 	}
 
 	unconfirmedCoins, err := strconv.ParseFloat(value.Get("unconfirmed_reward").String(), 64)
 	if err != nil {
-		fmt.Printf("Error converting to float: %s\n", err.Error())
+		fmt.Printf("Error converting unconfirmed_reward to float: %s\n", err.Error())
 		return
 	}
 

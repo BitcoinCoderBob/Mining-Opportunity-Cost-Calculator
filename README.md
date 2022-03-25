@@ -1,5 +1,6 @@
 Mining-Profitability
 
+Not that your slush token does expire after some time, and using an expired token will results in the calls to fail.
 
 Flags
 
