@@ -7,15 +7,15 @@ Not that your slush token does expire after some time, and using an expired toke
 Flags
 
 <ul>
-<li>`-token` slush pool token (https://slushpool.com/settings/access/) you can use this flag or the `-bitcoinMined` flag if you dont use slush</li>
-<li>`-startDate` mm/dd/yyyy format for start date of mining operation</li>
-<li>`-kwhPrice` price paid per kilowatt-hour</li>
-<li>`-watts` watts used by the miers</li>
-<li>`-uptimePercent` percent of time mining operation is online (expressed as an integer)</li>
-<li>`-fixedCosts` total costs of miners, hardware, and other operational fixed costs</li>
-<li>`-startDate` date of mining operation start</li>
-<li>`-bitcoinMined` amount of bitcoin mined (whole bitcoin units not sats)</li>
-<li>`-messariApiKey` api key from messari.io for historical price data</li>
+<li><code>-token</code> slush pool token (https://slushpool.com/settings/access/) you can use this flag or the `-bitcoinMined` flag if you dont use slush</li>
+<li><code>-startDate </code> mm/dd/yyyy format for start date of mining operation</li>
+<li><code>-kwhPrice </code> price paid per kilowatt-hour</li>
+<li><code>-watts </code> watts used by the miers</li>
+<li><code>-uptimePercent </code> percent of time mining operation is online (expressed as an integer)</li>
+<li><code>-fixedCosts </code> total costs of miners, hardware, and other operational fixed costs</li>
+<li><code>-startDate </code> date of mining operation start</li>
+<li><code>-bitcoinMined </code> amount of bitcoin mined (whole bitcoin units not sats)</li>
+<li><code>-messariApiKey </code> api key from messari.io for historical price data</li>
 </ul>
 
 Example: `go run main.go -token abc123 -startDate 01/01/2022 -kwhPrice .14 -watts 3300 -uptimePercent 98 -fixedCosts 7500`
