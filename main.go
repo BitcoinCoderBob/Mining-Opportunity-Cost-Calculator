@@ -31,10 +31,10 @@ func main() {
 	flag.Float64Var(&watts, "watts", 3200, "Specify watts used in total.")
 	flag.Float64Var(&uptimePercent, "uptimePercent", 100.0, "Specify percent uptime of your miners.")
 	flag.Float64Var(&fixedCosts, "fixedCosts", 6295.55, "Specify mining setup fix costs.")
-	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not sats).")
+	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not bitcoin).")
 	flag.StringVar(&startDate, "startDate", "01/01/2022", "Specify start date of mining operation.")
 	flag.StringVar(&messariApiKey, "messariApiKey", "default", "Specify Messari API Key")
-	flag.BoolVar(&hideBitcoinOnGraph, "hideBitcoinOnGraph", false, "Will hide sats on y-axis of graph, good for opsec when sharing the image. true to hide, false to keep the figure displayed")
+	flag.BoolVar(&hideBitcoinOnGraph, "hideBitcoinOnGraph", false, "Will hide bitcoin on y-axis of graph, good for opsec when sharing the image. true to hide, false to keep the figure displayed")
 
 	flag.Parse()
 	if slushToken == "default-token" && bitcoinMined == 0 {
@@ -97,14 +97,14 @@ func main() {
 	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
 	// }
 	fmt.Printf("bitcoin mined: %v\n", bitcoinMined)
-	swanData, swanSats := SwanDailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
-	ahData, ahSats := AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
-	fmt.Printf("americanHodlSats: %v\n", ahSats)
-	fmt.Printf("swanSats: %v\n", swanSats)
+	dcaData, dcaBitcoin := DailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
+	ahData, ahBitcoin := AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
+	fmt.Printf("AmericanHodl: %v\n", ahBitcoin)
+	fmt.Printf("Daily-DCA: %v\n", dcaBitcoin)
 	// MessariData(messariApiKey)
-	antiHomeMinerData, antiHomeMinerSats := AntiHomeMiner(fixedCosts, electricCosts, unixDaysSinceStart, priceData)
-	fmt.Printf("antiHomeMinerSats: %v\n", antiHomeMinerSats)
-	MakePlot(ahData, swanData, antiHomeMinerData, bitcoinMined, hideBitcoinOnGraph)
+	antiHomeMinerData, antiHomeMinerBitcoin := AntiHomeMiner(fixedCosts, electricCosts, unixDaysSinceStart, priceData)
+	fmt.Printf("Anti-Miner: %v\n", antiHomeMinerBitcoin)
+	MakePlot(ahData, dcaData, antiHomeMinerData, bitcoinMined, hideBitcoinOnGraph)
 
 }
 
@@ -332,7 +332,7 @@ func AmericanHodlSlamBuy(dollarsAvailable, openPrice float64, numberDays int) (c
 	return
 }
 
-func SwanDailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
+func DailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
 	dollarsToSpendPerDay := dollarsAvialble / daysSinceStart
 	// fmt.Printf("number of days to stack: %v   lenPriceData: %d\n", daysSinceStart, len(priceData))
 	for _, val := range priceData {
@@ -387,19 +387,19 @@ func CompareData() {
 	}
 }
 
-func MakeMinedSatsData(ahData []float64, minedSats float64) (minedData []float64) {
+func MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64) {
 	minedData = []float64{}
 	for range ahData {
-		minedData = append(minedData, minedSats)
+		minedData = append(minedData, minedBitcoin)
 	}
 	return
 }
 
-func MakePlot(ahData, swanData, antiMinerData []float64, minedSats float64, hideAxis bool) {
-	minedSatsData := MakeMinedSatsData(ahData, minedSats)
+func MakePlot(ahData, dcaData, antiMinerData []float64, minedBitcoin float64, hideAxis bool) {
+	minedBitcoinData := MakeMinedBitcoinData(ahData, minedBitcoin)
 	p := plot.New()
 	// p.Y.Tick.Label
-	p.Title.Text = "Sats Acquired Over Time"
+	p.Title.Text = "Bitcoin Acquired Over Time"
 	p.X.Label.Text = "Time"
 	p.Y.Label.Text = "Bitcoin"
 	if hideAxis {
@@ -414,24 +414,24 @@ func MakePlot(ahData, swanData, antiMinerData []float64, minedSats float64, hide
 	}
 	err := plotutil.AddLinePoints(p,
 		"AmericanHodl", plotData(ahData),
-		"DCA", plotData(swanData),
-		"AntiMiner", plotData(antiMinerData),
-		"Mined", plotData(minedSatsData))
+		"Daily DCA", plotData(dcaData),
+		"Anti-Miner", plotData(antiMinerData),
+		"Mined", plotData(minedBitcoinData))
 	if err != nil {
 		panic(err)
 	}
 
 	// Save the plot to a PNG file.
-	if err := p.Save(4*vg.Inch, 4*vg.Inch, "points2.png"); err != nil {
+	if err := p.Save(4*vg.Inch, 4*vg.Inch, "points.png"); err != nil {
 		panic(err)
 	}
 }
 
-func plotData(satsData []float64) plotter.XYs {
-	pts := make(plotter.XYs, len(satsData))
-	for index, sats := range satsData {
+func plotData(bitcoinData []float64) plotter.XYs {
+	pts := make(plotter.XYs, len(bitcoinData))
+	for index, bitcoin := range bitcoinData {
 		pts[index].X = float64(index)
-		pts[index].Y = sats
+		pts[index].Y = bitcoin
 	}
 	return pts
 }
