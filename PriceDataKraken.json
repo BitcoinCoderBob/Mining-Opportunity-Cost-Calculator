@@ -1,0 +1,9208 @@
+{
+  "data": [
+    {
+      "timestamp": 1451606400,
+      "openPrice": 434.17899
+    },
+    {
+      "timestamp": 1451692800,
+      "openPrice": 434
+    },
+    {
+      "timestamp": 1451779200,
+      "openPrice": 434.49
+    },
+    {
+      "timestamp": 1451865600,
+      "openPrice": 427.77001
+    },
+    {
+      "timestamp": 1451952000,
+      "openPrice": 431.06001
+    },
+    {
+      "timestamp": 1452038400,
+      "openPrice": 431.3299
+    },
+    {
+      "timestamp": 1452124800,
+      "openPrice": 428.55
+    },
+    {
+      "timestamp": 1452211200,
+      "openPrice": 457.9999
+    },
+    {
+      "timestamp": 1452297600,
+      "openPrice": 452.85001
+    },
+    {
+      "timestamp": 1452384000,
+      "openPrice": 450
+    },
+    {
+      "timestamp": 1452470400,
+      "openPrice": 449.89328
+    },
+    {
+      "timestamp": 1452556800,
+      "openPrice": 451.3155
+    },
+    {
+      "timestamp": 1452643200,
+      "openPrice": 440
+    },
+    {
+      "timestamp": 1452729600,
+      "openPrice": 433.0605
+    },
+    {
+      "timestamp": 1452816000,
+      "openPrice": 430.57505
+    },
+    {
+      "timestamp": 1452902400,
+      "openPrice": 364.48
+    },
+    {
+      "timestamp": 1452988800,
+      "openPrice": 390.328
+    },
+    {
+      "timestamp": 1453075200,
+      "openPrice": 383.5708
+    },
+    {
+      "timestamp": 1453161600,
+      "openPrice": 390.97
+    },
+    {
+      "timestamp": 1453248000,
+      "openPrice": 381.0438
+    },
+    {
+      "timestamp": 1453334400,
+      "openPrice": 419.0501
+    },
+    {
+      "timestamp": 1453420800,
+      "openPrice": 410.6546
+    },
+    {
+      "timestamp": 1453507200,
+      "openPrice": 384.29
+    },
+    {
+      "timestamp": 1453593600,
+      "openPrice": 387.96988
+    },
+    {
+      "timestamp": 1453680000,
+      "openPrice": 401.25228
+    },
+    {
+      "timestamp": 1453766400,
+      "openPrice": 393.36878
+    },
+    {
+      "timestamp": 1453852800,
+      "openPrice": 395.94988
+    },
+    {
+      "timestamp": 1453939200,
+      "openPrice": 396.55
+    },
+    {
+      "timestamp": 1454025600,
+      "openPrice": 380.0001
+    },
+    {
+      "timestamp": 1454112000,
+      "openPrice": 379.91559
+    },
+    {
+      "timestamp": 1454198400,
+      "openPrice": 379.22745
+    },
+    {
+      "timestamp": 1454284800,
+      "openPrice": 369.18991
+    },
+    {
+      "timestamp": 1454371200,
+      "openPrice": 372.15
+    },
+    {
+      "timestamp": 1454457600,
+      "openPrice": 372.44
+    },
+    {
+      "timestamp": 1454544000,
+      "openPrice": 368.66
+    },
+    {
+      "timestamp": 1454630400,
+      "openPrice": 389.71
+    },
+    {
+      "timestamp": 1454716800,
+      "openPrice": 384.00012
+    },
+    {
+      "timestamp": 1454803200,
+      "openPrice": 375.7
+    },
+    {
+      "timestamp": 1454889600,
+      "openPrice": 373.79
+    },
+    {
+      "timestamp": 1454976000,
+      "openPrice": 371.99999
+    },
+    {
+      "timestamp": 1455062400,
+      "openPrice": 374.96927
+    },
+    {
+      "timestamp": 1455148800,
+      "openPrice": 380
+    },
+    {
+      "timestamp": 1455235200,
+      "openPrice": 377.76
+    },
+    {
+      "timestamp": 1455321600,
+      "openPrice": 381.45
+    },
+    {
+      "timestamp": 1455408000,
+      "openPrice": 390.99999
+    },
+    {
+      "timestamp": 1455494400,
+      "openPrice": 404.75079
+    },
+    {
+      "timestamp": 1455580800,
+      "openPrice": 395.99769
+    },
+    {
+      "timestamp": 1455667200,
+      "openPrice": 405.23881
+    },
+    {
+      "timestamp": 1455753600,
+      "openPrice": 413.49001
+    },
+    {
+      "timestamp": 1455840000,
+      "openPrice": 420.01
+    },
+    {
+      "timestamp": 1455926400,
+      "openPrice": 418.49997
+    },
+    {
+      "timestamp": 1456012800,
+      "openPrice": 436.15713
+    },
+    {
+      "timestamp": 1456099200,
+      "openPrice": 431.20361
+    },
+    {
+      "timestamp": 1456185600,
+      "openPrice": 431.82001
+    },
+    {
+      "timestamp": 1456272000,
+      "openPrice": 417.44374
+    },
+    {
+      "timestamp": 1456358400,
+      "openPrice": 423.99999
+    },
+    {
+      "timestamp": 1456444800,
+      "openPrice": 422.76984
+    },
+    {
+      "timestamp": 1456531200,
+      "openPrice": 433.04
+    },
+    {
+      "timestamp": 1456617600,
+      "openPrice": 432.49
+    },
+    {
+      "timestamp": 1456704000,
+      "openPrice": 430.77929
+    },
+    {
+      "timestamp": 1456790400,
+      "openPrice": 437.893
+    },
+    {
+      "timestamp": 1456876800,
+      "openPrice": 431.48
+    },
+    {
+      "timestamp": 1456963200,
+      "openPrice": 421.71
+    },
+    {
+      "timestamp": 1457049600,
+      "openPrice": 421.33
+    },
+    {
+      "timestamp": 1457136000,
+      "openPrice": 406.67
+    },
+    {
+      "timestamp": 1457222400,
+      "openPrice": 393.18
+    },
+    {
+      "timestamp": 1457308800,
+      "openPrice": 400.649
+    },
+    {
+      "timestamp": 1457395200,
+      "openPrice": 410.453
+    },
+    {
+      "timestamp": 1457481600,
+      "openPrice": 411.92
+    },
+    {
+      "timestamp": 1457568000,
+      "openPrice": 410.52
+    },
+    {
+      "timestamp": 1457654400,
+      "openPrice": 416.5
+    },
+    {
+      "timestamp": 1457740800,
+      "openPrice": 419.19
+    },
+    {
+      "timestamp": 1457827200,
+      "openPrice": 408.681
+    },
+    {
+      "timestamp": 1457913600,
+      "openPrice": 410.331
+    },
+    {
+      "timestamp": 1458000000,
+      "openPrice": 414.5
+    },
+    {
+      "timestamp": 1458086400,
+      "openPrice": 415.29
+    },
+    {
+      "timestamp": 1458172800,
+      "openPrice": 418.166
+    },
+    {
+      "timestamp": 1458259200,
+      "openPrice": 420.995
+    },
+    {
+      "timestamp": 1458345600,
+      "openPrice": 407.902
+    },
+    {
+      "timestamp": 1458432000,
+      "openPrice": 409.92
+    },
+    {
+      "timestamp": 1458518400,
+      "openPrice": 413.189
+    },
+    {
+      "timestamp": 1458604800,
+      "openPrice": 412.25
+    },
+    {
+      "timestamp": 1458691200,
+      "openPrice": 417.89
+    },
+    {
+      "timestamp": 1458777600,
+      "openPrice": 415.566
+    },
+    {
+      "timestamp": 1458864000,
+      "openPrice": 415.03
+    },
+    {
+      "timestamp": 1458950400,
+      "openPrice": 415.851
+    },
+    {
+      "timestamp": 1459036800,
+      "openPrice": 417.573
+    },
+    {
+      "timestamp": 1459123200,
+      "openPrice": 425.012
+    },
+    {
+      "timestamp": 1459209600,
+      "openPrice": 422.51
+    },
+    {
+      "timestamp": 1459296000,
+      "openPrice": 414.88
+    },
+    {
+      "timestamp": 1459382400,
+      "openPrice": 412.432
+    },
+    {
+      "timestamp": 1459468800,
+      "openPrice": 416.1
+    },
+    {
+      "timestamp": 1459555200,
+      "openPrice": 417.9
+    },
+    {
+      "timestamp": 1459641600,
+      "openPrice": 420.631
+    },
+    {
+      "timestamp": 1459728000,
+      "openPrice": 421.48
+    },
+    {
+      "timestamp": 1459814400,
+      "openPrice": 419.51
+    },
+    {
+      "timestamp": 1459900800,
+      "openPrice": 423
+    },
+    {
+      "timestamp": 1459987200,
+      "openPrice": 423.54
+    },
+    {
+      "timestamp": 1460073600,
+      "openPrice": 422.27
+    },
+    {
+      "timestamp": 1460160000,
+      "openPrice": 419.351
+    },
+    {
+      "timestamp": 1460246400,
+      "openPrice": 418.095
+    },
+    {
+      "timestamp": 1460332800,
+      "openPrice": 420.65
+    },
+    {
+      "timestamp": 1460419200,
+      "openPrice": 423
+    },
+    {
+      "timestamp": 1460505600,
+      "openPrice": 426.69
+    },
+    {
+      "timestamp": 1460592000,
+      "openPrice": 424.12
+    },
+    {
+      "timestamp": 1460678400,
+      "openPrice": 426.04
+    },
+    {
+      "timestamp": 1460764800,
+      "openPrice": 428.588
+    },
+    {
+      "timestamp": 1460851200,
+      "openPrice": 430.1
+    },
+    {
+      "timestamp": 1460937600,
+      "openPrice": 426.77
+    },
+    {
+      "timestamp": 1461024000,
+      "openPrice": 427.42
+    },
+    {
+      "timestamp": 1461110400,
+      "openPrice": 435.999
+    },
+    {
+      "timestamp": 1461196800,
+      "openPrice": 440.965
+    },
+    {
+      "timestamp": 1461283200,
+      "openPrice": 449.166
+    },
+    {
+      "timestamp": 1461369600,
+      "openPrice": 446.003
+    },
+    {
+      "timestamp": 1461456000,
+      "openPrice": 450.711
+    },
+    {
+      "timestamp": 1461542400,
+      "openPrice": 459.5
+    },
+    {
+      "timestamp": 1461628800,
+      "openPrice": 464.358
+    },
+    {
+      "timestamp": 1461715200,
+      "openPrice": 466.84
+    },
+    {
+      "timestamp": 1461801600,
+      "openPrice": 445.99
+    },
+    {
+      "timestamp": 1461888000,
+      "openPrice": 450.49
+    },
+    {
+      "timestamp": 1461974400,
+      "openPrice": 458.12
+    },
+    {
+      "timestamp": 1462060800,
+      "openPrice": 448.904
+    },
+    {
+      "timestamp": 1462147200,
+      "openPrice": 452.34
+    },
+    {
+      "timestamp": 1462233600,
+      "openPrice": 444.552
+    },
+    {
+      "timestamp": 1462320000,
+      "openPrice": 451.52
+    },
+    {
+      "timestamp": 1462406400,
+      "openPrice": 447.768
+    },
+    {
+      "timestamp": 1462492800,
+      "openPrice": 448.71
+    },
+    {
+      "timestamp": 1462579200,
+      "openPrice": 459.57
+    },
+    {
+      "timestamp": 1462665600,
+      "openPrice": 459
+    },
+    {
+      "timestamp": 1462752000,
+      "openPrice": 458.08
+    },
+    {
+      "timestamp": 1462838400,
+      "openPrice": 461.721
+    },
+    {
+      "timestamp": 1462924800,
+      "openPrice": 452.569
+    },
+    {
+      "timestamp": 1463011200,
+      "openPrice": 453.29
+    },
+    {
+      "timestamp": 1463097600,
+      "openPrice": 455.949
+    },
+    {
+      "timestamp": 1463184000,
+      "openPrice": 456.863
+    },
+    {
+      "timestamp": 1463270400,
+      "openPrice": 455.4
+    },
+    {
+      "timestamp": 1463356800,
+      "openPrice": 457.397
+    },
+    {
+      "timestamp": 1463443200,
+      "openPrice": 453
+    },
+    {
+      "timestamp": 1463529600,
+      "openPrice": 452.788
+    },
+    {
+      "timestamp": 1463616000,
+      "openPrice": 453.29
+    },
+    {
+      "timestamp": 1463702400,
+      "openPrice": 429
+    },
+    {
+      "timestamp": 1463788800,
+      "openPrice": 439.8
+    },
+    {
+      "timestamp": 1463875200,
+      "openPrice": 438.561
+    },
+    {
+      "timestamp": 1463961600,
+      "openPrice": 437.52
+    },
+    {
+      "timestamp": 1464048000,
+      "openPrice": 442.99
+    },
+    {
+      "timestamp": 1464134400,
+      "openPrice": 443.06
+    },
+    {
+      "timestamp": 1464220800,
+      "openPrice": 448.3
+    },
+    {
+      "timestamp": 1464307200,
+      "openPrice": 452.409
+    },
+    {
+      "timestamp": 1464393600,
+      "openPrice": 471.471
+    },
+    {
+      "timestamp": 1464480000,
+      "openPrice": 523.998
+    },
+    {
+      "timestamp": 1464566400,
+      "openPrice": 521.349
+    },
+    {
+      "timestamp": 1464652800,
+      "openPrice": 529
+    },
+    {
+      "timestamp": 1464739200,
+      "openPrice": 530.834
+    },
+    {
+      "timestamp": 1464825600,
+      "openPrice": 535.231
+    },
+    {
+      "timestamp": 1464912000,
+      "openPrice": 536.928
+    },
+    {
+      "timestamp": 1464998400,
+      "openPrice": 569.382
+    },
+    {
+      "timestamp": 1465084800,
+      "openPrice": 573.121
+    },
+    {
+      "timestamp": 1465171200,
+      "openPrice": 573.353
+    },
+    {
+      "timestamp": 1465257600,
+      "openPrice": 584.99
+    },
+    {
+      "timestamp": 1465344000,
+      "openPrice": 578.3
+    },
+    {
+      "timestamp": 1465430400,
+      "openPrice": 581.98
+    },
+    {
+      "timestamp": 1465516800,
+      "openPrice": 576.286
+    },
+    {
+      "timestamp": 1465603200,
+      "openPrice": 580.574
+    },
+    {
+      "timestamp": 1465689600,
+      "openPrice": 608.726
+    },
+    {
+      "timestamp": 1465776000,
+      "openPrice": 670.47
+    },
+    {
+      "timestamp": 1465862400,
+      "openPrice": 703.369
+    },
+    {
+      "timestamp": 1465948800,
+      "openPrice": 683.665
+    },
+    {
+      "timestamp": 1466035200,
+      "openPrice": 696
+    },
+    {
+      "timestamp": 1466121600,
+      "openPrice": 766.659
+    },
+    {
+      "timestamp": 1466208000,
+      "openPrice": 750.16
+    },
+    {
+      "timestamp": 1466294400,
+      "openPrice": 758.23
+    },
+    {
+      "timestamp": 1466380800,
+      "openPrice": 765.692
+    },
+    {
+      "timestamp": 1466467200,
+      "openPrice": 733.561
+    },
+    {
+      "timestamp": 1466553600,
+      "openPrice": 666.65
+    },
+    {
+      "timestamp": 1466640000,
+      "openPrice": 599.88
+    },
+    {
+      "timestamp": 1466726400,
+      "openPrice": 628.343
+    },
+    {
+      "timestamp": 1466812800,
+      "openPrice": 672.29
+    },
+    {
+      "timestamp": 1466899200,
+      "openPrice": 673.7
+    },
+    {
+      "timestamp": 1466985600,
+      "openPrice": 629.999
+    },
+    {
+      "timestamp": 1467072000,
+      "openPrice": 663.82
+    },
+    {
+      "timestamp": 1467158400,
+      "openPrice": 647.5
+    },
+    {
+      "timestamp": 1467244800,
+      "openPrice": 638.567
+    },
+    {
+      "timestamp": 1467331200,
+      "openPrice": 672.22
+    },
+    {
+      "timestamp": 1467417600,
+      "openPrice": 674.67
+    },
+    {
+      "timestamp": 1467504000,
+      "openPrice": 703.95
+    },
+    {
+      "timestamp": 1467590400,
+      "openPrice": 656.331
+    },
+    {
+      "timestamp": 1467676800,
+      "openPrice": 678.848
+    },
+    {
+      "timestamp": 1467763200,
+      "openPrice": 669.45
+    },
+    {
+      "timestamp": 1467849600,
+      "openPrice": 678.84
+    },
+    {
+      "timestamp": 1467936000,
+      "openPrice": 640.4
+    },
+    {
+      "timestamp": 1468022400,
+      "openPrice": 671.932
+    },
+    {
+      "timestamp": 1468108800,
+      "openPrice": 652
+    },
+    {
+      "timestamp": 1468195200,
+      "openPrice": 652.54
+    },
+    {
+      "timestamp": 1468281600,
+      "openPrice": 650.72
+    },
+    {
+      "timestamp": 1468368000,
+      "openPrice": 665.41
+    },
+    {
+      "timestamp": 1468454400,
+      "openPrice": 654.22
+    },
+    {
+      "timestamp": 1468540800,
+      "openPrice": 661.25
+    },
+    {
+      "timestamp": 1468627200,
+      "openPrice": 665.15
+    },
+    {
+      "timestamp": 1468713600,
+      "openPrice": 665
+    },
+    {
+      "timestamp": 1468800000,
+      "openPrice": 680.3
+    },
+    {
+      "timestamp": 1468886400,
+      "openPrice": 673.93
+    },
+    {
+      "timestamp": 1468972800,
+      "openPrice": 672.721
+    },
+    {
+      "timestamp": 1469059200,
+      "openPrice": 667.49
+    },
+    {
+      "timestamp": 1469145600,
+      "openPrice": 665.549
+    },
+    {
+      "timestamp": 1469232000,
+      "openPrice": 651.15
+    },
+    {
+      "timestamp": 1469318400,
+      "openPrice": 657.718
+    },
+    {
+      "timestamp": 1469404800,
+      "openPrice": 661.73
+    },
+    {
+      "timestamp": 1469491200,
+      "openPrice": 653.153
+    },
+    {
+      "timestamp": 1469577600,
+      "openPrice": 651.82
+    },
+    {
+      "timestamp": 1469664000,
+      "openPrice": 656.979
+    },
+    {
+      "timestamp": 1469750400,
+      "openPrice": 655.98
+    },
+    {
+      "timestamp": 1469836800,
+      "openPrice": 656.869
+    },
+    {
+      "timestamp": 1469923200,
+      "openPrice": 653.74
+    },
+    {
+      "timestamp": 1470009600,
+      "openPrice": 623.52
+    },
+    {
+      "timestamp": 1470096000,
+      "openPrice": 602.552
+    },
+    {
+      "timestamp": 1470182400,
+      "openPrice": 539.599
+    },
+    {
+      "timestamp": 1470268800,
+      "openPrice": 567.576
+    },
+    {
+      "timestamp": 1470355200,
+      "openPrice": 582.68
+    },
+    {
+      "timestamp": 1470441600,
+      "openPrice": 575.64
+    },
+    {
+      "timestamp": 1470528000,
+      "openPrice": 591.759
+    },
+    {
+      "timestamp": 1470614400,
+      "openPrice": 595.5
+    },
+    {
+      "timestamp": 1470700800,
+      "openPrice": 591.831
+    },
+    {
+      "timestamp": 1470787200,
+      "openPrice": 586.308
+    },
+    {
+      "timestamp": 1470873600,
+      "openPrice": 590.061
+    },
+    {
+      "timestamp": 1470960000,
+      "openPrice": 589.37
+    },
+    {
+      "timestamp": 1471046400,
+      "openPrice": 586.69
+    },
+    {
+      "timestamp": 1471132800,
+      "openPrice": 583.84
+    },
+    {
+      "timestamp": 1471219200,
+      "openPrice": 570.56
+    },
+    {
+      "timestamp": 1471305600,
+      "openPrice": 568.25
+    },
+    {
+      "timestamp": 1471392000,
+      "openPrice": 579.61
+    },
+    {
+      "timestamp": 1471478400,
+      "openPrice": 573.679
+    },
+    {
+      "timestamp": 1471564800,
+      "openPrice": 572.79
+    },
+    {
+      "timestamp": 1471651200,
+      "openPrice": 572.95
+    },
+    {
+      "timestamp": 1471737600,
+      "openPrice": 581.331
+    },
+    {
+      "timestamp": 1471824000,
+      "openPrice": 581.301
+    },
+    {
+      "timestamp": 1471910400,
+      "openPrice": 586
+    },
+    {
+      "timestamp": 1471996800,
+      "openPrice": 584.86
+    },
+    {
+      "timestamp": 1472083200,
+      "openPrice": 580.999
+    },
+    {
+      "timestamp": 1472169600,
+      "openPrice": 577.08
+    },
+    {
+      "timestamp": 1472256000,
+      "openPrice": 579.35
+    },
+    {
+      "timestamp": 1472342400,
+      "openPrice": 570.16
+    },
+    {
+      "timestamp": 1472428800,
+      "openPrice": 578.99
+    },
+    {
+      "timestamp": 1472515200,
+      "openPrice": 573.552
+    },
+    {
+      "timestamp": 1472601600,
+      "openPrice": 577.24
+    },
+    {
+      "timestamp": 1472688000,
+      "openPrice": 574.21
+    },
+    {
+      "timestamp": 1472774400,
+      "openPrice": 572
+    },
+    {
+      "timestamp": 1472860800,
+      "openPrice": 576.653
+    },
+    {
+      "timestamp": 1472947200,
+      "openPrice": 601
+    },
+    {
+      "timestamp": 1473033600,
+      "openPrice": 612.299
+    },
+    {
+      "timestamp": 1473120000,
+      "openPrice": 609.634
+    },
+    {
+      "timestamp": 1473206400,
+      "openPrice": 613.318
+    },
+    {
+      "timestamp": 1473292800,
+      "openPrice": 617.333
+    },
+    {
+      "timestamp": 1473379200,
+      "openPrice": 627.083
+    },
+    {
+      "timestamp": 1473465600,
+      "openPrice": 625.78
+    },
+    {
+      "timestamp": 1473552000,
+      "openPrice": 624.889
+    },
+    {
+      "timestamp": 1473638400,
+      "openPrice": 611.299
+    },
+    {
+      "timestamp": 1473724800,
+      "openPrice": 611.107
+    },
+    {
+      "timestamp": 1473811200,
+      "openPrice": 612.37
+    },
+    {
+      "timestamp": 1473897600,
+      "openPrice": 612.5
+    },
+    {
+      "timestamp": 1473984000,
+      "openPrice": 612.917
+    },
+    {
+      "timestamp": 1474070400,
+      "openPrice": 610.083
+    },
+    {
+      "timestamp": 1474156800,
+      "openPrice": 609.93
+    },
+    {
+      "timestamp": 1474243200,
+      "openPrice": 612.94
+    },
+    {
+      "timestamp": 1474329600,
+      "openPrice": 611.059
+    },
+    {
+      "timestamp": 1474416000,
+      "openPrice": 603.106
+    },
+    {
+      "timestamp": 1474502400,
+      "openPrice": 598.925
+    },
+    {
+      "timestamp": 1474588800,
+      "openPrice": 595.071
+    },
+    {
+      "timestamp": 1474675200,
+      "openPrice": 604.169
+    },
+    {
+      "timestamp": 1474761600,
+      "openPrice": 601.7
+    },
+    {
+      "timestamp": 1474848000,
+      "openPrice": 599.998
+    },
+    {
+      "timestamp": 1474934400,
+      "openPrice": 608.978
+    },
+    {
+      "timestamp": 1475020800,
+      "openPrice": 606.577
+    },
+    {
+      "timestamp": 1475107200,
+      "openPrice": 604.999
+    },
+    {
+      "timestamp": 1475193600,
+      "openPrice": 607.368
+    },
+    {
+      "timestamp": 1475280000,
+      "openPrice": 612.5
+    },
+    {
+      "timestamp": 1475366400,
+      "openPrice": 614.27
+    },
+    {
+      "timestamp": 1475452800,
+      "openPrice": 611.758
+    },
+    {
+      "timestamp": 1475539200,
+      "openPrice": 613.597
+    },
+    {
+      "timestamp": 1475625600,
+      "openPrice": 611.998
+    },
+    {
+      "timestamp": 1475712000,
+      "openPrice": 614.999
+    },
+    {
+      "timestamp": 1475798400,
+      "openPrice": 611.965
+    },
+    {
+      "timestamp": 1475884800,
+      "openPrice": 618.501
+    },
+    {
+      "timestamp": 1475971200,
+      "openPrice": 620.01
+    },
+    {
+      "timestamp": 1476057600,
+      "openPrice": 615.851
+    },
+    {
+      "timestamp": 1476144000,
+      "openPrice": 618.86
+    },
+    {
+      "timestamp": 1476230400,
+      "openPrice": 640.976
+    },
+    {
+      "timestamp": 1476316800,
+      "openPrice": 634.731
+    },
+    {
+      "timestamp": 1476403200,
+      "openPrice": 634.243
+    },
+    {
+      "timestamp": 1476489600,
+      "openPrice": 640.61
+    },
+    {
+      "timestamp": 1476576000,
+      "openPrice": 640.749
+    },
+    {
+      "timestamp": 1476662400,
+      "openPrice": 641.521
+    },
+    {
+      "timestamp": 1476748800,
+      "openPrice": 640.99
+    },
+    {
+      "timestamp": 1476835200,
+      "openPrice": 636.508
+    },
+    {
+      "timestamp": 1476921600,
+      "openPrice": 631.499
+    },
+    {
+      "timestamp": 1477008000,
+      "openPrice": 630.05
+    },
+    {
+      "timestamp": 1477094400,
+      "openPrice": 634.449
+    },
+    {
+      "timestamp": 1477180800,
+      "openPrice": 663.499
+    },
+    {
+      "timestamp": 1477267200,
+      "openPrice": 655.255
+    },
+    {
+      "timestamp": 1477353600,
+      "openPrice": 652.63
+    },
+    {
+      "timestamp": 1477440000,
+      "openPrice": 655.889
+    },
+    {
+      "timestamp": 1477526400,
+      "openPrice": 677.318
+    },
+    {
+      "timestamp": 1477612800,
+      "openPrice": 686.781
+    },
+    {
+      "timestamp": 1477699200,
+      "openPrice": 690
+    },
+    {
+      "timestamp": 1477785600,
+      "openPrice": 713.949
+    },
+    {
+      "timestamp": 1477872000,
+      "openPrice": 700.079
+    },
+    {
+      "timestamp": 1477958400,
+      "openPrice": 698.79
+    },
+    {
+      "timestamp": 1478044800,
+      "openPrice": 733.742
+    },
+    {
+      "timestamp": 1478131200,
+      "openPrice": 747.07
+    },
+    {
+      "timestamp": 1478217600,
+      "openPrice": 692.902
+    },
+    {
+      "timestamp": 1478304000,
+      "openPrice": 706.036
+    },
+    {
+      "timestamp": 1478390400,
+      "openPrice": 706.46
+    },
+    {
+      "timestamp": 1478476800,
+      "openPrice": 715
+    },
+    {
+      "timestamp": 1478563200,
+      "openPrice": 704.142
+    },
+    {
+      "timestamp": 1478649600,
+      "openPrice": 712.69
+    },
+    {
+      "timestamp": 1478736000,
+      "openPrice": 722.4
+    },
+    {
+      "timestamp": 1478822400,
+      "openPrice": 713.503
+    },
+    {
+      "timestamp": 1478908800,
+      "openPrice": 717.74
+    },
+    {
+      "timestamp": 1478995200,
+      "openPrice": 704.399
+    },
+    {
+      "timestamp": 1479081600,
+      "openPrice": 702.7
+    },
+    {
+      "timestamp": 1479168000,
+      "openPrice": 706.999
+    },
+    {
+      "timestamp": 1479254400,
+      "openPrice": 710.87
+    },
+    {
+      "timestamp": 1479340800,
+      "openPrice": 741.875
+    },
+    {
+      "timestamp": 1479427200,
+      "openPrice": 739.088
+    },
+    {
+      "timestamp": 1479513600,
+      "openPrice": 752.232
+    },
+    {
+      "timestamp": 1479600000,
+      "openPrice": 751.99
+    },
+    {
+      "timestamp": 1479686400,
+      "openPrice": 731
+    },
+    {
+      "timestamp": 1479772800,
+      "openPrice": 737.999
+    },
+    {
+      "timestamp": 1479859200,
+      "openPrice": 749.76
+    },
+    {
+      "timestamp": 1479945600,
+      "openPrice": 742.489
+    },
+    {
+      "timestamp": 1480032000,
+      "openPrice": 740.459
+    },
+    {
+      "timestamp": 1480118400,
+      "openPrice": 742.479
+    },
+    {
+      "timestamp": 1480204800,
+      "openPrice": 733.26
+    },
+    {
+      "timestamp": 1480291200,
+      "openPrice": 729.885
+    },
+    {
+      "timestamp": 1480377600,
+      "openPrice": 734.173
+    },
+    {
+      "timestamp": 1480464000,
+      "openPrice": 732
+    },
+    {
+      "timestamp": 1480550400,
+      "openPrice": 742.396
+    },
+    {
+      "timestamp": 1480636800,
+      "openPrice": 753.999
+    },
+    {
+      "timestamp": 1480723200,
+      "openPrice": 773.501
+    },
+    {
+      "timestamp": 1480809600,
+      "openPrice": 765.897
+    },
+    {
+      "timestamp": 1480896000,
+      "openPrice": 769
+    },
+    {
+      "timestamp": 1480982400,
+      "openPrice": 752.079
+    },
+    {
+      "timestamp": 1481068800,
+      "openPrice": 758
+    },
+    {
+      "timestamp": 1481155200,
+      "openPrice": 765.008
+    },
+    {
+      "timestamp": 1481241600,
+      "openPrice": 768.834
+    },
+    {
+      "timestamp": 1481328000,
+      "openPrice": 773.588
+    },
+    {
+      "timestamp": 1481414400,
+      "openPrice": 775.421
+    },
+    {
+      "timestamp": 1481500800,
+      "openPrice": 771.325
+    },
+    {
+      "timestamp": 1481587200,
+      "openPrice": 778.226
+    },
+    {
+      "timestamp": 1481673600,
+      "openPrice": 778
+    },
+    {
+      "timestamp": 1481760000,
+      "openPrice": 777.56
+    },
+    {
+      "timestamp": 1481846400,
+      "openPrice": 778.5
+    },
+    {
+      "timestamp": 1481932800,
+      "openPrice": 785.41
+    },
+    {
+      "timestamp": 1482019200,
+      "openPrice": 792.989
+    },
+    {
+      "timestamp": 1482105600,
+      "openPrice": 791.371
+    },
+    {
+      "timestamp": 1482192000,
+      "openPrice": 791.686
+    },
+    {
+      "timestamp": 1482278400,
+      "openPrice": 800.199
+    },
+    {
+      "timestamp": 1482364800,
+      "openPrice": 829.999
+    },
+    {
+      "timestamp": 1482451200,
+      "openPrice": 860.07
+    },
+    {
+      "timestamp": 1482537600,
+      "openPrice": 918.2
+    },
+    {
+      "timestamp": 1482624000,
+      "openPrice": 895.399
+    },
+    {
+      "timestamp": 1482710400,
+      "openPrice": 896.72
+    },
+    {
+      "timestamp": 1482796800,
+      "openPrice": 904.609
+    },
+    {
+      "timestamp": 1482883200,
+      "openPrice": 936.934
+    },
+    {
+      "timestamp": 1482969600,
+      "openPrice": 979.87
+    },
+    {
+      "timestamp": 1483056000,
+      "openPrice": 974.32
+    },
+    {
+      "timestamp": 1483142400,
+      "openPrice": 960.66
+    },
+    {
+      "timestamp": 1483228800,
+      "openPrice": 968.75
+    },
+    {
+      "timestamp": 1483315200,
+      "openPrice": 999.497
+    },
+    {
+      "timestamp": 1483401600,
+      "openPrice": 1019.997
+    },
+    {
+      "timestamp": 1483488000,
+      "openPrice": 1039.309
+    },
+    {
+      "timestamp": 1483574400,
+      "openPrice": 1133.219
+    },
+    {
+      "timestamp": 1483660800,
+      "openPrice": 1004.41
+    },
+    {
+      "timestamp": 1483747200,
+      "openPrice": 898.43
+    },
+    {
+      "timestamp": 1483833600,
+      "openPrice": 912.654
+    },
+    {
+      "timestamp": 1483920000,
+      "openPrice": 913.121
+    },
+    {
+      "timestamp": 1484006400,
+      "openPrice": 905.062
+    },
+    {
+      "timestamp": 1484092800,
+      "openPrice": 909.999
+    },
+    {
+      "timestamp": 1484179200,
+      "openPrice": 783
+    },
+    {
+      "timestamp": 1484265600,
+      "openPrice": 809.979
+    },
+    {
+      "timestamp": 1484352000,
+      "openPrice": 834
+    },
+    {
+      "timestamp": 1484438400,
+      "openPrice": 821.559
+    },
+    {
+      "timestamp": 1484524800,
+      "openPrice": 825.951
+    },
+    {
+      "timestamp": 1484611200,
+      "openPrice": 834.634
+    },
+    {
+      "timestamp": 1484697600,
+      "openPrice": 909.27
+    },
+    {
+      "timestamp": 1484784000,
+      "openPrice": 892.402
+    },
+    {
+      "timestamp": 1484870400,
+      "openPrice": 900.238
+    },
+    {
+      "timestamp": 1484956800,
+      "openPrice": 896.589
+    },
+    {
+      "timestamp": 1485043200,
+      "openPrice": 925.298
+    },
+    {
+      "timestamp": 1485129600,
+      "openPrice": 925.27
+    },
+    {
+      "timestamp": 1485216000,
+      "openPrice": 917.72
+    },
+    {
+      "timestamp": 1485302400,
+      "openPrice": 885.71
+    },
+    {
+      "timestamp": 1485388800,
+      "openPrice": 896.89
+    },
+    {
+      "timestamp": 1485475200,
+      "openPrice": 915.79
+    },
+    {
+      "timestamp": 1485561600,
+      "openPrice": 921.45
+    },
+    {
+      "timestamp": 1485648000,
+      "openPrice": 920.749
+    },
+    {
+      "timestamp": 1485734400,
+      "openPrice": 916
+    },
+    {
+      "timestamp": 1485820800,
+      "openPrice": 920.63
+    },
+    {
+      "timestamp": 1485907200,
+      "openPrice": 968.166
+    },
+    {
+      "timestamp": 1485993600,
+      "openPrice": 988.79
+    },
+    {
+      "timestamp": 1486080000,
+      "openPrice": 1008.22
+    },
+    {
+      "timestamp": 1486166400,
+      "openPrice": 1016.291
+    },
+    {
+      "timestamp": 1486252800,
+      "openPrice": 1032.364
+    },
+    {
+      "timestamp": 1486339200,
+      "openPrice": 1015.35
+    },
+    {
+      "timestamp": 1486425600,
+      "openPrice": 1028.45
+    },
+    {
+      "timestamp": 1486512000,
+      "openPrice": 1054.214
+    },
+    {
+      "timestamp": 1486598400,
+      "openPrice": 1053.497
+    },
+    {
+      "timestamp": 1486684800,
+      "openPrice": 987.431
+    },
+    {
+      "timestamp": 1486771200,
+      "openPrice": 998.824
+    },
+    {
+      "timestamp": 1486857600,
+      "openPrice": 1010.599
+    },
+    {
+      "timestamp": 1486944000,
+      "openPrice": 1001.033
+    },
+    {
+      "timestamp": 1487030400,
+      "openPrice": 999.028
+    },
+    {
+      "timestamp": 1487116800,
+      "openPrice": 1015.05
+    },
+    {
+      "timestamp": 1487203200,
+      "openPrice": 1016.739
+    },
+    {
+      "timestamp": 1487289600,
+      "openPrice": 1038.502
+    },
+    {
+      "timestamp": 1487376000,
+      "openPrice": 1052
+    },
+    {
+      "timestamp": 1487462400,
+      "openPrice": 1058.88
+    },
+    {
+      "timestamp": 1487548800,
+      "openPrice": 1055.588
+    },
+    {
+      "timestamp": 1487635200,
+      "openPrice": 1088.67
+    },
+    {
+      "timestamp": 1487721600,
+      "openPrice": 1125.771
+    },
+    {
+      "timestamp": 1487808000,
+      "openPrice": 1122.092
+    },
+    {
+      "timestamp": 1487894400,
+      "openPrice": 1177.781
+    },
+    {
+      "timestamp": 1487980800,
+      "openPrice": 1174.574
+    },
+    {
+      "timestamp": 1488067200,
+      "openPrice": 1147.454
+    },
+    {
+      "timestamp": 1488153600,
+      "openPrice": 1167
+    },
+    {
+      "timestamp": 1488240000,
+      "openPrice": 1191.83
+    },
+    {
+      "timestamp": 1488326400,
+      "openPrice": 1181.998
+    },
+    {
+      "timestamp": 1488412800,
+      "openPrice": 1228.71
+    },
+    {
+      "timestamp": 1488499200,
+      "openPrice": 1254
+    },
+    {
+      "timestamp": 1488585600,
+      "openPrice": 1277
+    },
+    {
+      "timestamp": 1488672000,
+      "openPrice": 1264.63
+    },
+    {
+      "timestamp": 1488758400,
+      "openPrice": 1268.01
+    },
+    {
+      "timestamp": 1488844800,
+      "openPrice": 1274.904
+    },
+    {
+      "timestamp": 1488931200,
+      "openPrice": 1234.455
+    },
+    {
+      "timestamp": 1489017600,
+      "openPrice": 1143.388
+    },
+    {
+      "timestamp": 1489104000,
+      "openPrice": 1185.201
+    },
+    {
+      "timestamp": 1489190400,
+      "openPrice": 1107.563
+    },
+    {
+      "timestamp": 1489276800,
+      "openPrice": 1174.82
+    },
+    {
+      "timestamp": 1489363200,
+      "openPrice": 1224.199
+    },
+    {
+      "timestamp": 1489449600,
+      "openPrice": 1229.991
+    },
+    {
+      "timestamp": 1489536000,
+      "openPrice": 1245.927
+    },
+    {
+      "timestamp": 1489622400,
+      "openPrice": 1252.95
+    },
+    {
+      "timestamp": 1489708800,
+      "openPrice": 1165.1
+    },
+    {
+      "timestamp": 1489795200,
+      "openPrice": 1030.249
+    },
+    {
+      "timestamp": 1489881600,
+      "openPrice": 950.999
+    },
+    {
+      "timestamp": 1489968000,
+      "openPrice": 1007.44
+    },
+    {
+      "timestamp": 1490054400,
+      "openPrice": 1029.999
+    },
+    {
+      "timestamp": 1490140800,
+      "openPrice": 1109.99
+    },
+    {
+      "timestamp": 1490227200,
+      "openPrice": 1030.01
+    },
+    {
+      "timestamp": 1490313600,
+      "openPrice": 1025.002
+    },
+    {
+      "timestamp": 1490400000,
+      "openPrice": 921.817
+    },
+    {
+      "timestamp": 1490486400,
+      "openPrice": 951.27
+    },
+    {
+      "timestamp": 1490572800,
+      "openPrice": 958.73
+    },
+    {
+      "timestamp": 1490659200,
+      "openPrice": 1039.961
+    },
+    {
+      "timestamp": 1490745600,
+      "openPrice": 1043.3
+    },
+    {
+      "timestamp": 1490832000,
+      "openPrice": 1042.141
+    },
+    {
+      "timestamp": 1490918400,
+      "openPrice": 1040.001
+    },
+    {
+      "timestamp": 1491004800,
+      "openPrice": 1080.03
+    },
+    {
+      "timestamp": 1491091200,
+      "openPrice": 1096.008
+    },
+    {
+      "timestamp": 1491177600,
+      "openPrice": 1107.221
+    },
+    {
+      "timestamp": 1491264000,
+      "openPrice": 1149.967
+    },
+    {
+      "timestamp": 1491350400,
+      "openPrice": 1141.999
+    },
+    {
+      "timestamp": 1491436800,
+      "openPrice": 1138.21
+    },
+    {
+      "timestamp": 1491523200,
+      "openPrice": 1191.74
+    },
+    {
+      "timestamp": 1491609600,
+      "openPrice": 1194.213
+    },
+    {
+      "timestamp": 1491696000,
+      "openPrice": 1182.469
+    },
+    {
+      "timestamp": 1491782400,
+      "openPrice": 1209.66
+    },
+    {
+      "timestamp": 1491868800,
+      "openPrice": 1213.29
+    },
+    {
+      "timestamp": 1491955200,
+      "openPrice": 1223.499
+    },
+    {
+      "timestamp": 1492041600,
+      "openPrice": 1218.615
+    },
+    {
+      "timestamp": 1492128000,
+      "openPrice": 1175.899
+    },
+    {
+      "timestamp": 1492214400,
+      "openPrice": 1188
+    },
+    {
+      "timestamp": 1492300800,
+      "openPrice": 1180.53
+    },
+    {
+      "timestamp": 1492387200,
+      "openPrice": 1180.994
+    },
+    {
+      "timestamp": 1492473600,
+      "openPrice": 1200.398
+    },
+    {
+      "timestamp": 1492560000,
+      "openPrice": 1202.39
+    },
+    {
+      "timestamp": 1492646400,
+      "openPrice": 1209
+    },
+    {
+      "timestamp": 1492732800,
+      "openPrice": 1241.873
+    },
+    {
+      "timestamp": 1492819200,
+      "openPrice": 1248.985
+    },
+    {
+      "timestamp": 1492905600,
+      "openPrice": 1235.397
+    },
+    {
+      "timestamp": 1492992000,
+      "openPrice": 1244.32
+    },
+    {
+      "timestamp": 1493078400,
+      "openPrice": 1252.3
+    },
+    {
+      "timestamp": 1493164800,
+      "openPrice": 1276.349
+    },
+    {
+      "timestamp": 1493251200,
+      "openPrice": 1290.52
+    },
+    {
+      "timestamp": 1493337600,
+      "openPrice": 1335.493
+    },
+    {
+      "timestamp": 1493424000,
+      "openPrice": 1322.92
+    },
+    {
+      "timestamp": 1493510400,
+      "openPrice": 1335.927
+    },
+    {
+      "timestamp": 1493596800,
+      "openPrice": 1344.601
+    },
+    {
+      "timestamp": 1493683200,
+      "openPrice": 1397.237
+    },
+    {
+      "timestamp": 1493769600,
+      "openPrice": 1454.501
+    },
+    {
+      "timestamp": 1493856000,
+      "openPrice": 1513.598
+    },
+    {
+      "timestamp": 1493942400,
+      "openPrice": 1535.418
+    },
+    {
+      "timestamp": 1494028800,
+      "openPrice": 1514.473
+    },
+    {
+      "timestamp": 1494115200,
+      "openPrice": 1535.422
+    },
+    {
+      "timestamp": 1494201600,
+      "openPrice": 1505.164
+    },
+    {
+      "timestamp": 1494288000,
+      "openPrice": 1668.525
+    },
+    {
+      "timestamp": 1494374400,
+      "openPrice": 1721.751
+    },
+    {
+      "timestamp": 1494460800,
+      "openPrice": 1781.999
+    },
+    {
+      "timestamp": 1494547200,
+      "openPrice": 1830.001
+    },
+    {
+      "timestamp": 1494633600,
+      "openPrice": 1698.188
+    },
+    {
+      "timestamp": 1494720000,
+      "openPrice": 1785
+    },
+    {
+      "timestamp": 1494806400,
+      "openPrice": 1787.88
+    },
+    {
+      "timestamp": 1494892800,
+      "openPrice": 1739.75
+    },
+    {
+      "timestamp": 1494979200,
+      "openPrice": 1786.841
+    },
+    {
+      "timestamp": 1495065600,
+      "openPrice": 1836.05
+    },
+    {
+      "timestamp": 1495152000,
+      "openPrice": 1899.001
+    },
+    {
+      "timestamp": 1495238400,
+      "openPrice": 1961.793
+    },
+    {
+      "timestamp": 1495324800,
+      "openPrice": 2039.115
+    },
+    {
+      "timestamp": 1495411200,
+      "openPrice": 2007.227
+    },
+    {
+      "timestamp": 1495497600,
+      "openPrice": 2080.052
+    },
+    {
+      "timestamp": 1495584000,
+      "openPrice": 2233.975
+    },
+    {
+      "timestamp": 1495670400,
+      "openPrice": 2408.24
+    },
+    {
+      "timestamp": 1495756800,
+      "openPrice": 2292
+    },
+    {
+      "timestamp": 1495843200,
+      "openPrice": 2199.787
+    },
+    {
+      "timestamp": 1495929600,
+      "openPrice": 1995.016
+    },
+    {
+      "timestamp": 1496016000,
+      "openPrice": 2129.343
+    },
+    {
+      "timestamp": 1496102400,
+      "openPrice": 2259.4
+    },
+    {
+      "timestamp": 1496188800,
+      "openPrice": 2158.015
+    },
+    {
+      "timestamp": 1496275200,
+      "openPrice": 2317.64
+    },
+    {
+      "timestamp": 1496361600,
+      "openPrice": 2399.981
+    },
+    {
+      "timestamp": 1496448000,
+      "openPrice": 2485.432
+    },
+    {
+      "timestamp": 1496534400,
+      "openPrice": 2543.29
+    },
+    {
+      "timestamp": 1496620800,
+      "openPrice": 2522.768
+    },
+    {
+      "timestamp": 1496707200,
+      "openPrice": 2690.999
+    },
+    {
+      "timestamp": 1496793600,
+      "openPrice": 2871.9
+    },
+    {
+      "timestamp": 1496880000,
+      "openPrice": 2682.552
+    },
+    {
+      "timestamp": 1496966400,
+      "openPrice": 2810.339
+    },
+    {
+      "timestamp": 1497052800,
+      "openPrice": 2816.463
+    },
+    {
+      "timestamp": 1497139200,
+      "openPrice": 2816.214
+    },
+    {
+      "timestamp": 1497225600,
+      "openPrice": 2924.876
+    },
+    {
+      "timestamp": 1497312000,
+      "openPrice": 2609.442
+    },
+    {
+      "timestamp": 1497398400,
+      "openPrice": 2710
+    },
+    {
+      "timestamp": 1497484800,
+      "openPrice": 2456.602
+    },
+    {
+      "timestamp": 1497571200,
+      "openPrice": 2428.72
+    },
+    {
+      "timestamp": 1497657600,
+      "openPrice": 2470.316
+    },
+    {
+      "timestamp": 1497744000,
+      "openPrice": 2646.838
+    },
+    {
+      "timestamp": 1497830400,
+      "openPrice": 2500.724
+    },
+    {
+      "timestamp": 1497916800,
+      "openPrice": 2584.859
+    },
+    {
+      "timestamp": 1498003200,
+      "openPrice": 2705.1
+    },
+    {
+      "timestamp": 1498089600,
+      "openPrice": 2644.969
+    },
+    {
+      "timestamp": 1498176000,
+      "openPrice": 2684.98
+    },
+    {
+      "timestamp": 1498262400,
+      "openPrice": 2668
+    },
+    {
+      "timestamp": 1498348800,
+      "openPrice": 2555.092
+    },
+    {
+      "timestamp": 1498435200,
+      "openPrice": 2490.126
+    },
+    {
+      "timestamp": 1498521600,
+      "openPrice": 2404.374
+    },
+    {
+      "timestamp": 1498608000,
+      "openPrice": 2538.01
+    },
+    {
+      "timestamp": 1498694400,
+      "openPrice": 2554.014
+    },
+    {
+      "timestamp": 1498780800,
+      "openPrice": 2526.074
+    },
+    {
+      "timestamp": 1498867200,
+      "openPrice": 2443.36
+    },
+    {
+      "timestamp": 1498953600,
+      "openPrice": 2393
+    },
+    {
+      "timestamp": 1499040000,
+      "openPrice": 2500.911
+    },
+    {
+      "timestamp": 1499126400,
+      "openPrice": 2546.73
+    },
+    {
+      "timestamp": 1499212800,
+      "openPrice": 2597.708
+    },
+    {
+      "timestamp": 1499299200,
+      "openPrice": 2610.74
+    },
+    {
+      "timestamp": 1499385600,
+      "openPrice": 2606.8
+    },
+    {
+      "timestamp": 1499472000,
+      "openPrice": 2506.928
+    },
+    {
+      "timestamp": 1499558400,
+      "openPrice": 2547.017
+    },
+    {
+      "timestamp": 1499644800,
+      "openPrice": 2499.12
+    },
+    {
+      "timestamp": 1499731200,
+      "openPrice": 2336.317
+    },
+    {
+      "timestamp": 1499817600,
+      "openPrice": 2302.2
+    },
+    {
+      "timestamp": 1499904000,
+      "openPrice": 2373.845
+    },
+    {
+      "timestamp": 1499990400,
+      "openPrice": 2338.641
+    },
+    {
+      "timestamp": 1500076800,
+      "openPrice": 2216.178
+    },
+    {
+      "timestamp": 1500163200,
+      "openPrice": 1969.999
+    },
+    {
+      "timestamp": 1500249600,
+      "openPrice": 1905.05
+    },
+    {
+      "timestamp": 1500336000,
+      "openPrice": 2217
+    },
+    {
+      "timestamp": 1500422400,
+      "openPrice": 2310.801
+    },
+    {
+      "timestamp": 1500508800,
+      "openPrice": 2254.998
+    },
+    {
+      "timestamp": 1500595200,
+      "openPrice": 2854.882
+    },
+    {
+      "timestamp": 1500681600,
+      "openPrice": 2670
+    },
+    {
+      "timestamp": 1500768000,
+      "openPrice": 2833.599
+    },
+    {
+      "timestamp": 1500854400,
+      "openPrice": 2761
+    },
+    {
+      "timestamp": 1500940800,
+      "openPrice": 2755.898
+    },
+    {
+      "timestamp": 1501027200,
+      "openPrice": 2565
+    },
+    {
+      "timestamp": 1501113600,
+      "openPrice": 2526.699
+    },
+    {
+      "timestamp": 1501200000,
+      "openPrice": 2676.988
+    },
+    {
+      "timestamp": 1501286400,
+      "openPrice": 2808.971
+    },
+    {
+      "timestamp": 1501372800,
+      "openPrice": 2716
+    },
+    {
+      "timestamp": 1501459200,
+      "openPrice": 2798.999
+    },
+    {
+      "timestamp": 1501545600,
+      "openPrice": 2876.133
+    },
+    {
+      "timestamp": 1501632000,
+      "openPrice": 2727.975
+    },
+    {
+      "timestamp": 1501718400,
+      "openPrice": 2700.9
+    },
+    {
+      "timestamp": 1501804800,
+      "openPrice": 2797.034
+    },
+    {
+      "timestamp": 1501891200,
+      "openPrice": 3130
+    },
+    {
+      "timestamp": 1501977600,
+      "openPrice": 3251.77
+    },
+    {
+      "timestamp": 1502064000,
+      "openPrice": 3365.87
+    },
+    {
+      "timestamp": 1502150400,
+      "openPrice": 3395
+    },
+    {
+      "timestamp": 1502236800,
+      "openPrice": 3430.52
+    },
+    {
+      "timestamp": 1502323200,
+      "openPrice": 3370
+    },
+    {
+      "timestamp": 1502409600,
+      "openPrice": 3434.099
+    },
+    {
+      "timestamp": 1502496000,
+      "openPrice": 3669.618
+    },
+    {
+      "timestamp": 1502582400,
+      "openPrice": 3889.09
+    },
+    {
+      "timestamp": 1502668800,
+      "openPrice": 4084
+    },
+    {
+      "timestamp": 1502755200,
+      "openPrice": 4350.021
+    },
+    {
+      "timestamp": 1502841600,
+      "openPrice": 4170.8
+    },
+    {
+      "timestamp": 1502928000,
+      "openPrice": 4381.01
+    },
+    {
+      "timestamp": 1503014400,
+      "openPrice": 4291
+    },
+    {
+      "timestamp": 1503100800,
+      "openPrice": 4130
+    },
+    {
+      "timestamp": 1503187200,
+      "openPrice": 4184.937
+    },
+    {
+      "timestamp": 1503273600,
+      "openPrice": 4076.001
+    },
+    {
+      "timestamp": 1503360000,
+      "openPrice": 4007.398
+    },
+    {
+      "timestamp": 1503446400,
+      "openPrice": 4104.9
+    },
+    {
+      "timestamp": 1503532800,
+      "openPrice": 4150.999
+    },
+    {
+      "timestamp": 1503619200,
+      "openPrice": 4334.999
+    },
+    {
+      "timestamp": 1503705600,
+      "openPrice": 4391.5
+    },
+    {
+      "timestamp": 1503792000,
+      "openPrice": 4360.4
+    },
+    {
+      "timestamp": 1503878400,
+      "openPrice": 4338.458
+    },
+    {
+      "timestamp": 1503964800,
+      "openPrice": 4387.699
+    },
+    {
+      "timestamp": 1504051200,
+      "openPrice": 4590.168
+    },
+    {
+      "timestamp": 1504137600,
+      "openPrice": 4581.12
+    },
+    {
+      "timestamp": 1504224000,
+      "openPrice": 4737.02
+    },
+    {
+      "timestamp": 1504310400,
+      "openPrice": 4919.9
+    },
+    {
+      "timestamp": 1504396800,
+      "openPrice": 4630.45
+    },
+    {
+      "timestamp": 1504483200,
+      "openPrice": 4645
+    },
+    {
+      "timestamp": 1504569600,
+      "openPrice": 4344.11
+    },
+    {
+      "timestamp": 1504656000,
+      "openPrice": 4457.02
+    },
+    {
+      "timestamp": 1504742400,
+      "openPrice": 4651.1
+    },
+    {
+      "timestamp": 1504828800,
+      "openPrice": 4659.8
+    },
+    {
+      "timestamp": 1504915200,
+      "openPrice": 4385.1
+    },
+    {
+      "timestamp": 1505001600,
+      "openPrice": 4354.7
+    },
+    {
+      "timestamp": 1505088000,
+      "openPrice": 4287.3
+    },
+    {
+      "timestamp": 1505174400,
+      "openPrice": 4224.7
+    },
+    {
+      "timestamp": 1505260800,
+      "openPrice": 4176.6
+    },
+    {
+      "timestamp": 1505347200,
+      "openPrice": 3880.7
+    },
+    {
+      "timestamp": 1505433600,
+      "openPrice": 3254.4
+    },
+    {
+      "timestamp": 1505520000,
+      "openPrice": 3739.7
+    },
+    {
+      "timestamp": 1505606400,
+      "openPrice": 3716.4
+    },
+    {
+      "timestamp": 1505692800,
+      "openPrice": 3718.8
+    },
+    {
+      "timestamp": 1505779200,
+      "openPrice": 4093.7
+    },
+    {
+      "timestamp": 1505865600,
+      "openPrice": 3912.3
+    },
+    {
+      "timestamp": 1505952000,
+      "openPrice": 3863.1
+    },
+    {
+      "timestamp": 1506038400,
+      "openPrice": 3623.9
+    },
+    {
+      "timestamp": 1506124800,
+      "openPrice": 3599.7
+    },
+    {
+      "timestamp": 1506211200,
+      "openPrice": 3789.5
+    },
+    {
+      "timestamp": 1506297600,
+      "openPrice": 3670
+    },
+    {
+      "timestamp": 1506384000,
+      "openPrice": 3922.7
+    },
+    {
+      "timestamp": 1506470400,
+      "openPrice": 3886.3
+    },
+    {
+      "timestamp": 1506556800,
+      "openPrice": 4213.9
+    },
+    {
+      "timestamp": 1506643200,
+      "openPrice": 4195.4
+    },
+    {
+      "timestamp": 1506729600,
+      "openPrice": 4162.6
+    },
+    {
+      "timestamp": 1506816000,
+      "openPrice": 4343.9
+    },
+    {
+      "timestamp": 1506902400,
+      "openPrice": 4387.9
+    },
+    {
+      "timestamp": 1506988800,
+      "openPrice": 4401.6
+    },
+    {
+      "timestamp": 1507075200,
+      "openPrice": 4312.9
+    },
+    {
+      "timestamp": 1507161600,
+      "openPrice": 4222.3
+    },
+    {
+      "timestamp": 1507248000,
+      "openPrice": 4319.6
+    },
+    {
+      "timestamp": 1507334400,
+      "openPrice": 4363.1
+    },
+    {
+      "timestamp": 1507420800,
+      "openPrice": 4423.2
+    },
+    {
+      "timestamp": 1507507200,
+      "openPrice": 4594.4
+    },
+    {
+      "timestamp": 1507593600,
+      "openPrice": 4774.9
+    },
+    {
+      "timestamp": 1507680000,
+      "openPrice": 4745.4
+    },
+    {
+      "timestamp": 1507766400,
+      "openPrice": 4824.2
+    },
+    {
+      "timestamp": 1507852800,
+      "openPrice": 5429.8
+    },
+    {
+      "timestamp": 1507939200,
+      "openPrice": 5626.7
+    },
+    {
+      "timestamp": 1508025600,
+      "openPrice": 5800
+    },
+    {
+      "timestamp": 1508112000,
+      "openPrice": 5673.2
+    },
+    {
+      "timestamp": 1508198400,
+      "openPrice": 5738.7
+    },
+    {
+      "timestamp": 1508284800,
+      "openPrice": 5606.5
+    },
+    {
+      "timestamp": 1508371200,
+      "openPrice": 5590
+    },
+    {
+      "timestamp": 1508457600,
+      "openPrice": 5703.1
+    },
+    {
+      "timestamp": 1508544000,
+      "openPrice": 5990.2
+    },
+    {
+      "timestamp": 1508630400,
+      "openPrice": 6039.8
+    },
+    {
+      "timestamp": 1508716800,
+      "openPrice": 5987.5
+    },
+    {
+      "timestamp": 1508803200,
+      "openPrice": 5902.6
+    },
+    {
+      "timestamp": 1508889600,
+      "openPrice": 5545.5
+    },
+    {
+      "timestamp": 1508976000,
+      "openPrice": 5761
+    },
+    {
+      "timestamp": 1509062400,
+      "openPrice": 5891.2
+    },
+    {
+      "timestamp": 1509148800,
+      "openPrice": 5794
+    },
+    {
+      "timestamp": 1509235200,
+      "openPrice": 5750
+    },
+    {
+      "timestamp": 1509321600,
+      "openPrice": 6135.8
+    },
+    {
+      "timestamp": 1509408000,
+      "openPrice": 6124.5
+    },
+    {
+      "timestamp": 1509494400,
+      "openPrice": 6442.3
+    },
+    {
+      "timestamp": 1509580800,
+      "openPrice": 6741.8
+    },
+    {
+      "timestamp": 1509667200,
+      "openPrice": 7020.3
+    },
+    {
+      "timestamp": 1509753600,
+      "openPrice": 7160
+    },
+    {
+      "timestamp": 1509840000,
+      "openPrice": 7366.5
+    },
+    {
+      "timestamp": 1509926400,
+      "openPrice": 7374.7
+    },
+    {
+      "timestamp": 1510012800,
+      "openPrice": 6970.3
+    },
+    {
+      "timestamp": 1510099200,
+      "openPrice": 7128.1
+    },
+    {
+      "timestamp": 1510185600,
+      "openPrice": 7460
+    },
+    {
+      "timestamp": 1510272000,
+      "openPrice": 7155
+    },
+    {
+      "timestamp": 1510358400,
+      "openPrice": 6567.1
+    },
+    {
+      "timestamp": 1510444800,
+      "openPrice": 6330
+    },
+    {
+      "timestamp": 1510531200,
+      "openPrice": 5840
+    },
+    {
+      "timestamp": 1510617600,
+      "openPrice": 6534
+    },
+    {
+      "timestamp": 1510704000,
+      "openPrice": 6660.6
+    },
+    {
+      "timestamp": 1510790400,
+      "openPrice": 7260
+    },
+    {
+      "timestamp": 1510876800,
+      "openPrice": 7755.7
+    },
+    {
+      "timestamp": 1510963200,
+      "openPrice": 7691.9
+    },
+    {
+      "timestamp": 1511049600,
+      "openPrice": 7790.5
+    },
+    {
+      "timestamp": 1511136000,
+      "openPrice": 8000
+    },
+    {
+      "timestamp": 1511222400,
+      "openPrice": 8220.8
+    },
+    {
+      "timestamp": 1511308800,
+      "openPrice": 8100.8
+    },
+    {
+      "timestamp": 1511395200,
+      "openPrice": 8251.5
+    },
+    {
+      "timestamp": 1511481600,
+      "openPrice": 8028.7
+    },
+    {
+      "timestamp": 1511568000,
+      "openPrice": 8174.1
+    },
+    {
+      "timestamp": 1511654400,
+      "openPrice": 8691.8
+    },
+    {
+      "timestamp": 1511740800,
+      "openPrice": 9174.3
+    },
+    {
+      "timestamp": 1511827200,
+      "openPrice": 9597.7
+    },
+    {
+      "timestamp": 1511913600,
+      "openPrice": 9820
+    },
+    {
+      "timestamp": 1512000000,
+      "openPrice": 9773.1
+    },
+    {
+      "timestamp": 1512086400,
+      "openPrice": 10087.8
+    },
+    {
+      "timestamp": 1512172800,
+      "openPrice": 10887.1
+    },
+    {
+      "timestamp": 1512259200,
+      "openPrice": 10901
+    },
+    {
+      "timestamp": 1512345600,
+      "openPrice": 11242
+    },
+    {
+      "timestamp": 1512432000,
+      "openPrice": 11638
+    },
+    {
+      "timestamp": 1512518400,
+      "openPrice": 11723.4
+    },
+    {
+      "timestamp": 1512604800,
+      "openPrice": 13733.4
+    },
+    {
+      "timestamp": 1512691200,
+      "openPrice": 15899
+    },
+    {
+      "timestamp": 1512777600,
+      "openPrice": 15921.9
+    },
+    {
+      "timestamp": 1512864000,
+      "openPrice": 14682.9
+    },
+    {
+      "timestamp": 1512950400,
+      "openPrice": 14850
+    },
+    {
+      "timestamp": 1513036800,
+      "openPrice": 16568.1
+    },
+    {
+      "timestamp": 1513123200,
+      "openPrice": 16894.3
+    },
+    {
+      "timestamp": 1513209600,
+      "openPrice": 16135.3
+    },
+    {
+      "timestamp": 1513296000,
+      "openPrice": 16376.6
+    },
+    {
+      "timestamp": 1513382400,
+      "openPrice": 17500
+    },
+    {
+      "timestamp": 1513468800,
+      "openPrice": 19356.9
+    },
+    {
+      "timestamp": 1513555200,
+      "openPrice": 18920.8
+    },
+    {
+      "timestamp": 1513641600,
+      "openPrice": 18832.8
+    },
+    {
+      "timestamp": 1513728000,
+      "openPrice": 17593.5
+    },
+    {
+      "timestamp": 1513814400,
+      "openPrice": 16217.7
+    },
+    {
+      "timestamp": 1513900800,
+      "openPrice": 15184.3
+    },
+    {
+      "timestamp": 1513987200,
+      "openPrice": 13899.8
+    },
+    {
+      "timestamp": 1514073600,
+      "openPrice": 14569.4
+    },
+    {
+      "timestamp": 1514160000,
+      "openPrice": 13760
+    },
+    {
+      "timestamp": 1514246400,
+      "openPrice": 13870
+    },
+    {
+      "timestamp": 1514332800,
+      "openPrice": 15813.3
+    },
+    {
+      "timestamp": 1514419200,
+      "openPrice": 15444.3
+    },
+    {
+      "timestamp": 1514505600,
+      "openPrice": 14566.1
+    },
+    {
+      "timestamp": 1514592000,
+      "openPrice": 14400.8
+    },
+    {
+      "timestamp": 1514678400,
+      "openPrice": 12600
+    },
+    {
+      "timestamp": 1514764800,
+      "openPrice": 13971.1
+    },
+    {
+      "timestamp": 1514851200,
+      "openPrice": 13506.1
+    },
+    {
+      "timestamp": 1514937600,
+      "openPrice": 14882
+    },
+    {
+      "timestamp": 1515024000,
+      "openPrice": 15186.7
+    },
+    {
+      "timestamp": 1515110400,
+      "openPrice": 15266.6
+    },
+    {
+      "timestamp": 1515196800,
+      "openPrice": 16988.3
+    },
+    {
+      "timestamp": 1515283200,
+      "openPrice": 17083.5
+    },
+    {
+      "timestamp": 1515369600,
+      "openPrice": 16116.9
+    },
+    {
+      "timestamp": 1515456000,
+      "openPrice": 15016.9
+    },
+    {
+      "timestamp": 1515542400,
+      "openPrice": 14508.5
+    },
+    {
+      "timestamp": 1515628800,
+      "openPrice": 14907
+    },
+    {
+      "timestamp": 1515715200,
+      "openPrice": 13503
+    },
+    {
+      "timestamp": 1515801600,
+      "openPrice": 14101
+    },
+    {
+      "timestamp": 1515888000,
+      "openPrice": 14396.3
+    },
+    {
+      "timestamp": 1515974400,
+      "openPrice": 13711.1
+    },
+    {
+      "timestamp": 1516060800,
+      "openPrice": 13606.9
+    },
+    {
+      "timestamp": 1516147200,
+      "openPrice": 11533.9
+    },
+    {
+      "timestamp": 1516233600,
+      "openPrice": 11191
+    },
+    {
+      "timestamp": 1516320000,
+      "openPrice": 11286.1
+    },
+    {
+      "timestamp": 1516406400,
+      "openPrice": 11599
+    },
+    {
+      "timestamp": 1516492800,
+      "openPrice": 12845.6
+    },
+    {
+      "timestamp": 1516579200,
+      "openPrice": 11588.6
+    },
+    {
+      "timestamp": 1516665600,
+      "openPrice": 10811.3
+    },
+    {
+      "timestamp": 1516752000,
+      "openPrice": 10850
+    },
+    {
+      "timestamp": 1516838400,
+      "openPrice": 11419.8
+    },
+    {
+      "timestamp": 1516924800,
+      "openPrice": 11156.1
+    },
+    {
+      "timestamp": 1517011200,
+      "openPrice": 11080
+    },
+    {
+      "timestamp": 1517097600,
+      "openPrice": 11380.2
+    },
+    {
+      "timestamp": 1517184000,
+      "openPrice": 11633.9
+    },
+    {
+      "timestamp": 1517270400,
+      "openPrice": 11149.9
+    },
+    {
+      "timestamp": 1517356800,
+      "openPrice": 9985
+    },
+    {
+      "timestamp": 1517443200,
+      "openPrice": 10105.5
+    },
+    {
+      "timestamp": 1517529600,
+      "openPrice": 9043
+    },
+    {
+      "timestamp": 1517616000,
+      "openPrice": 8770
+    },
+    {
+      "timestamp": 1517702400,
+      "openPrice": 9178
+    },
+    {
+      "timestamp": 1517788800,
+      "openPrice": 8146.8
+    },
+    {
+      "timestamp": 1517875200,
+      "openPrice": 6843.8
+    },
+    {
+      "timestamp": 1517961600,
+      "openPrice": 7676.1
+    },
+    {
+      "timestamp": 1518048000,
+      "openPrice": 7552.4
+    },
+    {
+      "timestamp": 1518134400,
+      "openPrice": 8218.07
+    },
+    {
+      "timestamp": 1518220800,
+      "openPrice": 8671
+    },
+    {
+      "timestamp": 1518307200,
+      "openPrice": 8256.7
+    },
+    {
+      "timestamp": 1518393600,
+      "openPrice": 8063.8
+    },
+    {
+      "timestamp": 1518480000,
+      "openPrice": 8897.6
+    },
+    {
+      "timestamp": 1518566400,
+      "openPrice": 8520
+    },
+    {
+      "timestamp": 1518652800,
+      "openPrice": 9475.7
+    },
+    {
+      "timestamp": 1518739200,
+      "openPrice": 10044.4
+    },
+    {
+      "timestamp": 1518825600,
+      "openPrice": 10188.5
+    },
+    {
+      "timestamp": 1518912000,
+      "openPrice": 11100
+    },
+    {
+      "timestamp": 1518998400,
+      "openPrice": 10430
+    },
+    {
+      "timestamp": 1519084800,
+      "openPrice": 11165.1
+    },
+    {
+      "timestamp": 1519171200,
+      "openPrice": 11231.2
+    },
+    {
+      "timestamp": 1519257600,
+      "openPrice": 10477.2
+    },
+    {
+      "timestamp": 1519344000,
+      "openPrice": 9842
+    },
+    {
+      "timestamp": 1519430400,
+      "openPrice": 10147.9
+    },
+    {
+      "timestamp": 1519516800,
+      "openPrice": 9688
+    },
+    {
+      "timestamp": 1519603200,
+      "openPrice": 9580
+    },
+    {
+      "timestamp": 1519689600,
+      "openPrice": 10326.8
+    },
+    {
+      "timestamp": 1519776000,
+      "openPrice": 10569
+    },
+    {
+      "timestamp": 1519862400,
+      "openPrice": 10309
+    },
+    {
+      "timestamp": 1519948800,
+      "openPrice": 10920
+    },
+    {
+      "timestamp": 1520035200,
+      "openPrice": 11031.3
+    },
+    {
+      "timestamp": 1520121600,
+      "openPrice": 11429.9
+    },
+    {
+      "timestamp": 1520208000,
+      "openPrice": 11503.1
+    },
+    {
+      "timestamp": 1520294400,
+      "openPrice": 11432.9
+    },
+    {
+      "timestamp": 1520380800,
+      "openPrice": 10718.4
+    },
+    {
+      "timestamp": 1520467200,
+      "openPrice": 9903
+    },
+    {
+      "timestamp": 1520553600,
+      "openPrice": 9290.1
+    },
+    {
+      "timestamp": 1520640000,
+      "openPrice": 9224.5
+    },
+    {
+      "timestamp": 1520726400,
+      "openPrice": 8762.3
+    },
+    {
+      "timestamp": 1520812800,
+      "openPrice": 9533.7
+    },
+    {
+      "timestamp": 1520899200,
+      "openPrice": 9109.9
+    },
+    {
+      "timestamp": 1520985600,
+      "openPrice": 9141.2
+    },
+    {
+      "timestamp": 1521072000,
+      "openPrice": 8175.9
+    },
+    {
+      "timestamp": 1521158400,
+      "openPrice": 8244.9
+    },
+    {
+      "timestamp": 1521244800,
+      "openPrice": 8260
+    },
+    {
+      "timestamp": 1521331200,
+      "openPrice": 7839.1
+    },
+    {
+      "timestamp": 1521417600,
+      "openPrice": 8183.2
+    },
+    {
+      "timestamp": 1521504000,
+      "openPrice": 8600
+    },
+    {
+      "timestamp": 1521590400,
+      "openPrice": 8911.9
+    },
+    {
+      "timestamp": 1521676800,
+      "openPrice": 8879
+    },
+    {
+      "timestamp": 1521763200,
+      "openPrice": 8710
+    },
+    {
+      "timestamp": 1521849600,
+      "openPrice": 8917.4
+    },
+    {
+      "timestamp": 1521936000,
+      "openPrice": 8532.7
+    },
+    {
+      "timestamp": 1522022400,
+      "openPrice": 8453.5
+    },
+    {
+      "timestamp": 1522108800,
+      "openPrice": 8137.8
+    },
+    {
+      "timestamp": 1522195200,
+      "openPrice": 7786.7
+    },
+    {
+      "timestamp": 1522281600,
+      "openPrice": 7935
+    },
+    {
+      "timestamp": 1522368000,
+      "openPrice": 7084.8
+    },
+    {
+      "timestamp": 1522454400,
+      "openPrice": 6804
+    },
+    {
+      "timestamp": 1522540800,
+      "openPrice": 6913.8
+    },
+    {
+      "timestamp": 1522627200,
+      "openPrice": 6818.8
+    },
+    {
+      "timestamp": 1522713600,
+      "openPrice": 7054.6
+    },
+    {
+      "timestamp": 1522800000,
+      "openPrice": 7410.1
+    },
+    {
+      "timestamp": 1522886400,
+      "openPrice": 6790.4
+    },
+    {
+      "timestamp": 1522972800,
+      "openPrice": 6763.6
+    },
+    {
+      "timestamp": 1523059200,
+      "openPrice": 6613.9
+    },
+    {
+      "timestamp": 1523145600,
+      "openPrice": 6885
+    },
+    {
+      "timestamp": 1523232000,
+      "openPrice": 7022.9
+    },
+    {
+      "timestamp": 1523318400,
+      "openPrice": 6774.2
+    },
+    {
+      "timestamp": 1523404800,
+      "openPrice": 6829.9
+    },
+    {
+      "timestamp": 1523491200,
+      "openPrice": 6940.9
+    },
+    {
+      "timestamp": 1523577600,
+      "openPrice": 7919.9
+    },
+    {
+      "timestamp": 1523664000,
+      "openPrice": 7882.4
+    },
+    {
+      "timestamp": 1523750400,
+      "openPrice": 8005
+    },
+    {
+      "timestamp": 1523836800,
+      "openPrice": 8374
+    },
+    {
+      "timestamp": 1523923200,
+      "openPrice": 8057.2
+    },
+    {
+      "timestamp": 1524009600,
+      "openPrice": 7893
+    },
+    {
+      "timestamp": 1524096000,
+      "openPrice": 8170.6
+    },
+    {
+      "timestamp": 1524182400,
+      "openPrice": 8267.5
+    },
+    {
+      "timestamp": 1524268800,
+      "openPrice": 8875.1
+    },
+    {
+      "timestamp": 1524355200,
+      "openPrice": 8939.7
+    },
+    {
+      "timestamp": 1524441600,
+      "openPrice": 8796.3
+    },
+    {
+      "timestamp": 1524528000,
+      "openPrice": 8959
+    },
+    {
+      "timestamp": 1524614400,
+      "openPrice": 9661.7
+    },
+    {
+      "timestamp": 1524700800,
+      "openPrice": 8857
+    },
+    {
+      "timestamp": 1524787200,
+      "openPrice": 9281.7
+    },
+    {
+      "timestamp": 1524873600,
+      "openPrice": 8917.8
+    },
+    {
+      "timestamp": 1524960000,
+      "openPrice": 9328.1
+    },
+    {
+      "timestamp": 1525046400,
+      "openPrice": 9407.4
+    },
+    {
+      "timestamp": 1525132800,
+      "openPrice": 9246.5
+    },
+    {
+      "timestamp": 1525219200,
+      "openPrice": 9074.3
+    },
+    {
+      "timestamp": 1525305600,
+      "openPrice": 9233.3
+    },
+    {
+      "timestamp": 1525392000,
+      "openPrice": 9731.1
+    },
+    {
+      "timestamp": 1525478400,
+      "openPrice": 9687.9
+    },
+    {
+      "timestamp": 1525564800,
+      "openPrice": 9794.9
+    },
+    {
+      "timestamp": 1525651200,
+      "openPrice": 9605
+    },
+    {
+      "timestamp": 1525737600,
+      "openPrice": 9359.6
+    },
+    {
+      "timestamp": 1525824000,
+      "openPrice": 9178.3
+    },
+    {
+      "timestamp": 1525910400,
+      "openPrice": 9302
+    },
+    {
+      "timestamp": 1525996800,
+      "openPrice": 9009.8
+    },
+    {
+      "timestamp": 1526083200,
+      "openPrice": 8411
+    },
+    {
+      "timestamp": 1526169600,
+      "openPrice": 8478.8
+    },
+    {
+      "timestamp": 1526256000,
+      "openPrice": 8698.2
+    },
+    {
+      "timestamp": 1526342400,
+      "openPrice": 8661.6
+    },
+    {
+      "timestamp": 1526428800,
+      "openPrice": 8473.1
+    },
+    {
+      "timestamp": 1526515200,
+      "openPrice": 8345.8
+    },
+    {
+      "timestamp": 1526601600,
+      "openPrice": 8064
+    },
+    {
+      "timestamp": 1526688000,
+      "openPrice": 8231.9
+    },
+    {
+      "timestamp": 1526774400,
+      "openPrice": 8229.9
+    },
+    {
+      "timestamp": 1526860800,
+      "openPrice": 8524.9
+    },
+    {
+      "timestamp": 1526947200,
+      "openPrice": 8390.8
+    },
+    {
+      "timestamp": 1527033600,
+      "openPrice": 7989.2
+    },
+    {
+      "timestamp": 1527120000,
+      "openPrice": 7503
+    },
+    {
+      "timestamp": 1527206400,
+      "openPrice": 7575.7
+    },
+    {
+      "timestamp": 1527292800,
+      "openPrice": 7466.3
+    },
+    {
+      "timestamp": 1527379200,
+      "openPrice": 7325
+    },
+    {
+      "timestamp": 1527465600,
+      "openPrice": 7325.9
+    },
+    {
+      "timestamp": 1527552000,
+      "openPrice": 7102.8
+    },
+    {
+      "timestamp": 1527638400,
+      "openPrice": 7462.8
+    },
+    {
+      "timestamp": 1527724800,
+      "openPrice": 7372.5
+    },
+    {
+      "timestamp": 1527811200,
+      "openPrice": 7490.9
+    },
+    {
+      "timestamp": 1527897600,
+      "openPrice": 7504
+    },
+    {
+      "timestamp": 1527984000,
+      "openPrice": 7630.2
+    },
+    {
+      "timestamp": 1528070400,
+      "openPrice": 7716
+    },
+    {
+      "timestamp": 1528156800,
+      "openPrice": 7495.4
+    },
+    {
+      "timestamp": 1528243200,
+      "openPrice": 7622
+    },
+    {
+      "timestamp": 1528329600,
+      "openPrice": 7650.4
+    },
+    {
+      "timestamp": 1528416000,
+      "openPrice": 7679.7
+    },
+    {
+      "timestamp": 1528502400,
+      "openPrice": 7611.9
+    },
+    {
+      "timestamp": 1528588800,
+      "openPrice": 7496.8
+    },
+    {
+      "timestamp": 1528675200,
+      "openPrice": 6768.2
+    },
+    {
+      "timestamp": 1528761600,
+      "openPrice": 6877
+    },
+    {
+      "timestamp": 1528848000,
+      "openPrice": 6543.5
+    },
+    {
+      "timestamp": 1528934400,
+      "openPrice": 6295.7
+    },
+    {
+      "timestamp": 1529020800,
+      "openPrice": 6636.3
+    },
+    {
+      "timestamp": 1529107200,
+      "openPrice": 6388
+    },
+    {
+      "timestamp": 1529193600,
+      "openPrice": 6480.8
+    },
+    {
+      "timestamp": 1529280000,
+      "openPrice": 6444.5
+    },
+    {
+      "timestamp": 1529366400,
+      "openPrice": 6710.4
+    },
+    {
+      "timestamp": 1529452800,
+      "openPrice": 6740.2
+    },
+    {
+      "timestamp": 1529539200,
+      "openPrice": 6756.7
+    },
+    {
+      "timestamp": 1529625600,
+      "openPrice": 6716.1
+    },
+    {
+      "timestamp": 1529712000,
+      "openPrice": 6054
+    },
+    {
+      "timestamp": 1529798400,
+      "openPrice": 6154.1
+    },
+    {
+      "timestamp": 1529884800,
+      "openPrice": 6150
+    },
+    {
+      "timestamp": 1529971200,
+      "openPrice": 6246
+    },
+    {
+      "timestamp": 1530057600,
+      "openPrice": 6072.4
+    },
+    {
+      "timestamp": 1530144000,
+      "openPrice": 6132.5
+    },
+    {
+      "timestamp": 1530230400,
+      "openPrice": 5853.4
+    },
+    {
+      "timestamp": 1530316800,
+      "openPrice": 6198.6
+    },
+    {
+      "timestamp": 1530403200,
+      "openPrice": 6387
+    },
+    {
+      "timestamp": 1530489600,
+      "openPrice": 6343.6
+    },
+    {
+      "timestamp": 1530576000,
+      "openPrice": 6618.7
+    },
+    {
+      "timestamp": 1530662400,
+      "openPrice": 6497
+    },
+    {
+      "timestamp": 1530748800,
+      "openPrice": 6587
+    },
+    {
+      "timestamp": 1530835200,
+      "openPrice": 6529.8
+    },
+    {
+      "timestamp": 1530921600,
+      "openPrice": 6599.9
+    },
+    {
+      "timestamp": 1531008000,
+      "openPrice": 6754.1
+    },
+    {
+      "timestamp": 1531094400,
+      "openPrice": 6704.8
+    },
+    {
+      "timestamp": 1531180800,
+      "openPrice": 6662.5
+    },
+    {
+      "timestamp": 1531267200,
+      "openPrice": 6304.6
+    },
+    {
+      "timestamp": 1531353600,
+      "openPrice": 6378
+    },
+    {
+      "timestamp": 1531440000,
+      "openPrice": 6248.2
+    },
+    {
+      "timestamp": 1531526400,
+      "openPrice": 6215.2
+    },
+    {
+      "timestamp": 1531612800,
+      "openPrice": 6252.8
+    },
+    {
+      "timestamp": 1531699200,
+      "openPrice": 6345.2
+    },
+    {
+      "timestamp": 1531785600,
+      "openPrice": 6727
+    },
+    {
+      "timestamp": 1531872000,
+      "openPrice": 7316.2
+    },
+    {
+      "timestamp": 1531958400,
+      "openPrice": 7379.9
+    },
+    {
+      "timestamp": 1532044800,
+      "openPrice": 7472.3
+    },
+    {
+      "timestamp": 1532131200,
+      "openPrice": 7320
+    },
+    {
+      "timestamp": 1532217600,
+      "openPrice": 7397.7
+    },
+    {
+      "timestamp": 1532304000,
+      "openPrice": 7401.1
+    },
+    {
+      "timestamp": 1532390400,
+      "openPrice": 7719.9
+    },
+    {
+      "timestamp": 1532476800,
+      "openPrice": 8395.4
+    },
+    {
+      "timestamp": 1532563200,
+      "openPrice": 8164.7
+    },
+    {
+      "timestamp": 1532649600,
+      "openPrice": 7925.1
+    },
+    {
+      "timestamp": 1532736000,
+      "openPrice": 8177.1
+    },
+    {
+      "timestamp": 1532822400,
+      "openPrice": 8225.3
+    },
+    {
+      "timestamp": 1532908800,
+      "openPrice": 8213.1
+    },
+    {
+      "timestamp": 1532995200,
+      "openPrice": 8169.9
+    },
+    {
+      "timestamp": 1533081600,
+      "openPrice": 7726
+    },
+    {
+      "timestamp": 1533168000,
+      "openPrice": 7605.3
+    },
+    {
+      "timestamp": 1533254400,
+      "openPrice": 7534.7
+    },
+    {
+      "timestamp": 1533340800,
+      "openPrice": 7410.1
+    },
+    {
+      "timestamp": 1533427200,
+      "openPrice": 7011.8
+    },
+    {
+      "timestamp": 1533513600,
+      "openPrice": 7026.9
+    },
+    {
+      "timestamp": 1533600000,
+      "openPrice": 6935.7
+    },
+    {
+      "timestamp": 1533686400,
+      "openPrice": 6714.9
+    },
+    {
+      "timestamp": 1533772800,
+      "openPrice": 6276.6
+    },
+    {
+      "timestamp": 1533859200,
+      "openPrice": 6533.4
+    },
+    {
+      "timestamp": 1533945600,
+      "openPrice": 6141.1
+    },
+    {
+      "timestamp": 1534032000,
+      "openPrice": 6233.2
+    },
+    {
+      "timestamp": 1534118400,
+      "openPrice": 6310
+    },
+    {
+      "timestamp": 1534204800,
+      "openPrice": 6250
+    },
+    {
+      "timestamp": 1534291200,
+      "openPrice": 6193.1
+    },
+    {
+      "timestamp": 1534377600,
+      "openPrice": 6269.5
+    },
+    {
+      "timestamp": 1534464000,
+      "openPrice": 6311.6
+    },
+    {
+      "timestamp": 1534550400,
+      "openPrice": 6589.7
+    },
+    {
+      "timestamp": 1534636800,
+      "openPrice": 6400
+    },
+    {
+      "timestamp": 1534723200,
+      "openPrice": 6477.9
+    },
+    {
+      "timestamp": 1534809600,
+      "openPrice": 6257.1
+    },
+    {
+      "timestamp": 1534896000,
+      "openPrice": 6474.5
+    },
+    {
+      "timestamp": 1534982400,
+      "openPrice": 6354.9
+    },
+    {
+      "timestamp": 1535068800,
+      "openPrice": 6527.6
+    },
+    {
+      "timestamp": 1535155200,
+      "openPrice": 6693.1
+    },
+    {
+      "timestamp": 1535241600,
+      "openPrice": 6730.8
+    },
+    {
+      "timestamp": 1535328000,
+      "openPrice": 6710
+    },
+    {
+      "timestamp": 1535414400,
+      "openPrice": 6906.2
+    },
+    {
+      "timestamp": 1535500800,
+      "openPrice": 7076.7
+    },
+    {
+      "timestamp": 1535587200,
+      "openPrice": 7025.4
+    },
+    {
+      "timestamp": 1535673600,
+      "openPrice": 6983.1
+    },
+    {
+      "timestamp": 1535760000,
+      "openPrice": 7014.8
+    },
+    {
+      "timestamp": 1535846400,
+      "openPrice": 7191.2
+    },
+    {
+      "timestamp": 1535932800,
+      "openPrice": 7294.5
+    },
+    {
+      "timestamp": 1536019200,
+      "openPrice": 7256
+    },
+    {
+      "timestamp": 1536105600,
+      "openPrice": 7358.8
+    },
+    {
+      "timestamp": 1536192000,
+      "openPrice": 6684.4
+    },
+    {
+      "timestamp": 1536278400,
+      "openPrice": 6494.8
+    },
+    {
+      "timestamp": 1536364800,
+      "openPrice": 6400
+    },
+    {
+      "timestamp": 1536451200,
+      "openPrice": 6183.2
+    },
+    {
+      "timestamp": 1536537600,
+      "openPrice": 6232.8
+    },
+    {
+      "timestamp": 1536624000,
+      "openPrice": 6301.2
+    },
+    {
+      "timestamp": 1536710400,
+      "openPrice": 6281
+    },
+    {
+      "timestamp": 1536796800,
+      "openPrice": 6325.1
+    },
+    {
+      "timestamp": 1536883200,
+      "openPrice": 6490.5
+    },
+    {
+      "timestamp": 1536969600,
+      "openPrice": 6482.3
+    },
+    {
+      "timestamp": 1537056000,
+      "openPrice": 6520
+    },
+    {
+      "timestamp": 1537142400,
+      "openPrice": 6501.7
+    },
+    {
+      "timestamp": 1537228800,
+      "openPrice": 6250
+    },
+    {
+      "timestamp": 1537315200,
+      "openPrice": 6330.7
+    },
+    {
+      "timestamp": 1537401600,
+      "openPrice": 6390.6
+    },
+    {
+      "timestamp": 1537488000,
+      "openPrice": 6491.2
+    },
+    {
+      "timestamp": 1537574400,
+      "openPrice": 6755
+    },
+    {
+      "timestamp": 1537660800,
+      "openPrice": 6705.3
+    },
+    {
+      "timestamp": 1537747200,
+      "openPrice": 6700.2
+    },
+    {
+      "timestamp": 1537833600,
+      "openPrice": 6579.2
+    },
+    {
+      "timestamp": 1537920000,
+      "openPrice": 6434.9
+    },
+    {
+      "timestamp": 1538006400,
+      "openPrice": 6452
+    },
+    {
+      "timestamp": 1538092800,
+      "openPrice": 6683.7
+    },
+    {
+      "timestamp": 1538179200,
+      "openPrice": 6622.2
+    },
+    {
+      "timestamp": 1538265600,
+      "openPrice": 6582.2
+    },
+    {
+      "timestamp": 1538352000,
+      "openPrice": 6603.8
+    },
+    {
+      "timestamp": 1538438400,
+      "openPrice": 6574.5
+    },
+    {
+      "timestamp": 1538524800,
+      "openPrice": 6497.7
+    },
+    {
+      "timestamp": 1538611200,
+      "openPrice": 6463.8
+    },
+    {
+      "timestamp": 1538697600,
+      "openPrice": 6557
+    },
+    {
+      "timestamp": 1538784000,
+      "openPrice": 6582.7
+    },
+    {
+      "timestamp": 1538870400,
+      "openPrice": 6549.9
+    },
+    {
+      "timestamp": 1538956800,
+      "openPrice": 6567.9
+    },
+    {
+      "timestamp": 1539043200,
+      "openPrice": 6607.4
+    },
+    {
+      "timestamp": 1539129600,
+      "openPrice": 6585.6
+    },
+    {
+      "timestamp": 1539216000,
+      "openPrice": 6530.1
+    },
+    {
+      "timestamp": 1539302400,
+      "openPrice": 6151.9
+    },
+    {
+      "timestamp": 1539388800,
+      "openPrice": 6192.2
+    },
+    {
+      "timestamp": 1539475200,
+      "openPrice": 6197.8
+    },
+    {
+      "timestamp": 1539561600,
+      "openPrice": 6181.9
+    },
+    {
+      "timestamp": 1539648000,
+      "openPrice": 6441.3
+    },
+    {
+      "timestamp": 1539734400,
+      "openPrice": 6460.3
+    },
+    {
+      "timestamp": 1539820800,
+      "openPrice": 6442.3
+    },
+    {
+      "timestamp": 1539907200,
+      "openPrice": 6395.2
+    },
+    {
+      "timestamp": 1539993600,
+      "openPrice": 6383.4
+    },
+    {
+      "timestamp": 1540080000,
+      "openPrice": 6412
+    },
+    {
+      "timestamp": 1540166400,
+      "openPrice": 6411.1
+    },
+    {
+      "timestamp": 1540252800,
+      "openPrice": 6408.7
+    },
+    {
+      "timestamp": 1540339200,
+      "openPrice": 6394.9
+    },
+    {
+      "timestamp": 1540425600,
+      "openPrice": 6414
+    },
+    {
+      "timestamp": 1540512000,
+      "openPrice": 6393.1
+    },
+    {
+      "timestamp": 1540598400,
+      "openPrice": 6409.2
+    },
+    {
+      "timestamp": 1540684800,
+      "openPrice": 6410.3
+    },
+    {
+      "timestamp": 1540771200,
+      "openPrice": 6408.1
+    },
+    {
+      "timestamp": 1540857600,
+      "openPrice": 6266.2
+    },
+    {
+      "timestamp": 1540944000,
+      "openPrice": 6275.1
+    },
+    {
+      "timestamp": 1541030400,
+      "openPrice": 6307.5
+    },
+    {
+      "timestamp": 1541116800,
+      "openPrice": 6341.7
+    },
+    {
+      "timestamp": 1541203200,
+      "openPrice": 6346.2
+    },
+    {
+      "timestamp": 1541289600,
+      "openPrice": 6332.3
+    },
+    {
+      "timestamp": 1541376000,
+      "openPrice": 6419.9
+    },
+    {
+      "timestamp": 1541462400,
+      "openPrice": 6406
+    },
+    {
+      "timestamp": 1541548800,
+      "openPrice": 6450.3
+    },
+    {
+      "timestamp": 1541635200,
+      "openPrice": 6503.2
+    },
+    {
+      "timestamp": 1541721600,
+      "openPrice": 6408.9
+    },
+    {
+      "timestamp": 1541808000,
+      "openPrice": 6334.7
+    },
+    {
+      "timestamp": 1541894400,
+      "openPrice": 6348.9
+    },
+    {
+      "timestamp": 1541980800,
+      "openPrice": 6357.4
+    },
+    {
+      "timestamp": 1542067200,
+      "openPrice": 6327.3
+    },
+    {
+      "timestamp": 1542153600,
+      "openPrice": 6258.8
+    },
+    {
+      "timestamp": 1542240000,
+      "openPrice": 5600.9
+    },
+    {
+      "timestamp": 1542326400,
+      "openPrice": 5574.5
+    },
+    {
+      "timestamp": 1542412800,
+      "openPrice": 5516.9
+    },
+    {
+      "timestamp": 1542499200,
+      "openPrice": 5499.4
+    },
+    {
+      "timestamp": 1542585600,
+      "openPrice": 5561
+    },
+    {
+      "timestamp": 1542672000,
+      "openPrice": 4740.8
+    },
+    {
+      "timestamp": 1542758400,
+      "openPrice": 4361.4
+    },
+    {
+      "timestamp": 1542844800,
+      "openPrice": 4543.3
+    },
+    {
+      "timestamp": 1542931200,
+      "openPrice": 4269.4
+    },
+    {
+      "timestamp": 1543017600,
+      "openPrice": 4287.6
+    },
+    {
+      "timestamp": 1543104000,
+      "openPrice": 3775
+    },
+    {
+      "timestamp": 1543190400,
+      "openPrice": 3932.2
+    },
+    {
+      "timestamp": 1543276800,
+      "openPrice": 3727.5
+    },
+    {
+      "timestamp": 1543363200,
+      "openPrice": 3770.9
+    },
+    {
+      "timestamp": 1543449600,
+      "openPrice": 4219.8
+    },
+    {
+      "timestamp": 1543536000,
+      "openPrice": 4242
+    },
+    {
+      "timestamp": 1543622400,
+      "openPrice": 3969.4
+    },
+    {
+      "timestamp": 1543708800,
+      "openPrice": 4138.1
+    },
+    {
+      "timestamp": 1543795200,
+      "openPrice": 4101.9
+    },
+    {
+      "timestamp": 1543881600,
+      "openPrice": 3832.3
+    },
+    {
+      "timestamp": 1543968000,
+      "openPrice": 3904.7
+    },
+    {
+      "timestamp": 1544054400,
+      "openPrice": 3697.1
+    },
+    {
+      "timestamp": 1544140800,
+      "openPrice": 3432.6
+    },
+    {
+      "timestamp": 1544227200,
+      "openPrice": 3379
+    },
+    {
+      "timestamp": 1544313600,
+      "openPrice": 3395.1
+    },
+    {
+      "timestamp": 1544400000,
+      "openPrice": 3532.6
+    },
+    {
+      "timestamp": 1544486400,
+      "openPrice": 3410.4
+    },
+    {
+      "timestamp": 1544572800,
+      "openPrice": 3347.1
+    },
+    {
+      "timestamp": 1544659200,
+      "openPrice": 3433.1
+    },
+    {
+      "timestamp": 1544745600,
+      "openPrice": 3260
+    },
+    {
+      "timestamp": 1544832000,
+      "openPrice": 3192.9
+    },
+    {
+      "timestamp": 1544918400,
+      "openPrice": 3180.1
+    },
+    {
+      "timestamp": 1545004800,
+      "openPrice": 3193.2
+    },
+    {
+      "timestamp": 1545091200,
+      "openPrice": 3502
+    },
+    {
+      "timestamp": 1545177600,
+      "openPrice": 3668.6
+    },
+    {
+      "timestamp": 1545264000,
+      "openPrice": 3682
+    },
+    {
+      "timestamp": 1545350400,
+      "openPrice": 4074.5
+    },
+    {
+      "timestamp": 1545436800,
+      "openPrice": 3840.1
+    },
+    {
+      "timestamp": 1545523200,
+      "openPrice": 3979.8
+    },
+    {
+      "timestamp": 1545609600,
+      "openPrice": 3945.7
+    },
+    {
+      "timestamp": 1545696000,
+      "openPrice": 4033.7
+    },
+    {
+      "timestamp": 1545782400,
+      "openPrice": 3779.3
+    },
+    {
+      "timestamp": 1545868800,
+      "openPrice": 3809.2
+    },
+    {
+      "timestamp": 1545955200,
+      "openPrice": 3590
+    },
+    {
+      "timestamp": 1546041600,
+      "openPrice": 3890.1
+    },
+    {
+      "timestamp": 1546128000,
+      "openPrice": 3726.2
+    },
+    {
+      "timestamp": 1546214400,
+      "openPrice": 3829.9
+    },
+    {
+      "timestamp": 1546300800,
+      "openPrice": 3690.9
+    },
+    {
+      "timestamp": 1546387200,
+      "openPrice": 3825
+    },
+    {
+      "timestamp": 1546473600,
+      "openPrice": 3887.8
+    },
+    {
+      "timestamp": 1546560000,
+      "openPrice": 3785.3
+    },
+    {
+      "timestamp": 1546646400,
+      "openPrice": 3823.6
+    },
+    {
+      "timestamp": 1546732800,
+      "openPrice": 3795.2
+    },
+    {
+      "timestamp": 1546819200,
+      "openPrice": 4041
+    },
+    {
+      "timestamp": 1546905600,
+      "openPrice": 4003.7
+    },
+    {
+      "timestamp": 1546992000,
+      "openPrice": 3993
+    },
+    {
+      "timestamp": 1547078400,
+      "openPrice": 4002.2
+    },
+    {
+      "timestamp": 1547164800,
+      "openPrice": 3623.5
+    },
+    {
+      "timestamp": 1547251200,
+      "openPrice": 3635.1
+    },
+    {
+      "timestamp": 1547337600,
+      "openPrice": 3616.5
+    },
+    {
+      "timestamp": 1547424000,
+      "openPrice": 3514.9
+    },
+    {
+      "timestamp": 1547510400,
+      "openPrice": 3664.7
+    },
+    {
+      "timestamp": 1547596800,
+      "openPrice": 3586.1
+    },
+    {
+      "timestamp": 1547683200,
+      "openPrice": 3610.5
+    },
+    {
+      "timestamp": 1547769600,
+      "openPrice": 3641.2
+    },
+    {
+      "timestamp": 1547856000,
+      "openPrice": 3612.1
+    },
+    {
+      "timestamp": 1547942400,
+      "openPrice": 3683
+    },
+    {
+      "timestamp": 1548028800,
+      "openPrice": 3533.4
+    },
+    {
+      "timestamp": 1548115200,
+      "openPrice": 3533.4
+    },
+    {
+      "timestamp": 1548201600,
+      "openPrice": 3575.7
+    },
+    {
+      "timestamp": 1548288000,
+      "openPrice": 3556.1
+    },
+    {
+      "timestamp": 1548374400,
+      "openPrice": 3571.2
+    },
+    {
+      "timestamp": 1548460800,
+      "openPrice": 3560.1
+    },
+    {
+      "timestamp": 1548547200,
+      "openPrice": 3555.8
+    },
+    {
+      "timestamp": 1548633600,
+      "openPrice": 3533.5
+    },
+    {
+      "timestamp": 1548720000,
+      "openPrice": 3431
+    },
+    {
+      "timestamp": 1548806400,
+      "openPrice": 3393.4
+    },
+    {
+      "timestamp": 1548892800,
+      "openPrice": 3435.1
+    },
+    {
+      "timestamp": 1548979200,
+      "openPrice": 3409.6
+    },
+    {
+      "timestamp": 1549065600,
+      "openPrice": 3436.6
+    },
+    {
+      "timestamp": 1549152000,
+      "openPrice": 3467.7
+    },
+    {
+      "timestamp": 1549238400,
+      "openPrice": 3416.9
+    },
+    {
+      "timestamp": 1549324800,
+      "openPrice": 3411
+    },
+    {
+      "timestamp": 1549411200,
+      "openPrice": 3429.5
+    },
+    {
+      "timestamp": 1549497600,
+      "openPrice": 3367.2
+    },
+    {
+      "timestamp": 1549584000,
+      "openPrice": 3359.5
+    },
+    {
+      "timestamp": 1549670400,
+      "openPrice": 3622.1
+    },
+    {
+      "timestamp": 1549756800,
+      "openPrice": 3625.7
+    },
+    {
+      "timestamp": 1549843200,
+      "openPrice": 3647.3
+    },
+    {
+      "timestamp": 1549929600,
+      "openPrice": 3591.7
+    },
+    {
+      "timestamp": 1550016000,
+      "openPrice": 3588.9
+    },
+    {
+      "timestamp": 1550102400,
+      "openPrice": 3576
+    },
+    {
+      "timestamp": 1550188800,
+      "openPrice": 3560.6
+    },
+    {
+      "timestamp": 1550275200,
+      "openPrice": 3567.8
+    },
+    {
+      "timestamp": 1550361600,
+      "openPrice": 3580.4
+    },
+    {
+      "timestamp": 1550448000,
+      "openPrice": 3625.7
+    },
+    {
+      "timestamp": 1550534400,
+      "openPrice": 3870.1
+    },
+    {
+      "timestamp": 1550620800,
+      "openPrice": 3888.5
+    },
+    {
+      "timestamp": 1550707200,
+      "openPrice": 3938.6
+    },
+    {
+      "timestamp": 1550793600,
+      "openPrice": 3897.1
+    },
+    {
+      "timestamp": 1550880000,
+      "openPrice": 3940.5
+    },
+    {
+      "timestamp": 1550966400,
+      "openPrice": 4110
+    },
+    {
+      "timestamp": 1551052800,
+      "openPrice": 3732.4
+    },
+    {
+      "timestamp": 1551139200,
+      "openPrice": 3819.6
+    },
+    {
+      "timestamp": 1551225600,
+      "openPrice": 3795
+    },
+    {
+      "timestamp": 1551312000,
+      "openPrice": 3797.8
+    },
+    {
+      "timestamp": 1551398400,
+      "openPrice": 3793.6
+    },
+    {
+      "timestamp": 1551484800,
+      "openPrice": 3804.6
+    },
+    {
+      "timestamp": 1551571200,
+      "openPrice": 3810.3
+    },
+    {
+      "timestamp": 1551657600,
+      "openPrice": 3785.7
+    },
+    {
+      "timestamp": 1551744000,
+      "openPrice": 3700
+    },
+    {
+      "timestamp": 1551830400,
+      "openPrice": 3845
+    },
+    {
+      "timestamp": 1551916800,
+      "openPrice": 3851.7
+    },
+    {
+      "timestamp": 1552003200,
+      "openPrice": 3854
+    },
+    {
+      "timestamp": 1552089600,
+      "openPrice": 3840.5
+    },
+    {
+      "timestamp": 1552176000,
+      "openPrice": 3916.1
+    },
+    {
+      "timestamp": 1552262400,
+      "openPrice": 3899.8
+    },
+    {
+      "timestamp": 1552348800,
+      "openPrice": 3852
+    },
+    {
+      "timestamp": 1552435200,
+      "openPrice": 3864.4
+    },
+    {
+      "timestamp": 1552521600,
+      "openPrice": 3851.3
+    },
+    {
+      "timestamp": 1552608000,
+      "openPrice": 3853.9
+    },
+    {
+      "timestamp": 1552694400,
+      "openPrice": 3900.1
+    },
+    {
+      "timestamp": 1552780800,
+      "openPrice": 3989.5
+    },
+    {
+      "timestamp": 1552867200,
+      "openPrice": 3965.1
+    },
+    {
+      "timestamp": 1552953600,
+      "openPrice": 3969.6
+    },
+    {
+      "timestamp": 1553040000,
+      "openPrice": 3999.9
+    },
+    {
+      "timestamp": 1553126400,
+      "openPrice": 4030.9
+    },
+    {
+      "timestamp": 1553212800,
+      "openPrice": 3972.5
+    },
+    {
+      "timestamp": 1553299200,
+      "openPrice": 3982.1
+    },
+    {
+      "timestamp": 1553385600,
+      "openPrice": 3982.4
+    },
+    {
+      "timestamp": 1553472000,
+      "openPrice": 3968.6
+    },
+    {
+      "timestamp": 1553558400,
+      "openPrice": 3905.9
+    },
+    {
+      "timestamp": 1553644800,
+      "openPrice": 3919
+    },
+    {
+      "timestamp": 1553731200,
+      "openPrice": 4025
+    },
+    {
+      "timestamp": 1553817600,
+      "openPrice": 4013.3
+    },
+    {
+      "timestamp": 1553904000,
+      "openPrice": 4088.4
+    },
+    {
+      "timestamp": 1553990400,
+      "openPrice": 4092.2
+    },
+    {
+      "timestamp": 1554076800,
+      "openPrice": 4095.1
+    },
+    {
+      "timestamp": 1554163200,
+      "openPrice": 4137.9
+    },
+    {
+      "timestamp": 1554249600,
+      "openPrice": 4899.4
+    },
+    {
+      "timestamp": 1554336000,
+      "openPrice": 4971.2
+    },
+    {
+      "timestamp": 1554422400,
+      "openPrice": 4905.7
+    },
+    {
+      "timestamp": 1554508800,
+      "openPrice": 5037.4
+    },
+    {
+      "timestamp": 1554595200,
+      "openPrice": 5044.1
+    },
+    {
+      "timestamp": 1554681600,
+      "openPrice": 5194.4
+    },
+    {
+      "timestamp": 1554768000,
+      "openPrice": 5287.7
+    },
+    {
+      "timestamp": 1554854400,
+      "openPrice": 5191.9
+    },
+    {
+      "timestamp": 1554940800,
+      "openPrice": 5321.4
+    },
+    {
+      "timestamp": 1555027200,
+      "openPrice": 5040.7
+    },
+    {
+      "timestamp": 1555113600,
+      "openPrice": 5077.3
+    },
+    {
+      "timestamp": 1555200000,
+      "openPrice": 5065.6
+    },
+    {
+      "timestamp": 1555286400,
+      "openPrice": 5159.1
+    },
+    {
+      "timestamp": 1555372800,
+      "openPrice": 5034.8
+    },
+    {
+      "timestamp": 1555459200,
+      "openPrice": 5204
+    },
+    {
+      "timestamp": 1555545600,
+      "openPrice": 5225
+    },
+    {
+      "timestamp": 1555632000,
+      "openPrice": 5281
+    },
+    {
+      "timestamp": 1555718400,
+      "openPrice": 5286
+    },
+    {
+      "timestamp": 1555804800,
+      "openPrice": 5320.3
+    },
+    {
+      "timestamp": 1555891200,
+      "openPrice": 5294.7
+    },
+    {
+      "timestamp": 1555977600,
+      "openPrice": 5384
+    },
+    {
+      "timestamp": 1556064000,
+      "openPrice": 5525.4
+    },
+    {
+      "timestamp": 1556150400,
+      "openPrice": 5442.2
+    },
+    {
+      "timestamp": 1556236800,
+      "openPrice": 5128.7
+    },
+    {
+      "timestamp": 1556323200,
+      "openPrice": 5154.5
+    },
+    {
+      "timestamp": 1556409600,
+      "openPrice": 5169.8
+    },
+    {
+      "timestamp": 1556496000,
+      "openPrice": 5156.2
+    },
+    {
+      "timestamp": 1556582400,
+      "openPrice": 5152.8
+    },
+    {
+      "timestamp": 1556668800,
+      "openPrice": 5272.2
+    },
+    {
+      "timestamp": 1556755200,
+      "openPrice": 5323.2
+    },
+    {
+      "timestamp": 1556841600,
+      "openPrice": 5390
+    },
+    {
+      "timestamp": 1556928000,
+      "openPrice": 5660
+    },
+    {
+      "timestamp": 1557014400,
+      "openPrice": 5765.6
+    },
+    {
+      "timestamp": 1557100800,
+      "openPrice": 5719.1
+    },
+    {
+      "timestamp": 1557187200,
+      "openPrice": 5687.6
+    },
+    {
+      "timestamp": 1557273600,
+      "openPrice": 5747
+    },
+    {
+      "timestamp": 1557360000,
+      "openPrice": 5942
+    },
+    {
+      "timestamp": 1557446400,
+      "openPrice": 6151.4
+    },
+    {
+      "timestamp": 1557532800,
+      "openPrice": 6339.5
+    },
+    {
+      "timestamp": 1557619200,
+      "openPrice": 7207.9
+    },
+    {
+      "timestamp": 1557705600,
+      "openPrice": 6970.1
+    },
+    {
+      "timestamp": 1557792000,
+      "openPrice": 7817.1
+    },
+    {
+      "timestamp": 1557878400,
+      "openPrice": 7988.9
+    },
+    {
+      "timestamp": 1557964800,
+      "openPrice": 8201.5
+    },
+    {
+      "timestamp": 1558051200,
+      "openPrice": 7883.6
+    },
+    {
+      "timestamp": 1558137600,
+      "openPrice": 7353.9
+    },
+    {
+      "timestamp": 1558224000,
+      "openPrice": 7265
+    },
+    {
+      "timestamp": 1558310400,
+      "openPrice": 8197.2
+    },
+    {
+      "timestamp": 1558396800,
+      "openPrice": 7999.2
+    },
+    {
+      "timestamp": 1558483200,
+      "openPrice": 7951.7
+    },
+    {
+      "timestamp": 1558569600,
+      "openPrice": 7623.1
+    },
+    {
+      "timestamp": 1558656000,
+      "openPrice": 7880.5
+    },
+    {
+      "timestamp": 1558742400,
+      "openPrice": 8000
+    },
+    {
+      "timestamp": 1558828800,
+      "openPrice": 8067.4
+    },
+    {
+      "timestamp": 1558915200,
+      "openPrice": 8733
+    },
+    {
+      "timestamp": 1559001600,
+      "openPrice": 8773
+    },
+    {
+      "timestamp": 1559088000,
+      "openPrice": 8720.1
+    },
+    {
+      "timestamp": 1559174400,
+      "openPrice": 8664.1
+    },
+    {
+      "timestamp": 1559260800,
+      "openPrice": 8272
+    },
+    {
+      "timestamp": 1559347200,
+      "openPrice": 8552.9
+    },
+    {
+      "timestamp": 1559433600,
+      "openPrice": 8549.5
+    },
+    {
+      "timestamp": 1559520000,
+      "openPrice": 8740
+    },
+    {
+      "timestamp": 1559606400,
+      "openPrice": 8103.6
+    },
+    {
+      "timestamp": 1559692800,
+      "openPrice": 7668.9
+    },
+    {
+      "timestamp": 1559779200,
+      "openPrice": 7787.8
+    },
+    {
+      "timestamp": 1559865600,
+      "openPrice": 7799
+    },
+    {
+      "timestamp": 1559952000,
+      "openPrice": 8000
+    },
+    {
+      "timestamp": 1560038400,
+      "openPrice": 7928.6
+    },
+    {
+      "timestamp": 1560124800,
+      "openPrice": 7638.5
+    },
+    {
+      "timestamp": 1560211200,
+      "openPrice": 8019.4
+    },
+    {
+      "timestamp": 1560297600,
+      "openPrice": 7922.2
+    },
+    {
+      "timestamp": 1560384000,
+      "openPrice": 8171
+    },
+    {
+      "timestamp": 1560470400,
+      "openPrice": 8237.6
+    },
+    {
+      "timestamp": 1560556800,
+      "openPrice": 8694
+    },
+    {
+      "timestamp": 1560643200,
+      "openPrice": 8857
+    },
+    {
+      "timestamp": 1560729600,
+      "openPrice": 8976
+    },
+    {
+      "timestamp": 1560816000,
+      "openPrice": 9335
+    },
+    {
+      "timestamp": 1560902400,
+      "openPrice": 9077.3
+    },
+    {
+      "timestamp": 1560988800,
+      "openPrice": 9282.1
+    },
+    {
+      "timestamp": 1561075200,
+      "openPrice": 9533.2
+    },
+    {
+      "timestamp": 1561161600,
+      "openPrice": 10216.2
+    },
+    {
+      "timestamp": 1561248000,
+      "openPrice": 10663.6
+    },
+    {
+      "timestamp": 1561334400,
+      "openPrice": 10812.1
+    },
+    {
+      "timestamp": 1561420800,
+      "openPrice": 11023.9
+    },
+    {
+      "timestamp": 1561507200,
+      "openPrice": 11765.1
+    },
+    {
+      "timestamp": 1561593600,
+      "openPrice": 12933.2
+    },
+    {
+      "timestamp": 1561680000,
+      "openPrice": 11161.9
+    },
+    {
+      "timestamp": 1561766400,
+      "openPrice": 12370
+    },
+    {
+      "timestamp": 1561852800,
+      "openPrice": 11865.1
+    },
+    {
+      "timestamp": 1561939200,
+      "openPrice": 10749.4
+    },
+    {
+      "timestamp": 1562025600,
+      "openPrice": 10578.7
+    },
+    {
+      "timestamp": 1562112000,
+      "openPrice": 10837.2
+    },
+    {
+      "timestamp": 1562198400,
+      "openPrice": 11984.7
+    },
+    {
+      "timestamp": 1562284800,
+      "openPrice": 11145
+    },
+    {
+      "timestamp": 1562371200,
+      "openPrice": 10988.7
+    },
+    {
+      "timestamp": 1562457600,
+      "openPrice": 11234.2
+    },
+    {
+      "timestamp": 1562544000,
+      "openPrice": 11481.5
+    },
+    {
+      "timestamp": 1562630400,
+      "openPrice": 12299.7
+    },
+    {
+      "timestamp": 1562716800,
+      "openPrice": 12562.9
+    },
+    {
+      "timestamp": 1562803200,
+      "openPrice": 12096
+    },
+    {
+      "timestamp": 1562889600,
+      "openPrice": 11346.1
+    },
+    {
+      "timestamp": 1562976000,
+      "openPrice": 11804
+    },
+    {
+      "timestamp": 1563062400,
+      "openPrice": 11381.5
+    },
+    {
+      "timestamp": 1563148800,
+      "openPrice": 10622.7
+    },
+    {
+      "timestamp": 1563235200,
+      "openPrice": 10840.8
+    },
+    {
+      "timestamp": 1563321600,
+      "openPrice": 9420.5
+    },
+    {
+      "timestamp": 1563408000,
+      "openPrice": 9701.3
+    },
+    {
+      "timestamp": 1563494400,
+      "openPrice": 10647.2
+    },
+    {
+      "timestamp": 1563580800,
+      "openPrice": 10530.8
+    },
+    {
+      "timestamp": 1563667200,
+      "openPrice": 10774.7
+    },
+    {
+      "timestamp": 1563753600,
+      "openPrice": 10595.3
+    },
+    {
+      "timestamp": 1563840000,
+      "openPrice": 10324
+    },
+    {
+      "timestamp": 1563926400,
+      "openPrice": 9840.6
+    },
+    {
+      "timestamp": 1564012800,
+      "openPrice": 9770
+    },
+    {
+      "timestamp": 1564099200,
+      "openPrice": 9878
+    },
+    {
+      "timestamp": 1564185600,
+      "openPrice": 9850.9
+    },
+    {
+      "timestamp": 1564272000,
+      "openPrice": 9472.8
+    },
+    {
+      "timestamp": 1564358400,
+      "openPrice": 9536.2
+    },
+    {
+      "timestamp": 1564444800,
+      "openPrice": 9495.4
+    },
+    {
+      "timestamp": 1564531200,
+      "openPrice": 9594
+    },
+    {
+      "timestamp": 1564617600,
+      "openPrice": 10090.3
+    },
+    {
+      "timestamp": 1564704000,
+      "openPrice": 10408.9
+    },
+    {
+      "timestamp": 1564790400,
+      "openPrice": 10532.7
+    },
+    {
+      "timestamp": 1564876800,
+      "openPrice": 10809.9
+    },
+    {
+      "timestamp": 1564963200,
+      "openPrice": 10977.6
+    },
+    {
+      "timestamp": 1565049600,
+      "openPrice": 11799.6
+    },
+    {
+      "timestamp": 1565136000,
+      "openPrice": 11458.1
+    },
+    {
+      "timestamp": 1565222400,
+      "openPrice": 11973.3
+    },
+    {
+      "timestamp": 1565308800,
+      "openPrice": 11992.9
+    },
+    {
+      "timestamp": 1565395200,
+      "openPrice": 11859.6
+    },
+    {
+      "timestamp": 1565481600,
+      "openPrice": 11280
+    },
+    {
+      "timestamp": 1565568000,
+      "openPrice": 11539.7
+    },
+    {
+      "timestamp": 1565654400,
+      "openPrice": 11386
+    },
+    {
+      "timestamp": 1565740800,
+      "openPrice": 10855.1
+    },
+    {
+      "timestamp": 1565827200,
+      "openPrice": 10018
+    },
+    {
+      "timestamp": 1565913600,
+      "openPrice": 10300.9
+    },
+    {
+      "timestamp": 1566000000,
+      "openPrice": 10362.2
+    },
+    {
+      "timestamp": 1566086400,
+      "openPrice": 10211.8
+    },
+    {
+      "timestamp": 1566172800,
+      "openPrice": 10325
+    },
+    {
+      "timestamp": 1566259200,
+      "openPrice": 10921.4
+    },
+    {
+      "timestamp": 1566345600,
+      "openPrice": 10759.9
+    },
+    {
+      "timestamp": 1566432000,
+      "openPrice": 10125
+    },
+    {
+      "timestamp": 1566518400,
+      "openPrice": 10105.2
+    },
+    {
+      "timestamp": 1566604800,
+      "openPrice": 10407.5
+    },
+    {
+      "timestamp": 1566691200,
+      "openPrice": 10148.7
+    },
+    {
+      "timestamp": 1566777600,
+      "openPrice": 10142.1
+    },
+    {
+      "timestamp": 1566864000,
+      "openPrice": 10364.4
+    },
+    {
+      "timestamp": 1566950400,
+      "openPrice": 10180
+    },
+    {
+      "timestamp": 1567036800,
+      "openPrice": 9714.9
+    },
+    {
+      "timestamp": 1567123200,
+      "openPrice": 9484.7
+    },
+    {
+      "timestamp": 1567209600,
+      "openPrice": 9577.9
+    },
+    {
+      "timestamp": 1567296000,
+      "openPrice": 9602.1
+    },
+    {
+      "timestamp": 1567382400,
+      "openPrice": 9765
+    },
+    {
+      "timestamp": 1567468800,
+      "openPrice": 10389.6
+    },
+    {
+      "timestamp": 1567555200,
+      "openPrice": 10619.7
+    },
+    {
+      "timestamp": 1567641600,
+      "openPrice": 10585
+    },
+    {
+      "timestamp": 1567728000,
+      "openPrice": 10577.5
+    },
+    {
+      "timestamp": 1567814400,
+      "openPrice": 10307.5
+    },
+    {
+      "timestamp": 1567900800,
+      "openPrice": 10483.3
+    },
+    {
+      "timestamp": 1567987200,
+      "openPrice": 10398.9
+    },
+    {
+      "timestamp": 1568073600,
+      "openPrice": 10309.2
+    },
+    {
+      "timestamp": 1568160000,
+      "openPrice": 10097
+    },
+    {
+      "timestamp": 1568246400,
+      "openPrice": 10161
+    },
+    {
+      "timestamp": 1568332800,
+      "openPrice": 10419.8
+    },
+    {
+      "timestamp": 1568419200,
+      "openPrice": 10362.2
+    },
+    {
+      "timestamp": 1568505600,
+      "openPrice": 10363.5
+    },
+    {
+      "timestamp": 1568592000,
+      "openPrice": 10311.3
+    },
+    {
+      "timestamp": 1568678400,
+      "openPrice": 10260.7
+    },
+    {
+      "timestamp": 1568764800,
+      "openPrice": 10188
+    },
+    {
+      "timestamp": 1568851200,
+      "openPrice": 10157.7
+    },
+    {
+      "timestamp": 1568937600,
+      "openPrice": 10274.4
+    },
+    {
+      "timestamp": 1569024000,
+      "openPrice": 10173.8
+    },
+    {
+      "timestamp": 1569110400,
+      "openPrice": 9980
+    },
+    {
+      "timestamp": 1569196800,
+      "openPrice": 10029.2
+    },
+    {
+      "timestamp": 1569283200,
+      "openPrice": 9696
+    },
+    {
+      "timestamp": 1569369600,
+      "openPrice": 8535
+    },
+    {
+      "timestamp": 1569456000,
+      "openPrice": 8439
+    },
+    {
+      "timestamp": 1569542400,
+      "openPrice": 8063
+    },
+    {
+      "timestamp": 1569628800,
+      "openPrice": 8195.9
+    },
+    {
+      "timestamp": 1569715200,
+      "openPrice": 8214
+    },
+    {
+      "timestamp": 1569801600,
+      "openPrice": 8053.3
+    },
+    {
+      "timestamp": 1569888000,
+      "openPrice": 8310
+    },
+    {
+      "timestamp": 1569974400,
+      "openPrice": 8323
+    },
+    {
+      "timestamp": 1570060800,
+      "openPrice": 8382.2
+    },
+    {
+      "timestamp": 1570147200,
+      "openPrice": 8245.4
+    },
+    {
+      "timestamp": 1570233600,
+      "openPrice": 8155
+    },
+    {
+      "timestamp": 1570320000,
+      "openPrice": 8150.8
+    },
+    {
+      "timestamp": 1570406400,
+      "openPrice": 7863
+    },
+    {
+      "timestamp": 1570492800,
+      "openPrice": 8213.4
+    },
+    {
+      "timestamp": 1570579200,
+      "openPrice": 8180.2
+    },
+    {
+      "timestamp": 1570665600,
+      "openPrice": 8589.9
+    },
+    {
+      "timestamp": 1570752000,
+      "openPrice": 8588.6
+    },
+    {
+      "timestamp": 1570838400,
+      "openPrice": 8269.3
+    },
+    {
+      "timestamp": 1570924800,
+      "openPrice": 8305.1
+    },
+    {
+      "timestamp": 1571011200,
+      "openPrice": 8280
+    },
+    {
+      "timestamp": 1571097600,
+      "openPrice": 8354.6
+    },
+    {
+      "timestamp": 1571184000,
+      "openPrice": 8151.5
+    },
+    {
+      "timestamp": 1571270400,
+      "openPrice": 8000.1
+    },
+    {
+      "timestamp": 1571356800,
+      "openPrice": 8077.1
+    },
+    {
+      "timestamp": 1571443200,
+      "openPrice": 7956.3
+    },
+    {
+      "timestamp": 1571529600,
+      "openPrice": 7960
+    },
+    {
+      "timestamp": 1571616000,
+      "openPrice": 8240.1
+    },
+    {
+      "timestamp": 1571702400,
+      "openPrice": 8210.3
+    },
+    {
+      "timestamp": 1571788800,
+      "openPrice": 8020.6
+    },
+    {
+      "timestamp": 1571875200,
+      "openPrice": 7473.9
+    },
+    {
+      "timestamp": 1571961600,
+      "openPrice": 7426.4
+    },
+    {
+      "timestamp": 1572048000,
+      "openPrice": 8669.4
+    },
+    {
+      "timestamp": 1572134400,
+      "openPrice": 9261.7
+    },
+    {
+      "timestamp": 1572220800,
+      "openPrice": 9554.1
+    },
+    {
+      "timestamp": 1572307200,
+      "openPrice": 9217.1
+    },
+    {
+      "timestamp": 1572393600,
+      "openPrice": 9435.1
+    },
+    {
+      "timestamp": 1572480000,
+      "openPrice": 9163.9
+    },
+    {
+      "timestamp": 1572566400,
+      "openPrice": 9151.9
+    },
+    {
+      "timestamp": 1572652800,
+      "openPrice": 9258.2
+    },
+    {
+      "timestamp": 1572739200,
+      "openPrice": 9303.6
+    },
+    {
+      "timestamp": 1572825600,
+      "openPrice": 9209.9
+    },
+    {
+      "timestamp": 1572912000,
+      "openPrice": 9415.2
+    },
+    {
+      "timestamp": 1572998400,
+      "openPrice": 9313
+    },
+    {
+      "timestamp": 1573084800,
+      "openPrice": 9339.6
+    },
+    {
+      "timestamp": 1573171200,
+      "openPrice": 9205
+    },
+    {
+      "timestamp": 1573257600,
+      "openPrice": 8765.9
+    },
+    {
+      "timestamp": 1573344000,
+      "openPrice": 8812.1
+    },
+    {
+      "timestamp": 1573430400,
+      "openPrice": 9039
+    },
+    {
+      "timestamp": 1573516800,
+      "openPrice": 8717
+    },
+    {
+      "timestamp": 1573603200,
+      "openPrice": 8812.8
+    },
+    {
+      "timestamp": 1573689600,
+      "openPrice": 8763.9
+    },
+    {
+      "timestamp": 1573776000,
+      "openPrice": 8632
+    },
+    {
+      "timestamp": 1573862400,
+      "openPrice": 8455.9
+    },
+    {
+      "timestamp": 1573948800,
+      "openPrice": 8487
+    },
+    {
+      "timestamp": 1574035200,
+      "openPrice": 8503.2
+    },
+    {
+      "timestamp": 1574121600,
+      "openPrice": 8168.8
+    },
+    {
+      "timestamp": 1574208000,
+      "openPrice": 8124.9
+    },
+    {
+      "timestamp": 1574294400,
+      "openPrice": 8083.1
+    },
+    {
+      "timestamp": 1574380800,
+      "openPrice": 7619.1
+    },
+    {
+      "timestamp": 1574467200,
+      "openPrice": 7284.7
+    },
+    {
+      "timestamp": 1574553600,
+      "openPrice": 7322.5
+    },
+    {
+      "timestamp": 1574640000,
+      "openPrice": 6903.9
+    },
+    {
+      "timestamp": 1574726400,
+      "openPrice": 7125.8
+    },
+    {
+      "timestamp": 1574812800,
+      "openPrice": 7161.6
+    },
+    {
+      "timestamp": 1574899200,
+      "openPrice": 7523.8
+    },
+    {
+      "timestamp": 1574985600,
+      "openPrice": 7427.9
+    },
+    {
+      "timestamp": 1575072000,
+      "openPrice": 7756.6
+    },
+    {
+      "timestamp": 1575158400,
+      "openPrice": 7558.9
+    },
+    {
+      "timestamp": 1575244800,
+      "openPrice": 7398.3
+    },
+    {
+      "timestamp": 1575331200,
+      "openPrice": 7304
+    },
+    {
+      "timestamp": 1575417600,
+      "openPrice": 7299.5
+    },
+    {
+      "timestamp": 1575504000,
+      "openPrice": 7196.2
+    },
+    {
+      "timestamp": 1575590400,
+      "openPrice": 7395
+    },
+    {
+      "timestamp": 1575676800,
+      "openPrice": 7546.3
+    },
+    {
+      "timestamp": 1575763200,
+      "openPrice": 7507.2
+    },
+    {
+      "timestamp": 1575849600,
+      "openPrice": 7518.7
+    },
+    {
+      "timestamp": 1575936000,
+      "openPrice": 7334.5
+    },
+    {
+      "timestamp": 1576022400,
+      "openPrice": 7218.7
+    },
+    {
+      "timestamp": 1576108800,
+      "openPrice": 7201.9
+    },
+    {
+      "timestamp": 1576195200,
+      "openPrice": 7190.2
+    },
+    {
+      "timestamp": 1576281600,
+      "openPrice": 7251.9
+    },
+    {
+      "timestamp": 1576368000,
+      "openPrice": 7067.5
+    },
+    {
+      "timestamp": 1576454400,
+      "openPrice": 7112.8
+    },
+    {
+      "timestamp": 1576540800,
+      "openPrice": 6877.4
+    },
+    {
+      "timestamp": 1576627200,
+      "openPrice": 6612.9
+    },
+    {
+      "timestamp": 1576713600,
+      "openPrice": 7293.4
+    },
+    {
+      "timestamp": 1576800000,
+      "openPrice": 7150.5
+    },
+    {
+      "timestamp": 1576886400,
+      "openPrice": 7191.6
+    },
+    {
+      "timestamp": 1576972800,
+      "openPrice": 7143.5
+    },
+    {
+      "timestamp": 1577059200,
+      "openPrice": 7510.1
+    },
+    {
+      "timestamp": 1577145600,
+      "openPrice": 7315.2
+    },
+    {
+      "timestamp": 1577232000,
+      "openPrice": 7252.9
+    },
+    {
+      "timestamp": 1577318400,
+      "openPrice": 7193
+    },
+    {
+      "timestamp": 1577404800,
+      "openPrice": 7196.4
+    },
+    {
+      "timestamp": 1577491200,
+      "openPrice": 7246.6
+    },
+    {
+      "timestamp": 1577577600,
+      "openPrice": 7300.6
+    },
+    {
+      "timestamp": 1577664000,
+      "openPrice": 7383.4
+    },
+    {
+      "timestamp": 1577750400,
+      "openPrice": 7216.4
+    },
+    {
+      "timestamp": 1577836800,
+      "openPrice": 7168.3
+    },
+    {
+      "timestamp": 1577923200,
+      "openPrice": 7174.4
+    },
+    {
+      "timestamp": 1578009600,
+      "openPrice": 6943.4
+    },
+    {
+      "timestamp": 1578096000,
+      "openPrice": 7333.2
+    },
+    {
+      "timestamp": 1578182400,
+      "openPrice": 7350.2
+    },
+    {
+      "timestamp": 1578268800,
+      "openPrice": 7347.2
+    },
+    {
+      "timestamp": 1578355200,
+      "openPrice": 7760
+    },
+    {
+      "timestamp": 1578441600,
+      "openPrice": 8160.3
+    },
+    {
+      "timestamp": 1578528000,
+      "openPrice": 8043.3
+    },
+    {
+      "timestamp": 1578614400,
+      "openPrice": 7818.1
+    },
+    {
+      "timestamp": 1578700800,
+      "openPrice": 8191.9
+    },
+    {
+      "timestamp": 1578787200,
+      "openPrice": 8023.3
+    },
+    {
+      "timestamp": 1578873600,
+      "openPrice": 8177.3
+    },
+    {
+      "timestamp": 1578960000,
+      "openPrice": 8104.1
+    },
+    {
+      "timestamp": 1579046400,
+      "openPrice": 8815.5
+    },
+    {
+      "timestamp": 1579132800,
+      "openPrice": 8808.4
+    },
+    {
+      "timestamp": 1579219200,
+      "openPrice": 8717.9
+    },
+    {
+      "timestamp": 1579305600,
+      "openPrice": 8898.5
+    },
+    {
+      "timestamp": 1579392000,
+      "openPrice": 8905.3
+    },
+    {
+      "timestamp": 1579478400,
+      "openPrice": 8705.8
+    },
+    {
+      "timestamp": 1579564800,
+      "openPrice": 8628.7
+    },
+    {
+      "timestamp": 1579651200,
+      "openPrice": 8723.3
+    },
+    {
+      "timestamp": 1579737600,
+      "openPrice": 8658.9
+    },
+    {
+      "timestamp": 1579824000,
+      "openPrice": 8390.1
+    },
+    {
+      "timestamp": 1579910400,
+      "openPrice": 8426.8
+    },
+    {
+      "timestamp": 1579996800,
+      "openPrice": 8325.1
+    },
+    {
+      "timestamp": 1580083200,
+      "openPrice": 8599.3
+    },
+    {
+      "timestamp": 1580169600,
+      "openPrice": 8891.8
+    },
+    {
+      "timestamp": 1580256000,
+      "openPrice": 9395
+    },
+    {
+      "timestamp": 1580342400,
+      "openPrice": 9281.2
+    },
+    {
+      "timestamp": 1580428800,
+      "openPrice": 9500.5
+    },
+    {
+      "timestamp": 1580515200,
+      "openPrice": 9337.1
+    },
+    {
+      "timestamp": 1580601600,
+      "openPrice": 9377
+    },
+    {
+      "timestamp": 1580688000,
+      "openPrice": 9322.2
+    },
+    {
+      "timestamp": 1580774400,
+      "openPrice": 9280.8
+    },
+    {
+      "timestamp": 1580860800,
+      "openPrice": 9159.3
+    },
+    {
+      "timestamp": 1580947200,
+      "openPrice": 9612.8
+    },
+    {
+      "timestamp": 1581033600,
+      "openPrice": 9754.7
+    },
+    {
+      "timestamp": 1581120000,
+      "openPrice": 9799.6
+    },
+    {
+      "timestamp": 1581206400,
+      "openPrice": 9901.6
+    },
+    {
+      "timestamp": 1581292800,
+      "openPrice": 10159.1
+    },
+    {
+      "timestamp": 1581379200,
+      "openPrice": 9850.1
+    },
+    {
+      "timestamp": 1581465600,
+      "openPrice": 10271.6
+    },
+    {
+      "timestamp": 1581552000,
+      "openPrice": 10352.6
+    },
+    {
+      "timestamp": 1581638400,
+      "openPrice": 10241.6
+    },
+    {
+      "timestamp": 1581724800,
+      "openPrice": 10369.5
+    },
+    {
+      "timestamp": 1581811200,
+      "openPrice": 9904.5
+    },
+    {
+      "timestamp": 1581897600,
+      "openPrice": 9921.1
+    },
+    {
+      "timestamp": 1581984000,
+      "openPrice": 9702.2
+    },
+    {
+      "timestamp": 1582070400,
+      "openPrice": 10180.3
+    },
+    {
+      "timestamp": 1582156800,
+      "openPrice": 9602
+    },
+    {
+      "timestamp": 1582243200,
+      "openPrice": 9608.5
+    },
+    {
+      "timestamp": 1582329600,
+      "openPrice": 9696.8
+    },
+    {
+      "timestamp": 1582416000,
+      "openPrice": 9670
+    },
+    {
+      "timestamp": 1582502400,
+      "openPrice": 9967.5
+    },
+    {
+      "timestamp": 1582588800,
+      "openPrice": 9661.8
+    },
+    {
+      "timestamp": 1582675200,
+      "openPrice": 9307.7
+    },
+    {
+      "timestamp": 1582761600,
+      "openPrice": 8783.3
+    },
+    {
+      "timestamp": 1582848000,
+      "openPrice": 8814.5
+    },
+    {
+      "timestamp": 1582934400,
+      "openPrice": 8706.8
+    },
+    {
+      "timestamp": 1583020800,
+      "openPrice": 8526.1
+    },
+    {
+      "timestamp": 1583107200,
+      "openPrice": 8518.8
+    },
+    {
+      "timestamp": 1583193600,
+      "openPrice": 8918.4
+    },
+    {
+      "timestamp": 1583280000,
+      "openPrice": 8756.6
+    },
+    {
+      "timestamp": 1583366400,
+      "openPrice": 8758.4
+    },
+    {
+      "timestamp": 1583452800,
+      "openPrice": 9065.8
+    },
+    {
+      "timestamp": 1583539200,
+      "openPrice": 9154.8
+    },
+    {
+      "timestamp": 1583625600,
+      "openPrice": 8891.1
+    },
+    {
+      "timestamp": 1583712000,
+      "openPrice": 8039.8
+    },
+    {
+      "timestamp": 1583798400,
+      "openPrice": 7929.1
+    },
+    {
+      "timestamp": 1583884800,
+      "openPrice": 7889.6
+    },
+    {
+      "timestamp": 1583971200,
+      "openPrice": 7961.3
+    },
+    {
+      "timestamp": 1584057600,
+      "openPrice": 4850
+    },
+    {
+      "timestamp": 1584144000,
+      "openPrice": 5630.2
+    },
+    {
+      "timestamp": 1584230400,
+      "openPrice": 5163.1
+    },
+    {
+      "timestamp": 1584316800,
+      "openPrice": 5339.7
+    },
+    {
+      "timestamp": 1584403200,
+      "openPrice": 5044
+    },
+    {
+      "timestamp": 1584489600,
+      "openPrice": 5334.3
+    },
+    {
+      "timestamp": 1584576000,
+      "openPrice": 5419.3
+    },
+    {
+      "timestamp": 1584662400,
+      "openPrice": 6185.3
+    },
+    {
+      "timestamp": 1584748800,
+      "openPrice": 6207
+    },
+    {
+      "timestamp": 1584835200,
+      "openPrice": 6196.3
+    },
+    {
+      "timestamp": 1584921600,
+      "openPrice": 5820.6
+    },
+    {
+      "timestamp": 1585008000,
+      "openPrice": 6498.4
+    },
+    {
+      "timestamp": 1585094400,
+      "openPrice": 6766.8
+    },
+    {
+      "timestamp": 1585180800,
+      "openPrice": 6690
+    },
+    {
+      "timestamp": 1585267200,
+      "openPrice": 6764.2
+    },
+    {
+      "timestamp": 1585353600,
+      "openPrice": 6376.3
+    },
+    {
+      "timestamp": 1585440000,
+      "openPrice": 6252.6
+    },
+    {
+      "timestamp": 1585526400,
+      "openPrice": 5875
+    },
+    {
+      "timestamp": 1585612800,
+      "openPrice": 6403.8
+    },
+    {
+      "timestamp": 1585699200,
+      "openPrice": 6422.2
+    },
+    {
+      "timestamp": 1585785600,
+      "openPrice": 6662.9
+    },
+    {
+      "timestamp": 1585872000,
+      "openPrice": 6800.5
+    },
+    {
+      "timestamp": 1585958400,
+      "openPrice": 6738.6
+    },
+    {
+      "timestamp": 1586044800,
+      "openPrice": 6873
+    },
+    {
+      "timestamp": 1586131200,
+      "openPrice": 6778.7
+    },
+    {
+      "timestamp": 1586217600,
+      "openPrice": 7342.3
+    },
+    {
+      "timestamp": 1586304000,
+      "openPrice": 7204.7
+    },
+    {
+      "timestamp": 1586390400,
+      "openPrice": 7366.3
+    },
+    {
+      "timestamp": 1586476800,
+      "openPrice": 7294.1
+    },
+    {
+      "timestamp": 1586563200,
+      "openPrice": 6873.7
+    },
+    {
+      "timestamp": 1586649600,
+      "openPrice": 6886.8
+    },
+    {
+      "timestamp": 1586736000,
+      "openPrice": 6903.7
+    },
+    {
+      "timestamp": 1586822400,
+      "openPrice": 6862.1
+    },
+    {
+      "timestamp": 1586908800,
+      "openPrice": 6874.6
+    },
+    {
+      "timestamp": 1586995200,
+      "openPrice": 6618.1
+    },
+    {
+      "timestamp": 1587081600,
+      "openPrice": 7112.4
+    },
+    {
+      "timestamp": 1587168000,
+      "openPrice": 7034.5
+    },
+    {
+      "timestamp": 1587254400,
+      "openPrice": 7258.9
+    },
+    {
+      "timestamp": 1587340800,
+      "openPrice": 7125.8
+    },
+    {
+      "timestamp": 1587427200,
+      "openPrice": 6838.2
+    },
+    {
+      "timestamp": 1587513600,
+      "openPrice": 6855
+    },
+    {
+      "timestamp": 1587600000,
+      "openPrice": 7136.8
+    },
+    {
+      "timestamp": 1587686400,
+      "openPrice": 7489.8
+    },
+    {
+      "timestamp": 1587772800,
+      "openPrice": 7509.4
+    },
+    {
+      "timestamp": 1587859200,
+      "openPrice": 7550
+    },
+    {
+      "timestamp": 1587945600,
+      "openPrice": 7706.6
+    },
+    {
+      "timestamp": 1588032000,
+      "openPrice": 7792.4
+    },
+    {
+      "timestamp": 1588118400,
+      "openPrice": 7753
+    },
+    {
+      "timestamp": 1588204800,
+      "openPrice": 8779.9
+    },
+    {
+      "timestamp": 1588291200,
+      "openPrice": 8628.3
+    },
+    {
+      "timestamp": 1588377600,
+      "openPrice": 8831
+    },
+    {
+      "timestamp": 1588464000,
+      "openPrice": 8983.2
+    },
+    {
+      "timestamp": 1588550400,
+      "openPrice": 8910.9
+    },
+    {
+      "timestamp": 1588636800,
+      "openPrice": 8890.7
+    },
+    {
+      "timestamp": 1588723200,
+      "openPrice": 9027.4
+    },
+    {
+      "timestamp": 1588809600,
+      "openPrice": 9163.1
+    },
+    {
+      "timestamp": 1588896000,
+      "openPrice": 10001.4
+    },
+    {
+      "timestamp": 1588982400,
+      "openPrice": 9808.4
+    },
+    {
+      "timestamp": 1589068800,
+      "openPrice": 9530.5
+    },
+    {
+      "timestamp": 1589155200,
+      "openPrice": 8724.9
+    },
+    {
+      "timestamp": 1589241600,
+      "openPrice": 8570.8
+    },
+    {
+      "timestamp": 1589328000,
+      "openPrice": 8818.1
+    },
+    {
+      "timestamp": 1589414400,
+      "openPrice": 9317.1
+    },
+    {
+      "timestamp": 1589500800,
+      "openPrice": 9788.5
+    },
+    {
+      "timestamp": 1589587200,
+      "openPrice": 9310.5
+    },
+    {
+      "timestamp": 1589673600,
+      "openPrice": 9379.3
+    },
+    {
+      "timestamp": 1589760000,
+      "openPrice": 9675.6
+    },
+    {
+      "timestamp": 1589846400,
+      "openPrice": 9726
+    },
+    {
+      "timestamp": 1589932800,
+      "openPrice": 9779.2
+    },
+    {
+      "timestamp": 1590019200,
+      "openPrice": 9510.1
+    },
+    {
+      "timestamp": 1590105600,
+      "openPrice": 9057.5
+    },
+    {
+      "timestamp": 1590192000,
+      "openPrice": 9169.9
+    },
+    {
+      "timestamp": 1590278400,
+      "openPrice": 9175.4
+    },
+    {
+      "timestamp": 1590364800,
+      "openPrice": 8712.8
+    },
+    {
+      "timestamp": 1590451200,
+      "openPrice": 8898
+    },
+    {
+      "timestamp": 1590537600,
+      "openPrice": 8840.7
+    },
+    {
+      "timestamp": 1590624000,
+      "openPrice": 9208
+    },
+    {
+      "timestamp": 1590710400,
+      "openPrice": 9578
+    },
+    {
+      "timestamp": 1590796800,
+      "openPrice": 9424.9
+    },
+    {
+      "timestamp": 1590883200,
+      "openPrice": 9699.9
+    },
+    {
+      "timestamp": 1590969600,
+      "openPrice": 9447.9
+    },
+    {
+      "timestamp": 1591056000,
+      "openPrice": 10210.1
+    },
+    {
+      "timestamp": 1591142400,
+      "openPrice": 9516
+    },
+    {
+      "timestamp": 1591228800,
+      "openPrice": 9670
+    },
+    {
+      "timestamp": 1591315200,
+      "openPrice": 9792.1
+    },
+    {
+      "timestamp": 1591401600,
+      "openPrice": 9617.6
+    },
+    {
+      "timestamp": 1591488000,
+      "openPrice": 9668.7
+    },
+    {
+      "timestamp": 1591574400,
+      "openPrice": 9755.7
+    },
+    {
+      "timestamp": 1591660800,
+      "openPrice": 9782
+    },
+    {
+      "timestamp": 1591747200,
+      "openPrice": 9778
+    },
+    {
+      "timestamp": 1591833600,
+      "openPrice": 9892.2
+    },
+    {
+      "timestamp": 1591920000,
+      "openPrice": 9265.8
+    },
+    {
+      "timestamp": 1592006400,
+      "openPrice": 9459.9
+    },
+    {
+      "timestamp": 1592092800,
+      "openPrice": 9472.9
+    },
+    {
+      "timestamp": 1592179200,
+      "openPrice": 9328.4
+    },
+    {
+      "timestamp": 1592265600,
+      "openPrice": 9425.3
+    },
+    {
+      "timestamp": 1592352000,
+      "openPrice": 9527.5
+    },
+    {
+      "timestamp": 1592438400,
+      "openPrice": 9453.1
+    },
+    {
+      "timestamp": 1592524800,
+      "openPrice": 9381.5
+    },
+    {
+      "timestamp": 1592611200,
+      "openPrice": 9301.2
+    },
+    {
+      "timestamp": 1592697600,
+      "openPrice": 9357
+    },
+    {
+      "timestamp": 1592784000,
+      "openPrice": 9284.7
+    },
+    {
+      "timestamp": 1592870400,
+      "openPrice": 9694
+    },
+    {
+      "timestamp": 1592956800,
+      "openPrice": 9625.5
+    },
+    {
+      "timestamp": 1593043200,
+      "openPrice": 9290.6
+    },
+    {
+      "timestamp": 1593129600,
+      "openPrice": 9238
+    },
+    {
+      "timestamp": 1593216000,
+      "openPrice": 9153
+    },
+    {
+      "timestamp": 1593302400,
+      "openPrice": 9003.9
+    },
+    {
+      "timestamp": 1593388800,
+      "openPrice": 9113.8
+    },
+    {
+      "timestamp": 1593475200,
+      "openPrice": 9186.4
+    },
+    {
+      "timestamp": 1593561600,
+      "openPrice": 9135
+    },
+    {
+      "timestamp": 1593648000,
+      "openPrice": 9233.9
+    },
+    {
+      "timestamp": 1593734400,
+      "openPrice": 9086
+    },
+    {
+      "timestamp": 1593820800,
+      "openPrice": 9058.1
+    },
+    {
+      "timestamp": 1593907200,
+      "openPrice": 9138.5
+    },
+    {
+      "timestamp": 1593993600,
+      "openPrice": 9083.8
+    },
+    {
+      "timestamp": 1594080000,
+      "openPrice": 9347.1
+    },
+    {
+      "timestamp": 1594166400,
+      "openPrice": 9258.4
+    },
+    {
+      "timestamp": 1594252800,
+      "openPrice": 9440
+    },
+    {
+      "timestamp": 1594339200,
+      "openPrice": 9236
+    },
+    {
+      "timestamp": 1594425600,
+      "openPrice": 9286.1
+    },
+    {
+      "timestamp": 1594512000,
+      "openPrice": 9234.5
+    },
+    {
+      "timestamp": 1594598400,
+      "openPrice": 9300
+    },
+    {
+      "timestamp": 1594684800,
+      "openPrice": 9237.2
+    },
+    {
+      "timestamp": 1594771200,
+      "openPrice": 9253.9
+    },
+    {
+      "timestamp": 1594857600,
+      "openPrice": 9194.9
+    },
+    {
+      "timestamp": 1594944000,
+      "openPrice": 9131
+    },
+    {
+      "timestamp": 1595030400,
+      "openPrice": 9152.2
+    },
+    {
+      "timestamp": 1595116800,
+      "openPrice": 9173.7
+    },
+    {
+      "timestamp": 1595203200,
+      "openPrice": 9216.1
+    },
+    {
+      "timestamp": 1595289600,
+      "openPrice": 9163
+    },
+    {
+      "timestamp": 1595376000,
+      "openPrice": 9393.9
+    },
+    {
+      "timestamp": 1595462400,
+      "openPrice": 9529.8
+    },
+    {
+      "timestamp": 1595548800,
+      "openPrice": 9612
+    },
+    {
+      "timestamp": 1595635200,
+      "openPrice": 9553.6
+    },
+    {
+      "timestamp": 1595721600,
+      "openPrice": 9712.1
+    },
+    {
+      "timestamp": 1595808000,
+      "openPrice": 9939.6
+    },
+    {
+      "timestamp": 1595894400,
+      "openPrice": 11051
+    },
+    {
+      "timestamp": 1595980800,
+      "openPrice": 10934
+    },
+    {
+      "timestamp": 1596067200,
+      "openPrice": 11111.1
+    },
+    {
+      "timestamp": 1596153600,
+      "openPrice": 11114.8
+    },
+    {
+      "timestamp": 1596240000,
+      "openPrice": 11356.1
+    },
+    {
+      "timestamp": 1596326400,
+      "openPrice": 11811
+    },
+    {
+      "timestamp": 1596412800,
+      "openPrice": 11072.1
+    },
+    {
+      "timestamp": 1596499200,
+      "openPrice": 11237.1
+    },
+    {
+      "timestamp": 1596585600,
+      "openPrice": 11200
+    },
+    {
+      "timestamp": 1596672000,
+      "openPrice": 11746
+    },
+    {
+      "timestamp": 1596758400,
+      "openPrice": 11771.5
+    },
+    {
+      "timestamp": 1596844800,
+      "openPrice": 11603.5
+    },
+    {
+      "timestamp": 1596931200,
+      "openPrice": 11768
+    },
+    {
+      "timestamp": 1597017600,
+      "openPrice": 11689.7
+    },
+    {
+      "timestamp": 1597104000,
+      "openPrice": 11898.7
+    },
+    {
+      "timestamp": 1597190400,
+      "openPrice": 11391.6
+    },
+    {
+      "timestamp": 1597276800,
+      "openPrice": 11576.7
+    },
+    {
+      "timestamp": 1597363200,
+      "openPrice": 11794.8
+    },
+    {
+      "timestamp": 1597449600,
+      "openPrice": 11927
+    },
+    {
+      "timestamp": 1597536000,
+      "openPrice": 11855.6
+    },
+    {
+      "timestamp": 1597622400,
+      "openPrice": 11919.9
+    },
+    {
+      "timestamp": 1597708800,
+      "openPrice": 12301.7
+    },
+    {
+      "timestamp": 1597795200,
+      "openPrice": 11955.2
+    },
+    {
+      "timestamp": 1597881600,
+      "openPrice": 11757.2
+    },
+    {
+      "timestamp": 1597968000,
+      "openPrice": 11864.5
+    },
+    {
+      "timestamp": 1598054400,
+      "openPrice": 11522.7
+    },
+    {
+      "timestamp": 1598140800,
+      "openPrice": 11672.7
+    },
+    {
+      "timestamp": 1598227200,
+      "openPrice": 11653.2
+    },
+    {
+      "timestamp": 1598313600,
+      "openPrice": 11760.5
+    },
+    {
+      "timestamp": 1598400000,
+      "openPrice": 11330.1
+    },
+    {
+      "timestamp": 1598486400,
+      "openPrice": 11469.6
+    },
+    {
+      "timestamp": 1598572800,
+      "openPrice": 11327.9
+    },
+    {
+      "timestamp": 1598659200,
+      "openPrice": 11531
+    },
+    {
+      "timestamp": 1598745600,
+      "openPrice": 11480.9
+    },
+    {
+      "timestamp": 1598832000,
+      "openPrice": 11713
+    },
+    {
+      "timestamp": 1598918400,
+      "openPrice": 11657.2
+    },
+    {
+      "timestamp": 1599004800,
+      "openPrice": 11898
+    },
+    {
+      "timestamp": 1599091200,
+      "openPrice": 11399.2
+    },
+    {
+      "timestamp": 1599177600,
+      "openPrice": 10180
+    },
+    {
+      "timestamp": 1599264000,
+      "openPrice": 10463.5
+    },
+    {
+      "timestamp": 1599350400,
+      "openPrice": 10164
+    },
+    {
+      "timestamp": 1599436800,
+      "openPrice": 10256.2
+    },
+    {
+      "timestamp": 1599523200,
+      "openPrice": 10377.5
+    },
+    {
+      "timestamp": 1599609600,
+      "openPrice": 10123.3
+    },
+    {
+      "timestamp": 1599696000,
+      "openPrice": 10229.5
+    },
+    {
+      "timestamp": 1599782400,
+      "openPrice": 10350
+    },
+    {
+      "timestamp": 1599868800,
+      "openPrice": 10398.1
+    },
+    {
+      "timestamp": 1599955200,
+      "openPrice": 10447.5
+    },
+    {
+      "timestamp": 1600041600,
+      "openPrice": 10328.2
+    },
+    {
+      "timestamp": 1600128000,
+      "openPrice": 10675
+    },
+    {
+      "timestamp": 1600214400,
+      "openPrice": 10785.2
+    },
+    {
+      "timestamp": 1600300800,
+      "openPrice": 10951.3
+    },
+    {
+      "timestamp": 1600387200,
+      "openPrice": 10944.8
+    },
+    {
+      "timestamp": 1600473600,
+      "openPrice": 10934.8
+    },
+    {
+      "timestamp": 1600560000,
+      "openPrice": 11078
+    },
+    {
+      "timestamp": 1600646400,
+      "openPrice": 10918.6
+    },
+    {
+      "timestamp": 1600732800,
+      "openPrice": 10417.9
+    },
+    {
+      "timestamp": 1600819200,
+      "openPrice": 10531.2
+    },
+    {
+      "timestamp": 1600905600,
+      "openPrice": 10230.7
+    },
+    {
+      "timestamp": 1600992000,
+      "openPrice": 10738.9
+    },
+    {
+      "timestamp": 1601078400,
+      "openPrice": 10695.3
+    },
+    {
+      "timestamp": 1601164800,
+      "openPrice": 10733.4
+    },
+    {
+      "timestamp": 1601251200,
+      "openPrice": 10778.4
+    },
+    {
+      "timestamp": 1601337600,
+      "openPrice": 10694.1
+    },
+    {
+      "timestamp": 1601424000,
+      "openPrice": 10841.4
+    },
+    {
+      "timestamp": 1601510400,
+      "openPrice": 10774.9
+    },
+    {
+      "timestamp": 1601596800,
+      "openPrice": 10611
+    },
+    {
+      "timestamp": 1601683200,
+      "openPrice": 10574.8
+    },
+    {
+      "timestamp": 1601769600,
+      "openPrice": 10553
+    },
+    {
+      "timestamp": 1601856000,
+      "openPrice": 10676.4
+    },
+    {
+      "timestamp": 1601942400,
+      "openPrice": 10799
+    },
+    {
+      "timestamp": 1602028800,
+      "openPrice": 10605
+    },
+    {
+      "timestamp": 1602115200,
+      "openPrice": 10670
+    },
+    {
+      "timestamp": 1602201600,
+      "openPrice": 10931.9
+    },
+    {
+      "timestamp": 1602288000,
+      "openPrice": 11060.1
+    },
+    {
+      "timestamp": 1602374400,
+      "openPrice": 11299.4
+    },
+    {
+      "timestamp": 1602460800,
+      "openPrice": 11376.6
+    },
+    {
+      "timestamp": 1602547200,
+      "openPrice": 11534.6
+    },
+    {
+      "timestamp": 1602633600,
+      "openPrice": 11428.9
+    },
+    {
+      "timestamp": 1602720000,
+      "openPrice": 11433.2
+    },
+    {
+      "timestamp": 1602806400,
+      "openPrice": 11501
+    },
+    {
+      "timestamp": 1602892800,
+      "openPrice": 11327
+    },
+    {
+      "timestamp": 1602979200,
+      "openPrice": 11364
+    },
+    {
+      "timestamp": 1603065600,
+      "openPrice": 11508.8
+    },
+    {
+      "timestamp": 1603152000,
+      "openPrice": 11757
+    },
+    {
+      "timestamp": 1603238400,
+      "openPrice": 11926.7
+    },
+    {
+      "timestamp": 1603324800,
+      "openPrice": 12813
+    },
+    {
+      "timestamp": 1603411200,
+      "openPrice": 12985.4
+    },
+    {
+      "timestamp": 1603497600,
+      "openPrice": 12939
+    },
+    {
+      "timestamp": 1603584000,
+      "openPrice": 13130.9
+    },
+    {
+      "timestamp": 1603670400,
+      "openPrice": 13039.8
+    },
+    {
+      "timestamp": 1603756800,
+      "openPrice": 13080
+    },
+    {
+      "timestamp": 1603843200,
+      "openPrice": 13649.1
+    },
+    {
+      "timestamp": 1603929600,
+      "openPrice": 13288
+    },
+    {
+      "timestamp": 1604016000,
+      "openPrice": 13462.1
+    },
+    {
+      "timestamp": 1604102400,
+      "openPrice": 13567
+    },
+    {
+      "timestamp": 1604188800,
+      "openPrice": 13799
+    },
+    {
+      "timestamp": 1604275200,
+      "openPrice": 13762.6
+    },
+    {
+      "timestamp": 1604361600,
+      "openPrice": 13568.3
+    },
+    {
+      "timestamp": 1604448000,
+      "openPrice": 14028.8
+    },
+    {
+      "timestamp": 1604534400,
+      "openPrice": 14165.7
+    },
+    {
+      "timestamp": 1604620800,
+      "openPrice": 15610.3
+    },
+    {
+      "timestamp": 1604707200,
+      "openPrice": 15607.4
+    },
+    {
+      "timestamp": 1604793600,
+      "openPrice": 14837.4
+    },
+    {
+      "timestamp": 1604880000,
+      "openPrice": 15480
+    },
+    {
+      "timestamp": 1604966400,
+      "openPrice": 15339.1
+    },
+    {
+      "timestamp": 1605052800,
+      "openPrice": 15319
+    },
+    {
+      "timestamp": 1605139200,
+      "openPrice": 15708.6
+    },
+    {
+      "timestamp": 1605225600,
+      "openPrice": 16308.6
+    },
+    {
+      "timestamp": 1605312000,
+      "openPrice": 16343.3
+    },
+    {
+      "timestamp": 1605398400,
+      "openPrice": 16086.5
+    },
+    {
+      "timestamp": 1605484800,
+      "openPrice": 15966.8
+    },
+    {
+      "timestamp": 1605571200,
+      "openPrice": 16723.8
+    },
+    {
+      "timestamp": 1605657600,
+      "openPrice": 17680
+    },
+    {
+      "timestamp": 1605744000,
+      "openPrice": 17800
+    },
+    {
+      "timestamp": 1605830400,
+      "openPrice": 17827.4
+    },
+    {
+      "timestamp": 1605916800,
+      "openPrice": 18673.6
+    },
+    {
+      "timestamp": 1606003200,
+      "openPrice": 18708.7
+    },
+    {
+      "timestamp": 1606089600,
+      "openPrice": 18433.7
+    },
+    {
+      "timestamp": 1606176000,
+      "openPrice": 18380.2
+    },
+    {
+      "timestamp": 1606262400,
+      "openPrice": 19099.3
+    },
+    {
+      "timestamp": 1606348800,
+      "openPrice": 18815.1
+    },
+    {
+      "timestamp": 1606435200,
+      "openPrice": 17165
+    },
+    {
+      "timestamp": 1606521600,
+      "openPrice": 17146
+    },
+    {
+      "timestamp": 1606608000,
+      "openPrice": 17731.6
+    },
+    {
+      "timestamp": 1606694400,
+      "openPrice": 18195.6
+    },
+    {
+      "timestamp": 1606780800,
+      "openPrice": 19706.5
+    },
+    {
+      "timestamp": 1606867200,
+      "openPrice": 18777
+    },
+    {
+      "timestamp": 1606953600,
+      "openPrice": 19219.3
+    },
+    {
+      "timestamp": 1607040000,
+      "openPrice": 19440.7
+    },
+    {
+      "timestamp": 1607126400,
+      "openPrice": 18655
+    },
+    {
+      "timestamp": 1607212800,
+      "openPrice": 19263.1
+    },
+    {
+      "timestamp": 1607299200,
+      "openPrice": 19385
+    },
+    {
+      "timestamp": 1607385600,
+      "openPrice": 19182.5
+    },
+    {
+      "timestamp": 1607472000,
+      "openPrice": 18313.1
+    },
+    {
+      "timestamp": 1607558400,
+      "openPrice": 18548.4
+    },
+    {
+      "timestamp": 1607644800,
+      "openPrice": 18246.4
+    },
+    {
+      "timestamp": 1607731200,
+      "openPrice": 18031.5
+    },
+    {
+      "timestamp": 1607817600,
+      "openPrice": 18814.4
+    },
+    {
+      "timestamp": 1607904000,
+      "openPrice": 19163
+    },
+    {
+      "timestamp": 1607990400,
+      "openPrice": 19281
+    },
+    {
+      "timestamp": 1608076800,
+      "openPrice": 19439.5
+    },
+    {
+      "timestamp": 1608163200,
+      "openPrice": 21361.7
+    },
+    {
+      "timestamp": 1608249600,
+      "openPrice": 22811.8
+    },
+    {
+      "timestamp": 1608336000,
+      "openPrice": 23132.8
+    },
+    {
+      "timestamp": 1608422400,
+      "openPrice": 23871.5
+    },
+    {
+      "timestamp": 1608508800,
+      "openPrice": 23480.8
+    },
+    {
+      "timestamp": 1608595200,
+      "openPrice": 22724.6
+    },
+    {
+      "timestamp": 1608681600,
+      "openPrice": 23823
+    },
+    {
+      "timestamp": 1608768000,
+      "openPrice": 23225.5
+    },
+    {
+      "timestamp": 1608854400,
+      "openPrice": 23718.7
+    },
+    {
+      "timestamp": 1608940800,
+      "openPrice": 24703.8
+    },
+    {
+      "timestamp": 1609027200,
+      "openPrice": 26442.2
+    },
+    {
+      "timestamp": 1609113600,
+      "openPrice": 26238
+    },
+    {
+      "timestamp": 1609200000,
+      "openPrice": 27028.9
+    },
+    {
+      "timestamp": 1609286400,
+      "openPrice": 27376.2
+    },
+    {
+      "timestamp": 1609372800,
+      "openPrice": 28880
+    },
+    {
+      "timestamp": 1609459200,
+      "openPrice": 28959.4
+    },
+    {
+      "timestamp": 1609545600,
+      "openPrice": 29398.7
+    },
+    {
+      "timestamp": 1609632000,
+      "openPrice": 32215.4
+    },
+    {
+      "timestamp": 1609718400,
+      "openPrice": 33082.7
+    },
+    {
+      "timestamp": 1609804800,
+      "openPrice": 32047.9
+    },
+    {
+      "timestamp": 1609891200,
+      "openPrice": 34049.7
+    },
+    {
+      "timestamp": 1609977600,
+      "openPrice": 36873.4
+    },
+    {
+      "timestamp": 1610064000,
+      "openPrice": 39489
+    },
+    {
+      "timestamp": 1610150400,
+      "openPrice": 40644.2
+    },
+    {
+      "timestamp": 1610236800,
+      "openPrice": 40256.8
+    },
+    {
+      "timestamp": 1610323200,
+      "openPrice": 38170.3
+    },
+    {
+      "timestamp": 1610409600,
+      "openPrice": 35444
+    },
+    {
+      "timestamp": 1610496000,
+      "openPrice": 34038.2
+    },
+    {
+      "timestamp": 1610582400,
+      "openPrice": 37390.1
+    },
+    {
+      "timestamp": 1610668800,
+      "openPrice": 39121.5
+    },
+    {
+      "timestamp": 1610755200,
+      "openPrice": 36744.6
+    },
+    {
+      "timestamp": 1610841600,
+      "openPrice": 36010.5
+    },
+    {
+      "timestamp": 1610928000,
+      "openPrice": 35815.6
+    },
+    {
+      "timestamp": 1611014400,
+      "openPrice": 36622.5
+    },
+    {
+      "timestamp": 1611100800,
+      "openPrice": 35925.5
+    },
+    {
+      "timestamp": 1611187200,
+      "openPrice": 34562.2
+    },
+    {
+      "timestamp": 1611273600,
+      "openPrice": 29454
+    },
+    {
+      "timestamp": 1611360000,
+      "openPrice": 32735.1
+    },
+    {
+      "timestamp": 1611446400,
+      "openPrice": 32507
+    },
+    {
+      "timestamp": 1611532800,
+      "openPrice": 32297.8
+    },
+    {
+      "timestamp": 1611619200,
+      "openPrice": 32266.9
+    },
+    {
+      "timestamp": 1611705600,
+      "openPrice": 32509.2
+    },
+    {
+      "timestamp": 1611792000,
+      "openPrice": 30733.1
+    },
+    {
+      "timestamp": 1611878400,
+      "openPrice": 33430.5
+    },
+    {
+      "timestamp": 1611964800,
+      "openPrice": 34266.3
+    },
+    {
+      "timestamp": 1612051200,
+      "openPrice": 34297.4
+    },
+    {
+      "timestamp": 1612137600,
+      "openPrice": 33121.8
+    },
+    {
+      "timestamp": 1612224000,
+      "openPrice": 33534.1
+    },
+    {
+      "timestamp": 1612310400,
+      "openPrice": 36661.1
+    },
+    {
+      "timestamp": 1612396800,
+      "openPrice": 37676
+    },
+    {
+      "timestamp": 1612483200,
+      "openPrice": 36975.8
+    },
+    {
+      "timestamp": 1612569600,
+      "openPrice": 39414.2
+    },
+    {
+      "timestamp": 1612656000,
+      "openPrice": 39257
+    },
+    {
+      "timestamp": 1612742400,
+      "openPrice": 38763.7
+    },
+    {
+      "timestamp": 1612828800,
+      "openPrice": 45714.4
+    },
+    {
+      "timestamp": 1612915200,
+      "openPrice": 46349.7
+    },
+    {
+      "timestamp": 1613001600,
+      "openPrice": 44839.5
+    },
+    {
+      "timestamp": 1613088000,
+      "openPrice": 47979.9
+    },
+    {
+      "timestamp": 1613174400,
+      "openPrice": 47438.2
+    },
+    {
+      "timestamp": 1613260800,
+      "openPrice": 47199.9
+    },
+    {
+      "timestamp": 1613347200,
+      "openPrice": 46913.8
+    },
+    {
+      "timestamp": 1613433600,
+      "openPrice": 47682
+    },
+    {
+      "timestamp": 1613520000,
+      "openPrice": 49185.6
+    },
+    {
+      "timestamp": 1613606400,
+      "openPrice": 52302.8
+    },
+    {
+      "timestamp": 1613692800,
+      "openPrice": 51590.5
+    },
+    {
+      "timestamp": 1613779200,
+      "openPrice": 56235.5
+    },
+    {
+      "timestamp": 1613865600,
+      "openPrice": 55931.5
+    },
+    {
+      "timestamp": 1613952000,
+      "openPrice": 57475.9
+    },
+    {
+      "timestamp": 1614038400,
+      "openPrice": 54128
+    },
+    {
+      "timestamp": 1614124800,
+      "openPrice": 48899.6
+    },
+    {
+      "timestamp": 1614211200,
+      "openPrice": 49726.1
+    },
+    {
+      "timestamp": 1614297600,
+      "openPrice": 47380.7
+    },
+    {
+      "timestamp": 1614384000,
+      "openPrice": 46307.2
+    },
+    {
+      "timestamp": 1614470400,
+      "openPrice": 46163.9
+    },
+    {
+      "timestamp": 1614556800,
+      "openPrice": 45234.7
+    },
+    {
+      "timestamp": 1614643200,
+      "openPrice": 49615.3
+    },
+    {
+      "timestamp": 1614729600,
+      "openPrice": 48495.9
+    },
+    {
+      "timestamp": 1614816000,
+      "openPrice": 50400
+    },
+    {
+      "timestamp": 1614902400,
+      "openPrice": 48330
+    },
+    {
+      "timestamp": 1614988800,
+      "openPrice": 48767.4
+    },
+    {
+      "timestamp": 1615075200,
+      "openPrice": 49550
+    },
+    {
+      "timestamp": 1615161600,
+      "openPrice": 50971.3
+    },
+    {
+      "timestamp": 1615248000,
+      "openPrice": 52383
+    },
+    {
+      "timestamp": 1615334400,
+      "openPrice": 54922.7
+    },
+    {
+      "timestamp": 1615420800,
+      "openPrice": 55650
+    },
+    {
+      "timestamp": 1615507200,
+      "openPrice": 57807
+    },
+    {
+      "timestamp": 1615593600,
+      "openPrice": 56405.1
+    },
+    {
+      "timestamp": 1615680000,
+      "openPrice": 61050.1
+    },
+    {
+      "timestamp": 1615766400,
+      "openPrice": 59001
+    },
+    {
+      "timestamp": 1615852800,
+      "openPrice": 55627.6
+    },
+    {
+      "timestamp": 1615939200,
+      "openPrice": 56891.1
+    },
+    {
+      "timestamp": 1616025600,
+      "openPrice": 58940.5
+    },
+    {
+      "timestamp": 1616112000,
+      "openPrice": 57640
+    },
+    {
+      "timestamp": 1616198400,
+      "openPrice": 58085
+    },
+    {
+      "timestamp": 1616284800,
+      "openPrice": 58200
+    },
+    {
+      "timestamp": 1616371200,
+      "openPrice": 57368.8
+    },
+    {
+      "timestamp": 1616457600,
+      "openPrice": 54098.2
+    },
+    {
+      "timestamp": 1616544000,
+      "openPrice": 54341.2
+    },
+    {
+      "timestamp": 1616630400,
+      "openPrice": 52280.4
+    },
+    {
+      "timestamp": 1616716800,
+      "openPrice": 51318.2
+    },
+    {
+      "timestamp": 1616803200,
+      "openPrice": 55062.1
+    },
+    {
+      "timestamp": 1616889600,
+      "openPrice": 55852.5
+    },
+    {
+      "timestamp": 1616976000,
+      "openPrice": 55782.3
+    },
+    {
+      "timestamp": 1617062400,
+      "openPrice": 57131.9
+    },
+    {
+      "timestamp": 1617148800,
+      "openPrice": 59039.8
+    },
+    {
+      "timestamp": 1617235200,
+      "openPrice": 59118.9
+    },
+    {
+      "timestamp": 1617321600,
+      "openPrice": 58732.9
+    },
+    {
+      "timestamp": 1617408000,
+      "openPrice": 59429.5
+    },
+    {
+      "timestamp": 1617494400,
+      "openPrice": 56714.5
+    },
+    {
+      "timestamp": 1617580800,
+      "openPrice": 58195.1
+    },
+    {
+      "timestamp": 1617667200,
+      "openPrice": 59120
+    },
+    {
+      "timestamp": 1617753600,
+      "openPrice": 58017.2
+    },
+    {
+      "timestamp": 1617840000,
+      "openPrice": 55936.6
+    },
+    {
+      "timestamp": 1617926400,
+      "openPrice": 58264.3
+    },
+    {
+      "timestamp": 1618012800,
+      "openPrice": 60775.4
+    },
+    {
+      "timestamp": 1618099200,
+      "openPrice": 60097.8
+    },
+    {
+      "timestamp": 1618185600,
+      "openPrice": 59781.6
+    },
+    {
+      "timestamp": 1618272000,
+      "openPrice": 59823.7
+    },
+    {
+      "timestamp": 1618358400,
+      "openPrice": 63474.9
+    },
+    {
+      "timestamp": 1618444800,
+      "openPrice": 62963
+    },
+    {
+      "timestamp": 1618531200,
+      "openPrice": 63243.1
+    },
+    {
+      "timestamp": 1618617600,
+      "openPrice": 61427.27
+    },
+    {
+      "timestamp": 1618790400,
+      "openPrice": 56227.5
+    },
+    {
+      "timestamp": 1618876800,
+      "openPrice": 55720
+    },
+    {
+      "timestamp": 1618963200,
+      "openPrice": 56500
+    },
+    {
+      "timestamp": 1619049600,
+      "openPrice": 53815.3
+    },
+    {
+      "timestamp": 1619136000,
+      "openPrice": 51709.3
+    },
+    {
+      "timestamp": 1619222400,
+      "openPrice": 49900
+    },
+    {
+      "timestamp": 1619308800,
+      "openPrice": 50085.7
+    },
+    {
+      "timestamp": 1619395200,
+      "openPrice": 49112.6
+    },
+    {
+      "timestamp": 1619481600,
+      "openPrice": 54056.1
+    },
+    {
+      "timestamp": 1619568000,
+      "openPrice": 55077.4
+    },
+    {
+      "timestamp": 1619654400,
+      "openPrice": 54886.1
+    },
+    {
+      "timestamp": 1619740800,
+      "openPrice": 53579.7
+    },
+    {
+      "timestamp": 1619827200,
+      "openPrice": 57780.3
+    },
+    {
+      "timestamp": 1619913600,
+      "openPrice": 57510.6
+    },
+    {
+      "timestamp": 1620000000,
+      "openPrice": 56618.6
+    },
+    {
+      "timestamp": 1620086400,
+      "openPrice": 57193.4
+    },
+    {
+      "timestamp": 1620259200,
+      "openPrice": 57494.2
+    },
+    {
+      "timestamp": 1620345600,
+      "openPrice": 56421
+    },
+    {
+      "timestamp": 1620432000,
+      "openPrice": 57388
+    },
+    {
+      "timestamp": 1620518400,
+      "openPrice": 58951.5
+    },
+    {
+      "timestamp": 1620604800,
+      "openPrice": 58320.5
+    },
+    {
+      "timestamp": 1620691200,
+      "openPrice": 55866.38
+    },
+    {
+      "timestamp": 1620777600,
+      "openPrice": 57824.6
+    },
+    {
+      "timestamp": 1620864000,
+      "openPrice": 49502.7
+    },
+    {
+      "timestamp": 1620950400,
+      "openPrice": 49682.28
+    },
+    {
+      "timestamp": 1621036800,
+      "openPrice": 49899
+    },
+    {
+      "timestamp": 1621123200,
+      "openPrice": 46761
+    },
+    {
+      "timestamp": 1621209600,
+      "openPrice": 46474.7
+    },
+    {
+      "timestamp": 1621296000,
+      "openPrice": 43551.9
+    },
+    {
+      "timestamp": 1621382400,
+      "openPrice": 42898.4
+    },
+    {
+      "timestamp": 1621468800,
+      "openPrice": 36765.2
+    },
+    {
+      "timestamp": 1621555200,
+      "openPrice": 40609.6
+    },
+    {
+      "timestamp": 1621641600,
+      "openPrice": 37329.1
+    },
+    {
+      "timestamp": 1621728000,
+      "openPrice": 38199.9
+    },
+    {
+      "timestamp": 1621814400,
+      "openPrice": 34718.8
+    },
+    {
+      "timestamp": 1621900800,
+      "openPrice": 38843
+    },
+    {
+      "timestamp": 1621987200,
+      "openPrice": 38373.3
+    },
+    {
+      "timestamp": 1622073600,
+      "openPrice": 39293.23
+    },
+    {
+      "timestamp": 1622160000,
+      "openPrice": 38537.1
+    },
+    {
+      "timestamp": 1622246400,
+      "openPrice": 35683.8
+    },
+    {
+      "timestamp": 1622332800,
+      "openPrice": 34631.9
+    },
+    {
+      "timestamp": 1622419200,
+      "openPrice": 35667.9
+    },
+    {
+      "timestamp": 1622505600,
+      "openPrice": 37273.1
+    },
+    {
+      "timestamp": 1622592000,
+      "openPrice": 36676.4
+    },
+    {
+      "timestamp": 1622678400,
+      "openPrice": 37565.3
+    },
+    {
+      "timestamp": 1622764800,
+      "openPrice": 39212.3
+    },
+    {
+      "timestamp": 1622851200,
+      "openPrice": 36857.6
+    },
+    {
+      "timestamp": 1622937600,
+      "openPrice": 35532.2
+    },
+    {
+      "timestamp": 1623024000,
+      "openPrice": 35783.2
+    },
+    {
+      "timestamp": 1623110400,
+      "openPrice": 33578.6
+    },
+    {
+      "timestamp": 1623196800,
+      "openPrice": 33409.7
+    },
+    {
+      "timestamp": 1623283200,
+      "openPrice": 37398.9
+    },
+    {
+      "timestamp": 1623369600,
+      "openPrice": 36684.5
+    },
+    {
+      "timestamp": 1623456000,
+      "openPrice": 37322.2
+    },
+    {
+      "timestamp": 1623542400,
+      "openPrice": 35479.2
+    },
+    {
+      "timestamp": 1623628800,
+      "openPrice": 39035.7
+    },
+    {
+      "timestamp": 1623715200,
+      "openPrice": 40529.1
+    },
+    {
+      "timestamp": 1623801600,
+      "openPrice": 40167.3
+    },
+    {
+      "timestamp": 1623888000,
+      "openPrice": 38337.1
+    },
+    {
+      "timestamp": 1623974400,
+      "openPrice": 37940
+    },
+    {
+      "timestamp": 1624060800,
+      "openPrice": 35824
+    },
+    {
+      "timestamp": 1624147200,
+      "openPrice": 35484.2
+    },
+    {
+      "timestamp": 1624233600,
+      "openPrice": 35595.7
+    },
+    {
+      "timestamp": 1624320000,
+      "openPrice": 32634.9
+    },
+    {
+      "timestamp": 1624406400,
+      "openPrice": 32516.5
+    },
+    {
+      "timestamp": 1624492800,
+      "openPrice": 33685.8
+    },
+    {
+      "timestamp": 1624665600,
+      "openPrice": 31577.3
+    },
+    {
+      "timestamp": 1624752000,
+      "openPrice": 32275.9
+    },
+    {
+      "timestamp": 1624838400,
+      "openPrice": 34700
+    },
+    {
+      "timestamp": 1624924800,
+      "openPrice": 34475.9
+    },
+    {
+      "timestamp": 1625011200,
+      "openPrice": 35118.4
+    },
+    {
+      "timestamp": 1625097600,
+      "openPrice": 35070.4
+    },
+    {
+      "timestamp": 1625184000,
+      "openPrice": 33513.6
+    },
+    {
+      "timestamp": 1625270400,
+      "openPrice": 33802.8
+    },
+    {
+      "timestamp": 1625356800,
+      "openPrice": 34685.3
+    },
+    {
+      "timestamp": 1625443200,
+      "openPrice": 35305.1
+    },
+    {
+      "timestamp": 1625529600,
+      "openPrice": 33700.1
+    },
+    {
+      "timestamp": 1625616000,
+      "openPrice": 34215.4
+    },
+    {
+      "timestamp": 1625702400,
+      "openPrice": 33885.1
+    },
+    {
+      "timestamp": 1625788800,
+      "openPrice": 32878.4
+    },
+    {
+      "timestamp": 1625875200,
+      "openPrice": 33820.7
+    },
+    {
+      "timestamp": 1625961600,
+      "openPrice": 33514.4
+    },
+    {
+      "timestamp": 1626048000,
+      "openPrice": 34267.4
+    },
+    {
+      "timestamp": 1626134400,
+      "openPrice": 33096.2
+    },
+    {
+      "timestamp": 1626220800,
+      "openPrice": 32723
+    },
+    {
+      "timestamp": 1626307200,
+      "openPrice": 32815.2
+    },
+    {
+      "timestamp": 1626393600,
+      "openPrice": 31868.5
+    },
+    {
+      "timestamp": 1626480000,
+      "openPrice": 31400.2
+    },
+    {
+      "timestamp": 1626566400,
+      "openPrice": 31503.3
+    },
+    {
+      "timestamp": 1626652800,
+      "openPrice": 31783.9
+    },
+    {
+      "timestamp": 1626739200,
+      "openPrice": 30827.2
+    },
+    {
+      "timestamp": 1626825600,
+      "openPrice": 29788.1
+    },
+    {
+      "timestamp": 1626912000,
+      "openPrice": 32081.8
+    },
+    {
+      "timestamp": 1626998400,
+      "openPrice": 32283.3
+    },
+    {
+      "timestamp": 1627084800,
+      "openPrice": 33656.2
+    },
+    {
+      "timestamp": 1627171200,
+      "openPrice": 34283.5
+    },
+    {
+      "timestamp": 1627257600,
+      "openPrice": 35421.4
+    },
+    {
+      "timestamp": 1627344000,
+      "openPrice": 37270.3
+    },
+    {
+      "timestamp": 1627430400,
+      "openPrice": 39478.3
+    },
+    {
+      "timestamp": 1627516800,
+      "openPrice": 40025.4
+    },
+    {
+      "timestamp": 1627603200,
+      "openPrice": 40000
+    },
+    {
+      "timestamp": 1627689600,
+      "openPrice": 42232.8
+    },
+    {
+      "timestamp": 1627776000,
+      "openPrice": 41497.8
+    },
+    {
+      "timestamp": 1627862400,
+      "openPrice": 39892.9
+    },
+    {
+      "timestamp": 1627948800,
+      "openPrice": 39152.3
+    },
+    {
+      "timestamp": 1628035200,
+      "openPrice": 38163
+    },
+    {
+      "timestamp": 1628121600,
+      "openPrice": 39749
+    },
+    {
+      "timestamp": 1628208000,
+      "openPrice": 40886.5
+    },
+    {
+      "timestamp": 1628294400,
+      "openPrice": 42859.7
+    },
+    {
+      "timestamp": 1628380800,
+      "openPrice": 44612
+    },
+    {
+      "timestamp": 1628467200,
+      "openPrice": 43845.6
+    },
+    {
+      "timestamp": 1628553600,
+      "openPrice": 46273.1
+    },
+    {
+      "timestamp": 1628640000,
+      "openPrice": 45598.6
+    },
+    {
+      "timestamp": 1628726400,
+      "openPrice": 45570
+    },
+    {
+      "timestamp": 1628812800,
+      "openPrice": 44417.8
+    },
+    {
+      "timestamp": 1628899200,
+      "openPrice": 47823.2
+    },
+    {
+      "timestamp": 1628985600,
+      "openPrice": 47111.8
+    },
+    {
+      "timestamp": 1629072000,
+      "openPrice": 47021.1
+    },
+    {
+      "timestamp": 1629158400,
+      "openPrice": 45926.2
+    },
+    {
+      "timestamp": 1629244800,
+      "openPrice": 44679.5
+    },
+    {
+      "timestamp": 1629331200,
+      "openPrice": 44720.2
+    },
+    {
+      "timestamp": 1629417600,
+      "openPrice": 46765.7
+    },
+    {
+      "timestamp": 1629504000,
+      "openPrice": 49348.8
+    },
+    {
+      "timestamp": 1629590400,
+      "openPrice": 48865.4
+    },
+    {
+      "timestamp": 1629676800,
+      "openPrice": 49308.2
+    },
+    {
+      "timestamp": 1629763200,
+      "openPrice": 49502.4
+    },
+    {
+      "timestamp": 1629849600,
+      "openPrice": 47715
+    },
+    {
+      "timestamp": 1629936000,
+      "openPrice": 48991.4
+    },
+    {
+      "timestamp": 1630022400,
+      "openPrice": 46846.7
+    },
+    {
+      "timestamp": 1630108800,
+      "openPrice": 49074.9
+    },
+    {
+      "timestamp": 1630195200,
+      "openPrice": 48898.2
+    },
+    {
+      "timestamp": 1630281600,
+      "openPrice": 48787.7
+    },
+    {
+      "timestamp": 1630368000,
+      "openPrice": 46971.9
+    },
+    {
+      "timestamp": 1630454400,
+      "openPrice": 47108.7
+    },
+    {
+      "timestamp": 1630540800,
+      "openPrice": 48872.1
+    },
+    {
+      "timestamp": 1630627200,
+      "openPrice": 49290.2
+    },
+    {
+      "timestamp": 1630713600,
+      "openPrice": 50017
+    },
+    {
+      "timestamp": 1630800000,
+      "openPrice": 49956.1
+    },
+    {
+      "timestamp": 1630886400,
+      "openPrice": 51768
+    },
+    {
+      "timestamp": 1630972800,
+      "openPrice": 52688.2
+    },
+    {
+      "timestamp": 1631059200,
+      "openPrice": 46889.5
+    },
+    {
+      "timestamp": 1631145600,
+      "openPrice": 46064.3
+    },
+    {
+      "timestamp": 1631232000,
+      "openPrice": 46389.8
+    },
+    {
+      "timestamp": 1631318400,
+      "openPrice": 44850
+    },
+    {
+      "timestamp": 1631404800,
+      "openPrice": 45148.8
+    },
+    {
+      "timestamp": 1631491200,
+      "openPrice": 46054.6
+    },
+    {
+      "timestamp": 1631577600,
+      "openPrice": 44965.8
+    },
+    {
+      "timestamp": 1631664000,
+      "openPrice": 47107.4
+    },
+    {
+      "timestamp": 1631750400,
+      "openPrice": 48152.3
+    },
+    {
+      "timestamp": 1631836800,
+      "openPrice": 47786.8
+    },
+    {
+      "timestamp": 1631923200,
+      "openPrice": 47269.7
+    },
+    {
+      "timestamp": 1632009600,
+      "openPrice": 48308
+    },
+    {
+      "timestamp": 1632096000,
+      "openPrice": 47247.3
+    },
+    {
+      "timestamp": 1632182400,
+      "openPrice": 42992.9
+    },
+    {
+      "timestamp": 1632268800,
+      "openPrice": 40710.6
+    },
+    {
+      "timestamp": 1632355200,
+      "openPrice": 43563.3
+    },
+    {
+      "timestamp": 1632441600,
+      "openPrice": 44888.9
+    },
+    {
+      "timestamp": 1632528000,
+      "openPrice": 42831.7
+    },
+    {
+      "timestamp": 1632614400,
+      "openPrice": 42710.1
+    },
+    {
+      "timestamp": 1632700800,
+      "openPrice": 43175.1
+    },
+    {
+      "timestamp": 1632787200,
+      "openPrice": 42176.2
+    },
+    {
+      "timestamp": 1632873600,
+      "openPrice": 41012
+    },
+    {
+      "timestamp": 1632960000,
+      "openPrice": 41523.8
+    },
+    {
+      "timestamp": 1633046400,
+      "openPrice": 43798.7
+    },
+    {
+      "timestamp": 1633132800,
+      "openPrice": 48168.7
+    },
+    {
+      "timestamp": 1633219200,
+      "openPrice": 47657.3
+    },
+    {
+      "timestamp": 1633305600,
+      "openPrice": 48227.7
+    },
+    {
+      "timestamp": 1633392000,
+      "openPrice": 49239.2
+    },
+    {
+      "timestamp": 1633478400,
+      "openPrice": 51492.9
+    },
+    {
+      "timestamp": 1633564800,
+      "openPrice": 55350.1
+    },
+    {
+      "timestamp": 1633651200,
+      "openPrice": 53817.4
+    },
+    {
+      "timestamp": 1633737600,
+      "openPrice": 53960.9
+    },
+    {
+      "timestamp": 1633824000,
+      "openPrice": 54967.4
+    },
+    {
+      "timestamp": 1633910400,
+      "openPrice": 54676.2
+    },
+    {
+      "timestamp": 1633996800,
+      "openPrice": 57482.8
+    },
+    {
+      "timestamp": 1634083200,
+      "openPrice": 55991.9
+    },
+    {
+      "timestamp": 1634169600,
+      "openPrice": 57381.2
+    },
+    {
+      "timestamp": 1634256000,
+      "openPrice": 57354.8
+    },
+    {
+      "timestamp": 1634342400,
+      "openPrice": 61669.8
+    },
+    {
+      "timestamp": 1634428800,
+      "openPrice": 60868.5
+    },
+    {
+      "timestamp": 1634515200,
+      "openPrice": 61526.1
+    },
+    {
+      "timestamp": 1634601600,
+      "openPrice": 62018.2
+    },
+    {
+      "timestamp": 1634688000,
+      "openPrice": 64297.7
+    },
+    {
+      "timestamp": 1634774400,
+      "openPrice": 66028
+    },
+    {
+      "timestamp": 1634860800,
+      "openPrice": 62197.4
+    },
+    {
+      "timestamp": 1634947200,
+      "openPrice": 60687.5
+    },
+    {
+      "timestamp": 1635033600,
+      "openPrice": 61297.6
+    },
+    {
+      "timestamp": 1635120000,
+      "openPrice": 60865.1
+    },
+    {
+      "timestamp": 1635206400,
+      "openPrice": 63081.7
+    },
+    {
+      "timestamp": 1635292800,
+      "openPrice": 60325.1
+    },
+    {
+      "timestamp": 1635379200,
+      "openPrice": 58500.1
+    },
+    {
+      "timestamp": 1635465600,
+      "openPrice": 60604.5
+    },
+    {
+      "timestamp": 1635552000,
+      "openPrice": 62246.4
+    },
+    {
+      "timestamp": 1635638400,
+      "openPrice": 61879.2
+    },
+    {
+      "timestamp": 1635724800,
+      "openPrice": 61380.1
+    },
+    {
+      "timestamp": 1635811200,
+      "openPrice": 60954.5
+    },
+    {
+      "timestamp": 1635897600,
+      "openPrice": 63279.8
+    },
+    {
+      "timestamp": 1635984000,
+      "openPrice": 62938
+    },
+    {
+      "timestamp": 1636070400,
+      "openPrice": 61436.4
+    },
+    {
+      "timestamp": 1636156800,
+      "openPrice": 61007.4
+    },
+    {
+      "timestamp": 1636243200,
+      "openPrice": 61535.4
+    },
+    {
+      "timestamp": 1636329600,
+      "openPrice": 63319.6
+    },
+    {
+      "timestamp": 1636416000,
+      "openPrice": 67550.8
+    },
+    {
+      "timestamp": 1636502400,
+      "openPrice": 66950.1
+    },
+    {
+      "timestamp": 1636588800,
+      "openPrice": 64959
+    },
+    {
+      "timestamp": 1636675200,
+      "openPrice": 64825.1
+    },
+    {
+      "timestamp": 1636761600,
+      "openPrice": 64151.3
+    },
+    {
+      "timestamp": 1636848000,
+      "openPrice": 64394.5
+    },
+    {
+      "timestamp": 1636934400,
+      "openPrice": 65495
+    },
+    {
+      "timestamp": 1637020800,
+      "openPrice": 63615.8
+    },
+    {
+      "timestamp": 1637107200,
+      "openPrice": 60137.2
+    },
+    {
+      "timestamp": 1637193600,
+      "openPrice": 60368.6
+    },
+    {
+      "timestamp": 1637280000,
+      "openPrice": 56910.8
+    },
+    {
+      "timestamp": 1637366400,
+      "openPrice": 58107.2
+    },
+    {
+      "timestamp": 1637452800,
+      "openPrice": 59744.2
+    },
+    {
+      "timestamp": 1637539200,
+      "openPrice": 58660.3
+    },
+    {
+      "timestamp": 1637625600,
+      "openPrice": 56290.2
+    },
+    {
+      "timestamp": 1637712000,
+      "openPrice": 57574
+    },
+    {
+      "timestamp": 1637798400,
+      "openPrice": 57170.4
+    },
+    {
+      "timestamp": 1637884800,
+      "openPrice": 58955.3
+    },
+    {
+      "timestamp": 1637971200,
+      "openPrice": 53776.5
+    },
+    {
+      "timestamp": 1638057600,
+      "openPrice": 54757.5
+    },
+    {
+      "timestamp": 1638144000,
+      "openPrice": 57300
+    },
+    {
+      "timestamp": 1638230400,
+      "openPrice": 57830.2
+    },
+    {
+      "timestamp": 1638316800,
+      "openPrice": 57007.4
+    },
+    {
+      "timestamp": 1638403200,
+      "openPrice": 57237.2
+    },
+    {
+      "timestamp": 1638489600,
+      "openPrice": 56528.2
+    },
+    {
+      "timestamp": 1638576000,
+      "openPrice": 53675
+    },
+    {
+      "timestamp": 1638662400,
+      "openPrice": 49245
+    },
+    {
+      "timestamp": 1638748800,
+      "openPrice": 49463.9
+    },
+    {
+      "timestamp": 1638835200,
+      "openPrice": 50544.8
+    },
+    {
+      "timestamp": 1638921600,
+      "openPrice": 50650.1
+    },
+    {
+      "timestamp": 1639008000,
+      "openPrice": 50525.1
+    },
+    {
+      "timestamp": 1639094400,
+      "openPrice": 47576.4
+    },
+    {
+      "timestamp": 1639180800,
+      "openPrice": 47173.9
+    },
+    {
+      "timestamp": 1639267200,
+      "openPrice": 49406
+    },
+    {
+      "timestamp": 1639353600,
+      "openPrice": 50098.8
+    },
+    {
+      "timestamp": 1639440000,
+      "openPrice": 46732.2
+    },
+    {
+      "timestamp": 1639526400,
+      "openPrice": 48399.2
+    },
+    {
+      "timestamp": 1639612800,
+      "openPrice": 48881.8
+    },
+    {
+      "timestamp": 1639699200,
+      "openPrice": 47639.9
+    },
+    {
+      "timestamp": 1639785600,
+      "openPrice": 46166.6
+    },
+    {
+      "timestamp": 1639872000,
+      "openPrice": 46858
+    },
+    {
+      "timestamp": 1639958400,
+      "openPrice": 46687.8
+    },
+    {
+      "timestamp": 1640044800,
+      "openPrice": 46907.3
+    },
+    {
+      "timestamp": 1640131200,
+      "openPrice": 48925.9
+    },
+    {
+      "timestamp": 1640217600,
+      "openPrice": 48624.9
+    },
+    {
+      "timestamp": 1640304000,
+      "openPrice": 50818.8
+    },
+    {
+      "timestamp": 1640390400,
+      "openPrice": 50834.2
+    },
+    {
+      "timestamp": 1640476800,
+      "openPrice": 50436.1
+    },
+    {
+      "timestamp": 1640563200,
+      "openPrice": 50797.4
+    },
+    {
+      "timestamp": 1640649600,
+      "openPrice": 50687.5
+    },
+    {
+      "timestamp": 1640736000,
+      "openPrice": 47549.8
+    },
+    {
+      "timestamp": 1640822400,
+      "openPrice": 46464.5
+    },
+    {
+      "timestamp": 1640908800,
+      "openPrice": 47143.8
+    },
+    {
+      "timestamp": 1640995200,
+      "openPrice": 46150
+    },
+    {
+      "timestamp": 1641081600,
+      "openPrice": 47736.5
+    },
+    {
+      "timestamp": 1641168000,
+      "openPrice": 47301.2
+    },
+    {
+      "timestamp": 1641254400,
+      "openPrice": 46452.5
+    },
+    {
+      "timestamp": 1641340800,
+      "openPrice": 45858.5
+    },
+    {
+      "timestamp": 1641427200,
+      "openPrice": 43432.5
+    },
+    {
+      "timestamp": 1641513600,
+      "openPrice": 43124.5
+    },
+    {
+      "timestamp": 1641600000,
+      "openPrice": 41523.7
+    },
+    {
+      "timestamp": 1641686400,
+      "openPrice": 41693.2
+    },
+    {
+      "timestamp": 1641772800,
+      "openPrice": 41867.1
+    },
+    {
+      "timestamp": 1641859200,
+      "openPrice": 41855.2
+    },
+    {
+      "timestamp": 1641945600,
+      "openPrice": 42728.8
+    },
+    {
+      "timestamp": 1642032000,
+      "openPrice": 43927.8
+    },
+    {
+      "timestamp": 1642118400,
+      "openPrice": 42550
+    },
+    {
+      "timestamp": 1642204800,
+      "openPrice": 43090
+    },
+    {
+      "timestamp": 1642291200,
+      "openPrice": 43111.5
+    },
+    {
+      "timestamp": 1642377600,
+      "openPrice": 43114.5
+    },
+    {
+      "timestamp": 1642464000,
+      "openPrice": 42248
+    },
+    {
+      "timestamp": 1642550400,
+      "openPrice": 42371.3
+    },
+    {
+      "timestamp": 1642636800,
+      "openPrice": 41686.2
+    },
+    {
+      "timestamp": 1642723200,
+      "openPrice": 40686.9
+    },
+    {
+      "timestamp": 1642809600,
+      "openPrice": 36446.2
+    },
+    {
+      "timestamp": 1642896000,
+      "openPrice": 35070.8
+    },
+    {
+      "timestamp": 1642982400,
+      "openPrice": 36270.1
+    },
+    {
+      "timestamp": 1643068800,
+      "openPrice": 36699.5
+    },
+    {
+      "timestamp": 1643155200,
+      "openPrice": 36994.6
+    },
+    {
+      "timestamp": 1643241600,
+      "openPrice": 36846.2
+    },
+    {
+      "timestamp": 1643328000,
+      "openPrice": 37168
+    },
+    {
+      "timestamp": 1643414400,
+      "openPrice": 37735.7
+    },
+    {
+      "timestamp": 1643500800,
+      "openPrice": 38188.3
+    },
+    {
+      "timestamp": 1643587200,
+      "openPrice": 37914
+    },
+    {
+      "timestamp": 1643673600,
+      "openPrice": 38512
+    },
+    {
+      "timestamp": 1643760000,
+      "openPrice": 38721.4
+    },
+    {
+      "timestamp": 1643846400,
+      "openPrice": 36921.5
+    },
+    {
+      "timestamp": 1643932800,
+      "openPrice": 37324.3
+    },
+    {
+      "timestamp": 1644019200,
+      "openPrice": 41597.2
+    },
+    {
+      "timestamp": 1644105600,
+      "openPrice": 41419
+    },
+    {
+      "timestamp": 1644192000,
+      "openPrice": 42426.1
+    },
+    {
+      "timestamp": 1644278400,
+      "openPrice": 43873.1
+    },
+    {
+      "timestamp": 1644364800,
+      "openPrice": 44083.1
+    },
+    {
+      "timestamp": 1644451200,
+      "openPrice": 44420.1
+    },
+    {
+      "timestamp": 1644537600,
+      "openPrice": 43537.5
+    },
+    {
+      "timestamp": 1644624000,
+      "openPrice": 42400.1
+    },
+    {
+      "timestamp": 1644710400,
+      "openPrice": 42241.1
+    },
+    {
+      "timestamp": 1644796800,
+      "openPrice": 42062.5
+    },
+    {
+      "timestamp": 1644883200,
+      "openPrice": 42563.4
+    },
+    {
+      "timestamp": 1644969600,
+      "openPrice": 44569.9
+    },
+    {
+      "timestamp": 1645056000,
+      "openPrice": 43873
+    },
+    {
+      "timestamp": 1645142400,
+      "openPrice": 40547.4
+    },
+    {
+      "timestamp": 1645228800,
+      "openPrice": 40007.4
+    },
+    {
+      "timestamp": 1645315200,
+      "openPrice": 40094.3
+    },
+    {
+      "timestamp": 1645401600,
+      "openPrice": 38400.1
+    },
+    {
+      "timestamp": 1645488000,
+      "openPrice": 37024.2
+    },
+    {
+      "timestamp": 1645574400,
+      "openPrice": 38256.3
+    },
+    {
+      "timestamp": 1645660800,
+      "openPrice": 37250.1
+    },
+    {
+      "timestamp": 1645747200,
+      "openPrice": 38343.6
+    },
+    {
+      "timestamp": 1645833600,
+      "openPrice": 39239.9
+    },
+    {
+      "timestamp": 1645920000,
+      "openPrice": 39120.2
+    },
+    {
+      "timestamp": 1646006400,
+      "openPrice": 37710
+    },
+    {
+      "timestamp": 1646092800,
+      "openPrice": 43188.4
+    },
+    {
+      "timestamp": 1646179200,
+      "openPrice": 44428
+    },
+    {
+      "timestamp": 1646265600,
+      "openPrice": 43922.2
+    },
+    {
+      "timestamp": 1646352000,
+      "openPrice": 42465
+    },
+    {
+      "timestamp": 1646438400,
+      "openPrice": 39137.4
+    },
+    {
+      "timestamp": 1646524800,
+      "openPrice": 39396.3
+    },
+    {
+      "timestamp": 1646611200,
+      "openPrice": 38420.4
+    },
+    {
+      "timestamp": 1646697600,
+      "openPrice": 38009.8
+    },
+    {
+      "timestamp": 1646784000,
+      "openPrice": 38752.6
+    },
+    {
+      "timestamp": 1646870400,
+      "openPrice": 41959
+    },
+    {
+      "timestamp": 1646956800,
+      "openPrice": 39435.8
+    },
+    {
+      "timestamp": 1647043200,
+      "openPrice": 38727.7
+    },
+    {
+      "timestamp": 1647129600,
+      "openPrice": 38785
+    },
+    {
+      "timestamp": 1647216000,
+      "openPrice": 37783.7
+    },
+    {
+      "timestamp": 1647302400,
+      "openPrice": 39689.2
+    },
+    {
+      "timestamp": 1647388800,
+      "openPrice": 39321.7
+    },
+    {
+      "timestamp": 1647475200,
+      "openPrice": 41129.9
+    },
+    {
+      "timestamp": 1647561600,
+      "openPrice": 40941.1
+    },
+    {
+      "timestamp": 1647648000,
+      "openPrice": 41779.4
+    },
+    {
+      "timestamp": 1647734400,
+      "openPrice": 42218
+    },
+    {
+      "timestamp": 1647820800,
+      "openPrice": 41286.1
+    },
+    {
+      "timestamp": 1647907200,
+      "openPrice": 41014.3
+    },
+    {
+      "timestamp": 1647993600,
+      "openPrice": 42377.7
+    },
+    {
+      "timestamp": 1648080000,
+      "openPrice": 42910
+    },
+    {
+      "timestamp": 1648166400,
+      "openPrice": 43989
+    },
+    {
+      "timestamp": 1648252800,
+      "openPrice": 44315.5
+    },
+    {
+      "timestamp": 1648339200,
+      "openPrice": 44547.2
+    },
+    {
+      "timestamp": 1648425600,
+      "openPrice": 46855.3
+    },
+    {
+      "timestamp": 1648512000,
+      "openPrice": 47138.3
+    },
+    {
+      "timestamp": 1648598400,
+      "openPrice": 47440.3
+    },
+    {
+      "timestamp": 1648684800,
+      "openPrice": 47079.2
+    },
+    {
+      "timestamp": 1648771200,
+      "openPrice": 45600.2
+    },
+    {
+      "timestamp": 1648857600,
+      "openPrice": 46312
+    },
+    {
+      "timestamp": 1648944000,
+      "openPrice": 45828.9
+    },
+    {
+      "timestamp": 1649030400,
+      "openPrice": 46424.2
+    },
+    {
+      "timestamp": 1649116800,
+      "openPrice": 46617.1
+    },
+    {
+      "timestamp": 1649203200,
+      "openPrice": 45498.3
+    },
+    {
+      "timestamp": 1649289600,
+      "openPrice": 43179.5
+    },
+    {
+      "timestamp": 1649376000,
+      "openPrice": 43469.8
+    },
+    {
+      "timestamp": 1649462400,
+      "openPrice": 42282.6
+    },
+    {
+      "timestamp": 1649548800,
+      "openPrice": 42781.7
+    },
+    {
+      "timestamp": 1649635200,
+      "openPrice": 42164.9
+    },
+    {
+      "timestamp": 1649721600,
+      "openPrice": 39530.5
+    },
+    {
+      "timestamp": 1649808000,
+      "openPrice": 40078.7
+    },
+    {
+      "timestamp": 1649894400,
+      "openPrice": 41150
+    },
+    {
+      "timestamp": 1649980800,
+      "openPrice": 39978.9
+    },
+    {
+      "timestamp": 1650067200,
+      "openPrice": 40569.4
+    },
+    {
+      "timestamp": 1650153600,
+      "openPrice": 40391
+    },
+    {
+      "timestamp": 1650240000,
+      "openPrice": 39669.8
+    },
+    {
+      "timestamp": 1650326400,
+      "openPrice": 40811.4
+    },
+    {
+      "timestamp": 1650412800,
+      "openPrice": 41506.2
+    },
+    {
+      "timestamp": 1650499200,
+      "openPrice": 41332.2
+    },
+    {
+      "timestamp": 1650585600,
+      "openPrice": 40483.38
+    }
+  ]
+}

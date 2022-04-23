@@ -10,6 +10,9 @@ Flags
 `-watts` watts used by the miers
 `-uptimePercent` percent of time mining operation is online (expressed as an integer)
 `-fixedCosts` total costs of miners, hardware, and other operational fixed costs
+`-startDate` date of mining operation start
+`-messariApiKey` api key from messari.io for historical price data
+
 
 Example: `go run main.go -token abc123 -startDate 01/01/2022 -kwhPrice .14 -watts 3300 -uptimePercent 98 -fixedCosts 7500`
 
@@ -24,3 +27,5 @@ Percent paid off: 71.59%
 Expected more days until breakeven: 27.89
 Expected breakeven date: 04/09/2022
 ```
+
+![Example output plot](points.png)
