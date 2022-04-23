@@ -19,17 +19,20 @@ import (
 )
 
 func main() {
-	var token, messariApiKey, startDate string
-	var kwhPrice, watts, uptimePercent, fixedCosts float64
-	flag.StringVar(&token, "token", "default-token", "Specify Slush Pool token.")
+	var slushToken, messariApiKey, startDate string
+	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined float64
+	flag.StringVar(&slushToken, "slushToken", "default-token", "Specify Slush Pool token.")
 	flag.Float64Var(&kwhPrice, "kwhPrice", 0.15, "Specify price paid per kilowatt hour.")
 	flag.Float64Var(&watts, "watts", 3200, "Specify watts used in total.")
 	flag.Float64Var(&uptimePercent, "uptimePercent", 100.0, "Specify percent uptime of your miners.")
 	flag.Float64Var(&fixedCosts, "fixedCosts", 6295.55, "Specify mining setup fix costs.")
+	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not sats).")
 	flag.StringVar(&startDate, "startDate", "01/01/2022", "Specify start date of mining operation.")
 	flag.StringVar(&messariApiKey, "messariApiKey", "default", "Specify Messari API Key")
 	flag.Parse()
-
+	if slushToken == "default-token" && bitcoinMined == 0 {
+		fmt.Printf("Must enter either slush api token or bitcoinMined")
+	}
 	price, err := GetBitcoinPrice()
 	if err != nil {
 		fmt.Printf("Error getting bitcoin price: %s\n", err.Error())
@@ -42,12 +45,15 @@ func main() {
 		return
 	}
 	fmt.Printf("Days since start: %s\n", fmt.Sprintf("%.2f", daysSinceStart))
-	coinsMined, err := GetUserMinedCoinsTotal(token)
-	if err != nil {
-		fmt.Printf("Error GetUseRMinedCoinsTotal: %s\n", err.Error())
+
+	if slushToken != "default-token" {
+		bitcoinMined, err = GetUserMinedCoinsTotal(slushToken)
+		if err != nil {
+			fmt.Printf("Error GetUseRMinedCoinsTotal: %s\n", err.Error())
+		}
 	}
-	fmt.Printf("Average coins per day: %s\n", fmt.Sprintf("%.8f", AverageCoinsPerDay(daysSinceStart, coinsMined)))
-	dollarinosEarned := DollarinosEarned(coinsMined, price)
+	fmt.Printf("Average coins per day: %s\n", fmt.Sprintf("%.8f", AverageCoinsPerDay(daysSinceStart, bitcoinMined)))
+	dollarinosEarned := DollarinosEarned(bitcoinMined, price)
 	fmt.Printf("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
 	electricCosts := ElectricCosts(kwhPrice, uptimePercent, daysSinceStart, watts)
 	fmt.Printf("Total electric costs: $%s\n", fmt.Sprintf("%.2f", electricCosts))
@@ -83,8 +89,7 @@ func main() {
 	// if err != nil {
 	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
 	// }
-	fmt.Printf("days since start unix: %v\n", unixDaysSinceStart)
-	fmt.Printf("coins mined: %v\n", coinsMined)
+	fmt.Printf("bitcoin mined: %v\n", bitcoinMined)
 	swanData, swanSats := SwanDailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
 	ahData, ahSats := AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
 	fmt.Printf("americanHodlSats: %v\n", ahSats)
@@ -92,7 +97,7 @@ func main() {
 	// MessariData(messariApiKey)
 	antiHomeMinerData, antiHomeMinerSats := AntiHomeMiner(fixedCosts, electricCosts, unixDaysSinceStart, priceData)
 	fmt.Printf("antiHomeMinerSats: %v\n", antiHomeMinerSats)
-	MakePlot(ahData, swanData, antiHomeMinerData, coinsMined)
+	MakePlot(ahData, swanData, antiHomeMinerData, bitcoinMined)
 }
 
 func DateToUnixTimestamp(start string) (timestamp string, err error) {
@@ -376,7 +381,6 @@ func CompareData() {
 
 func MakeMinedSatsData(ahData []float64, minedSats float64) (minedData []float64) {
 	minedData = []float64{}
-	fmt.Printf("lenah: %d\n", len(ahData))
 	for range ahData {
 		minedData = append(minedData, minedSats)
 	}
