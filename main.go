@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"image/color"
 	"io/ioutil"
 	"log"
 	"math"
@@ -13,14 +14,18 @@ import (
 
 	"github.com/tidwall/gjson"
 	"gonum.org/v1/plot"
+	"gonum.org/v1/plot/font"
 	"gonum.org/v1/plot/plotter"
 	"gonum.org/v1/plot/plotutil"
+	"gonum.org/v1/plot/text"
 	"gonum.org/v1/plot/vg"
+	"gonum.org/v1/plot/vg/draw"
 )
 
 func main() {
 	var slushToken, messariApiKey, startDate string
 	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined float64
+	var hideBitcoinOnGraph bool
 	flag.StringVar(&slushToken, "slushToken", "default-token", "Specify Slush Pool token.")
 	flag.Float64Var(&kwhPrice, "kwhPrice", 0.15, "Specify price paid per kilowatt hour.")
 	flag.Float64Var(&watts, "watts", 3200, "Specify watts used in total.")
@@ -29,6 +34,8 @@ func main() {
 	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not sats).")
 	flag.StringVar(&startDate, "startDate", "01/01/2022", "Specify start date of mining operation.")
 	flag.StringVar(&messariApiKey, "messariApiKey", "default", "Specify Messari API Key")
+	flag.BoolVar(&hideBitcoinOnGraph, "hideBitcoinOnGraph", false, "Will hide sats on y-axis of graph, good for opsec when sharing the image. true to hide, false to keep the figure displayed")
+
 	flag.Parse()
 	if slushToken == "default-token" && bitcoinMined == 0 {
 		fmt.Printf("Must enter either slush api token or bitcoinMined")
@@ -97,7 +104,8 @@ func main() {
 	// MessariData(messariApiKey)
 	antiHomeMinerData, antiHomeMinerSats := AntiHomeMiner(fixedCosts, electricCosts, unixDaysSinceStart, priceData)
 	fmt.Printf("antiHomeMinerSats: %v\n", antiHomeMinerSats)
-	MakePlot(ahData, swanData, antiHomeMinerData, bitcoinMined)
+	MakePlot(ahData, swanData, antiHomeMinerData, bitcoinMined, hideBitcoinOnGraph)
+
 }
 
 func DateToUnixTimestamp(start string) (timestamp string, err error) {
@@ -387,13 +395,23 @@ func MakeMinedSatsData(ahData []float64, minedSats float64) (minedData []float64
 	return
 }
 
-func MakePlot(ahData, swanData, antiMinerData []float64, minedSats float64) {
-
+func MakePlot(ahData, swanData, antiMinerData []float64, minedSats float64, hideAxis bool) {
 	minedSatsData := MakeMinedSatsData(ahData, minedSats)
 	p := plot.New()
+	// p.Y.Tick.Label
 	p.Title.Text = "Sats Acquired Over Time"
 	p.X.Label.Text = "Time"
-	p.Y.Label.Text = "Sats"
+	p.Y.Label.Text = "Bitcoin"
+	if hideAxis {
+		p.Y.Tick.Length = 0
+		p.Y.Tick.Label = text.Style{
+			Color:   color.White,
+			Font:    font.From(plot.DefaultFont, 0),
+			XAlign:  draw.XCenter,
+			YAlign:  draw.YBottom,
+			Handler: plot.DefaultTextHandler,
+		}
+	}
 	err := plotutil.AddLinePoints(p,
 		"AmericanHodl", plotData(ahData),
 		"DCA", plotData(swanData),
@@ -404,7 +422,7 @@ func MakePlot(ahData, swanData, antiMinerData []float64, minedSats float64) {
 	}
 
 	// Save the plot to a PNG file.
-	if err := p.Save(4*vg.Inch, 4*vg.Inch, "points.png"); err != nil {
+	if err := p.Save(4*vg.Inch, 4*vg.Inch, "points2.png"); err != nil {
 		panic(err)
 	}
 }
