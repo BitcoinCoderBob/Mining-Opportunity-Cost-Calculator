@@ -35,6 +35,10 @@ type RequestPayload struct {
 	HideBitcoinOnGraph bool    `json:"hideBitcoinOnGraph"`
 }
 
+type ReturnPayload struct {
+	BitcoinPrice float64 `json:"bitcoinPrice`
+}
+
 type Client struct {
 	PriceDataKrakenPath   string
 	PriceDataCoinbasePath string
@@ -53,7 +57,7 @@ func New(cfg *config.Config, logger *logrus.Logger) *Client {
 
 type Interface interface {
 	GenerateImage(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error)
-	GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error)
+	GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*ReturnPayload, error)
 	AverageCoinsPerDay(days, coins float64) (averageCoinsPerDay float64)
 	DollarinosEarned(coins, price float64) (dollarinos float64)
 	ElectricCosts(kwhPrice, uptimePercentage, uptimeDays, watts float64) (electricCosts float64)
@@ -70,14 +74,14 @@ type Interface interface {
 	MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64)
 }
 
-func (c *Client) GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error) {
-
+func (c *Client) GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*ReturnPayload, error) {
+	returnPayload := &ReturnPayload{}
 	price, err := externalData.GetBitcoinPrice()
 	if err != nil {
 		c.Logger.Error("error getting bitcoin price: %w", err)
 		return nil, fmt.Errorf("error getting bitcoin price: %w", err)
 	}
-
+	returnPayload.BitcoinPrice = price
 	c.Logger.Info("Bicoin current price: $%s\n", fmt.Sprintf("%.2f", price))
 	daysSinceStart, err := c.DaysSinceStart(requestPayload.StartDate)
 	if err != nil {
@@ -147,8 +151,8 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 		dcaBitcoin:           "Daily-DCA",
 		antiHomeMinerBitcoin: "Anti-Miner",
 	}*/
-	stub := ""
-	return &stub, nil
+
+	return returnPayload, nil
 }
 
 func (c *Client) GenerateImage(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error) {
