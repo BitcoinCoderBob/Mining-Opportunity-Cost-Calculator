@@ -48,6 +48,21 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.RequestPayload) {
-	//TODO: handle post request to calculate here
+
+	if requestPayload.SlushToken == "default-token" && requestPayload.BitcoinMined == 0 {
+		h.actx.Logger.Error("error must send either slush api token or bitcoinMined")
+		w.WriteHeader(http.StatusBadRequest)
+		_, _ = w.Write([]byte("error must send either slush api token or bitcoinMined"))
+
+	}
+
+	_, err := h.actx.Calc.Drive(*requestPayload, h.actx.ExternalData, h.actx.Utils)
+	if err != nil {
+		h.actx.Logger.WithError(err).Error("error must send either slush api token or bitcoinMined")
+		w.WriteHeader(http.StatusInternalServerError)
+		_, _ = w.Write([]byte(err.Error()))
+	}
+	w.WriteHeader(http.StatusOK)
+	//	_, _ = w.Write([]byte(results))
 
 }

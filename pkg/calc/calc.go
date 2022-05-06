@@ -70,10 +70,7 @@ type Interface interface {
 }
 
 func (c *Client) Drive(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (map[float64]string, error) {
-	if requestPayload.SlushToken == "default-token" && requestPayload.BitcoinMined == 0 {
-		c.Logger.Error("error must send either slush api token or bitcoinMined")
-		return nil, fmt.Errorf("error must send either slush api token or bitcoinMined")
-	}
+
 	price, err := externalData.GetBitcoinPrice()
 	if err != nil {
 		c.Logger.Error("error getting bitcoin price: %w", err)
