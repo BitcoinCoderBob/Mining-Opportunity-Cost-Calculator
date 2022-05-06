@@ -58,7 +58,7 @@ type ReturnPayload struct {
 	AhData                     []float64          `json:"ahData"`
 	AntiHomeMinerBitcoin       float64            `json:"antiHomeMinerBitcoin"`
 	AntiHomeMinerData          []float64          `json:"antiHomeMinerData"`
-	Rankings                   map[string]float64 `json:"rankings:"`
+	Rankings                   map[string]float64 `json:"rankings"`
 }
 
 type Client struct {
