@@ -7,7 +7,13 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
+var (
+	EnvProduction = "production"
+)
+
 type Config struct {
+	Environment           string `yaml:"environment"`
+	Address               string `yaml:"address"`
 	PriceDataKrakenPath   string `yaml:"priceDataKrakenPath"`
 	MessariUrl            string `yaml:"messariUrl"`
 	BlockchainInfoUrl     string `yaml:"blockchainInfoUrl"`
