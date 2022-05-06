@@ -29,7 +29,7 @@ type RequestPayload struct {
 	KwhPrice           float64  `json:"kwhPrice"`
 	Watts              float64  `json:"watts"`
 	ElectricCosts      *float64 `json:"electicCosts"`
-	UptimePercent      float64  `json:"updtimePercent"`
+	UptimePercent      float64  `json:"uptimePercent"`
 	FixedCosts         float64  `json:"fixedCosts"`
 	BitcoinMined       float64  `json:"bitcoinMined"`
 	MessariApiKey      string   `json:"messariApiKey"`
@@ -120,15 +120,15 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 	}
 	(*returnPayload).BitcoinMined = requestPayload.BitcoinMined
 	(*returnPayload).AverageCoinsPerDay = c.AverageCoinsPerDay((*returnPayload).DaysSinceStarted, returnPayload.BitcoinMined)
-	(*returnPayload).DollarinosEarned = c.DollarinosEarned(returnPayload.BitcoinMined, (*returnPayload).BitcoinPrice)
+	(*returnPayload).DollarinosEarned = c.DollarinosEarned((*returnPayload).BitcoinMined, (*returnPayload).BitcoinPrice)
 
 	if requestPayload.ElectricCosts == nil || *requestPayload.ElectricCosts == 0 {
 		electicCost := c.ElectricCosts(requestPayload.KwhPrice, requestPayload.UptimePercent, (*returnPayload).DaysSinceStarted, requestPayload.Watts)
 		requestPayload.ElectricCosts = &electicCost
 	}
-	fmt.Println(*requestPayload.ElectricCosts)
-	(*returnPayload).FixedCosts = requestPayload.FixedCosts
+
 	(*returnPayload).ElectricCosts = *requestPayload.ElectricCosts
+	(*returnPayload).FixedCosts = requestPayload.FixedCosts
 	(*returnPayload).PercentPaidOff = c.PercentPaidOff((*returnPayload).DollarinosEarned, (*returnPayload).FixedCosts, (*returnPayload).ElectricCosts)
 	(*returnPayload).BreakevenPriceIncrease = ((100 / (*returnPayload).PercentPaidOff) - 1) * 100
 	(*returnPayload).BreakevenPrice = c.BreakEvenPrice((*returnPayload).PercentPaidOff, (*returnPayload).BitcoinPrice)
@@ -163,7 +163,7 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 		(*returnPayload).DcaBitcoin:           "Daily-DCA",
 		(*returnPayload).AntiHomeMinerBitcoin: "Anti-Miner",
 	}
-	fmt.Println(rankings)
+
 	(*returnPayload).Rankings = c.CompareStrategies(requestPayload.BitcoinMined, rankings)
 	return returnPayload, nil
 }
@@ -260,9 +260,7 @@ func (c *Client) AntiHomeMiner(fixedCosts, electricCosts, daysSinceStart float64
 	bitcoinAcquired := 0.0
 	cumulativeTotal := make([]float64, 0)
 	dollarsToSpendPerDay := electricCosts / daysSinceStart
-	fmt.Println(dollarsToSpendPerDay)
-	fmt.Println(electricCosts)
-	fmt.Println(len(priceData))
+
 	for _, val := range priceData {
 		bitcoinAcquired += dollarsToSpendPerDay / val
 		cumulativeTotal = append(cumulativeTotal, bitcoinAcquired)
