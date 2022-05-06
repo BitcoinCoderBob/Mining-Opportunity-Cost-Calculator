@@ -118,7 +118,6 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 		}
 	}
 	(*returnPayload).BitcoinMined = requestPayload.BitcoinMined
-	c.Logger.Info("Average coins per day: %s\n", fmt.Sprintf("%.8f", c.AverageCoinsPerDay((*returnPayload).DaysSinceStarted, requestPayload.BitcoinMined)))
 	(*returnPayload).AverageCoinsPerDay = c.AverageCoinsPerDay((*returnPayload).DaysSinceStarted, returnPayload.BitcoinMined)
 	(*returnPayload).DollarinosEarned = c.DollarinosEarned(returnPayload.BitcoinMined, price)
 
@@ -148,15 +147,16 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 	(*returnPayload).TotalDollarsSpent = requestPayload.ElectricCosts + requestPayload.FixedCosts
 	unixDaysSinceStart, err := utils.RegularDateToUnix(requestPayload.StartDate)
 	if err != nil {
-		fmt.Printf("error with RegularDateToUnix: %s\n", err)
+		c.Logger.Error("error with RegularDateToUnix: %w", err)
+		return nil, fmt.Errorf("error with RegularDateToUnix: %w", err)
 	}
 
-	(*returnPayload).AhData, (*returnPayload).DcaBitcoin = c.DailyDCABuy((*returnPayload).TotalDollarsSpent, unixDaysSinceStart, priceData)
-	(*returnPayload).DcaData, (*returnPayload).AhBitcoin = c.AmericanHodlSlamBuy((*returnPayload).TotalDollarsSpent, priceData[0], len(priceData))
+	(*returnPayload).DcaData, (*returnPayload).DcaBitcoin = c.DailyDCABuy((*returnPayload).TotalDollarsSpent, unixDaysSinceStart, priceData)
+	(*returnPayload).AhData, (*returnPayload).AhBitcoin = c.AmericanHodlSlamBuy((*returnPayload).TotalDollarsSpent, priceData[0], len(priceData))
 	(*returnPayload).AntiHomeMinerData, (*returnPayload).AntiHomeMinerBitcoin = c.AntiHomeMiner((*returnPayload).FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
 
-	c.Logger.Info("Percentage comparison of strategies versus mining. \n\n")
-	rankings := map[float64]string{(*returnPayload).AhBitcoin: "AmericanHodl",
+	rankings := map[float64]string{
+		(*returnPayload).AhBitcoin:            "AmericanHodl",
 		(*returnPayload).DcaBitcoin:           "Daily-DCA",
 		(*returnPayload).AntiHomeMinerBitcoin: "Anti-Miner",
 	}
@@ -206,10 +206,6 @@ func (c *Client) DaysSinceStartUnixTimestamp(startDate string) (days float64, er
 		return
 	}
 	tm := time.Unix(i, 0)
-	// t, err := time.Parse("1136239445", "1405544146")
-	// if err != nil {
-	// 	return
-	// }
 	durationSinceStart := time.Since(tm)
 	days = durationSinceStart.Hours() / 24
 	return math.Floor(days), err
@@ -245,7 +241,6 @@ func (c *Client) AmericanHodlSlamBuy(dollarsAvailable, openPrice float64, number
 
 func (c *Client) DailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
 	dollarsToSpendPerDay := dollarsAvialble / daysSinceStart
-	c.Logger.Info("number of days to stack: %v   lenPriceData: %d\n", daysSinceStart, len(priceData))
 	for _, val := range priceData {
 		bitcoinAcquired += dollarsToSpendPerDay / val
 		cumulativeTotal = append(cumulativeTotal, bitcoinAcquired)
@@ -321,7 +316,6 @@ func (c *Client) CompareStrategies(bitcoinMined float64, m map[float64]string) m
 		case percentage > 1:
 			percentage = percentage - 1
 		}
-		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
 		results[k] = percentage * 100
 	}
 	rankingResults := make(map[string]float64, len(m))
@@ -368,7 +362,7 @@ func (c *Client) MakePlot(ahData, dcaData, antiMinerData []float64, minedBitcoin
 	}
 
 	// Save the plot to a PNG file.
-	var fileName = fmt.Sprintf("%d-points.png", time.Now().UnixNano())
+	fileName := fmt.Sprintf("%d-points.png", time.Now().UnixNano())
 
 	if err := p.Save(4*vg.Inch, 4*vg.Inch, fileName); err != nil {
 		return nil, fmt.Errorf("error saving plot: %w", err)
