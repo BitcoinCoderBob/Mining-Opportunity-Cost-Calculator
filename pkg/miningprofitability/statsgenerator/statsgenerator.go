@@ -2,7 +2,6 @@ package statsgenerator
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
 
@@ -62,7 +61,7 @@ func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.Requ
 		w.WriteHeader(http.StatusInternalServerError)
 		_, _ = w.Write([]byte(err.Error()))
 	}
-	fmt.Println(stats)
+
 	byteRes, err := json.Marshal(stats)
 	if err != nil {
 		h.actx.Logger.WithError(err).Error("error must send either slush api token or bitcoinMined")

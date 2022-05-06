@@ -23,7 +23,7 @@ type Client struct {
 
 type Interface interface {
 	MessariData(apiKey string)
-	GetBitcoinPrice() (price float64, err error)
+	GetBitcoinPrice() (*float64, error)
 	GetUserMinedCoinsTotal(token string) (coins float64, err error)
 	GetPriceDataFromDateRange(start string) (priceData []float64)
 }
@@ -69,16 +69,14 @@ func (c *Client) MessariData(apiKey string) {
 	}
 }
 
-func (c *Client) GetBitcoinPrice() (price float64, err error) {
+func (c *Client) GetBitcoinPrice() (*float64, error) {
 	req, err := http.NewRequest("GET", c.BlockchainInfoUrl, nil)
 	if err != nil {
-		fmt.Printf("Got error %s", err.Error())
-		return
+		return nil, fmt.Errorf("Got error %w", err)
 	}
 	response, err := c.httpClient.Do(req)
 	if err != nil {
-		fmt.Printf("Got error %s", err.Error())
-		return
+		return nil, fmt.Errorf("Got error %w", err)
 	}
 	body, err := ioutil.ReadAll(response.Body)
 	if err != nil {
@@ -87,10 +85,10 @@ func (c *Client) GetBitcoinPrice() (price float64, err error) {
 	defer response.Body.Close()
 	s, err := strconv.ParseFloat(string(body), 64)
 	if err != nil {
-		return
+		return nil, err
 	}
-	price = 500 / s
-	return
+	priceVal := 500 / s
+	return &priceVal, nil
 }
 
 func (c *Client) GetUserMinedCoinsTotal(token string) (coins float64, err error) {
@@ -141,5 +139,5 @@ func (c *Client) GetPriceDataFromDateRange(start string) (priceData []float64) {
 			priceData = append(priceData, price)
 		}
 	}
-	return
+	return priceData
 }
