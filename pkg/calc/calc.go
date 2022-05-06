@@ -37,7 +37,28 @@ type RequestPayload struct {
 }
 
 type ReturnPayload struct {
-	BitcoinPrice float64 `json:"bitcoinPrice"`
+	BitcoinMined               float64            `json:"bitcoinMined"`
+	ElectricCosts              float64            `json:"electicCosts"`
+	FixedCosts                 float64            `json:"fixedCosts"`
+	BitcoinPrice               float64            `json:"bitcoinPrice"`
+	DaysSinceStarted           float64            `json:"daysSinceStart"`
+	AverageCoinsPerDay         float64            `json:"averageCoinsPerDay"`
+	DollarinosEarned           float64            `json:"dollarinosEarned"`
+	PercentPaidOff             float64            `json:"percentPaidOff"`
+	BreakevenPriceIncrease     float64            `json:"breakevenPriceIncrease"`
+	BreakevenPrice             float64            `json:"breakevenPrice"`
+	DaysUntilBreakeven         float64            `json:"daysUntilBreakeven"`
+	TotalMiningDaysToBreakEven float64            `json:"totalMiningDaysToBreakEven"`
+	ExpectedBreakevenDate      string             `json:"expectedBreakevenDate"`
+	DailyElectricCost          float64            `json:"dailyElectricCost"`
+	TotalDollarsSpent          float64            `json:"totalDollarsSpent"`
+	DcaBitcoin                 float64            `json:"dcaBitcoin"`
+	DcaData                    []float64          `json:"dcaData"`
+	AhBitcoin                  float64            `json:"ahBitcoin"`
+	AhData                     []float64          `json:"ahData"`
+	AntiHomeMinerBitcoin       float64            `json:"antiHomeMinerBitcoin"`
+	AntiHomeMinerData          []float64          `json:"antiHomeMinerData"`
+	Rankings                   map[string]float64 `json:"rankings"`
 }
 
 type Client struct {
@@ -72,8 +93,8 @@ type Interface interface {
 	DailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64)
 	AntiHomeMiner(fixedCosts, electricCosts, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64)
 	CompareData() error
+	CompareStrategies(bitcoinMined float64, m map[float64]string) map[string]float64
 	MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64)
-	CompareStrategies(bitcoinMined float64, m map[float64]string)
 }
 
 func (c *Client) GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*ReturnPayload, error) {
@@ -83,15 +104,12 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 		c.Logger.Error("error getting bitcoin price: %w", err)
 		return nil, fmt.Errorf("error getting bitcoin price: %w", err)
 	}
-	returnPayload.BitcoinPrice = price
-	c.Logger.Info("Bicoin current price: $%s\n", fmt.Sprintf("%.2f", price))
-	daysSinceStart, err := c.DaysSinceStart(requestPayload.StartDate)
+	(*returnPayload).BitcoinPrice = price
+	(*returnPayload).DaysSinceStarted, err = c.DaysSinceStart(requestPayload.StartDate)
 	if err != nil {
 		c.Logger.Error("error calculating days since start: %w", err)
 		return nil, fmt.Errorf("error calculating days since start: %w", err)
 	}
-	c.Logger.Info("Days since start: %s\n", fmt.Sprintf("%.2f", daysSinceStart))
-
 	if requestPayload.SlushToken != "default-token" {
 		requestPayload.BitcoinMined, err = externalData.GetUserMinedCoinsTotal(requestPayload.SlushToken)
 		if err != nil {
@@ -99,135 +117,59 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 			return nil, fmt.Errorf("error GetUseRMinedCoinsTotal: %w", err)
 		}
 	}
-	c.Logger.Info("Average coins per day: %s\n", fmt.Sprintf("%.8f", c.AverageCoinsPerDay(daysSinceStart, requestPayload.BitcoinMined)))
-	dollarinosEarned := c.DollarinosEarned(requestPayload.BitcoinMined, price)
-	c.Logger.Info("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
+	(*returnPayload).BitcoinMined = requestPayload.BitcoinMined
+	c.Logger.Info("Average coins per day: %s\n", fmt.Sprintf("%.8f", c.AverageCoinsPerDay((*returnPayload).DaysSinceStarted, requestPayload.BitcoinMined)))
+	(*returnPayload).AverageCoinsPerDay = c.AverageCoinsPerDay((*returnPayload).DaysSinceStarted, returnPayload.BitcoinMined)
+	(*returnPayload).DollarinosEarned = c.DollarinosEarned(returnPayload.BitcoinMined, price)
+
 	if requestPayload.ElectricCosts == 0 {
-		requestPayload.ElectricCosts = c.ElectricCosts(requestPayload.KwhPrice, requestPayload.UptimePercent, daysSinceStart, requestPayload.Watts)
+		requestPayload.ElectricCosts = c.ElectricCosts(requestPayload.KwhPrice, requestPayload.UptimePercent, (*returnPayload).DaysSinceStarted, requestPayload.Watts)
 	}
-	c.Logger.Info("Total electric costs: $%s\n", fmt.Sprintf("%.2f", requestPayload.ElectricCosts))
-	percentPaidOff := c.PercentPaidOff(dollarinosEarned, requestPayload.FixedCosts, requestPayload.ElectricCosts)
-	c.Logger.Info("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
-	c.Logger.Info("Bitcoin percentage increase needed to be breakeven: %s%%\n", fmt.Sprintf("%.2f", ((100/percentPaidOff)-1)*100))
-	breakevenPrice := c.BreakEvenPrice(percentPaidOff, price)
-	c.Logger.Info("Breakeven price: $%s\n", fmt.Sprintf("%.2f", breakevenPrice))
-	daysUntilBreakeven := c.DaysUntilBreakeven(daysSinceStart, percentPaidOff)
-	c.Logger.Info("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
-	c.Logger.Info("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+daysSinceStart))
-	futureDate, err := c.DateFromDaysNow(daysUntilBreakeven)
+	(*returnPayload).FixedCosts = requestPayload.FixedCosts
+	(*returnPayload).ElectricCosts = requestPayload.ElectricCosts
+	(*returnPayload).PercentPaidOff = c.PercentPaidOff((*returnPayload).DollarinosEarned, (*returnPayload).FixedCosts, (*returnPayload).ElectricCosts)
+	(*returnPayload).BreakevenPriceIncrease = ((100 / (*returnPayload).PercentPaidOff) - 1) * 100
+	(*returnPayload).BreakevenPrice = c.BreakEvenPrice((*returnPayload).PercentPaidOff, price)
+	(*returnPayload).DaysUntilBreakeven = c.DaysUntilBreakeven((*returnPayload).DaysSinceStarted, (*returnPayload).PercentPaidOff)
+	(*returnPayload).TotalMiningDaysToBreakEven = (*returnPayload).DaysUntilBreakeven + (*returnPayload).DaysSinceStarted
+	(*returnPayload).ExpectedBreakevenDate, err = c.DateFromDaysNow((*returnPayload).DaysUntilBreakeven)
 	if err != nil {
 		c.Logger.Error("error with DateFromDaysNow: %w", err)
 		return nil, fmt.Errorf("error with DateFromDaysNow: %w", err)
 	}
-	c.Logger.Info("Expected breakeven date: %s\n", futureDate)
-	c.Logger.Info("\n\n------------------------------------------------\n\n")
-	dailyElectricCost := requestPayload.ElectricCosts / daysSinceStart
-	c.Logger.Info("Electric costs per day: $%s\n", fmt.Sprintf("%.2f", dailyElectricCost))
+
+	(*returnPayload).DailyElectricCost = (*returnPayload).ElectricCosts / (*returnPayload).DaysSinceStarted
 	unixTimeStampStart, err := utils.DateToUnixTimestamp(requestPayload.StartDate)
 	if err != nil {
 		c.Logger.Error("error with DateToUnixTimestamp: %w", err)
 		return nil, fmt.Errorf("error with DateToUnixTimestamp: %w", err)
 	}
 	priceData := externalData.GetPriceDataFromDateRange(unixTimeStampStart)
-	totalDollarsSpent := requestPayload.ElectricCosts + requestPayload.FixedCosts
+	(*returnPayload).TotalDollarsSpent = requestPayload.ElectricCosts + requestPayload.FixedCosts
 	unixDaysSinceStart, err := utils.RegularDateToUnix(requestPayload.StartDate)
 	if err != nil {
 		fmt.Printf("error with RegularDateToUnix: %s\n", err)
 	}
-	// fmt.Printf("a: %v\n", a)
-	// daysSinceStartUnix, err := DaysSinceStartUnixTimestamp("")
-	// if err != nil {
-	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
-	// }
-	c.Logger.Info("bitcoin mined: %v\n", requestPayload.BitcoinMined)
-	_, dcaBitcoin := c.DailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
-	_, ahBitcoin := c.AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
-	c.Logger.Info("AmericanHodl: %v\n", ahBitcoin)
-	c.Logger.Info("Daily-DCA: %v\n", dcaBitcoin)
-	// MessariData(messariApiKey)
-	_, antiHomeMinerBitcoin := c.AntiHomeMiner(requestPayload.FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
-	c.Logger.Info("Anti-Miner: %v\n", antiHomeMinerBitcoin)
-	c.Logger.Info("\n\n------------------------------------------------\n\n")
-	c.Logger.Info("Percentage comparison of strategies versus mining. \n\n")
-	/*rankings := map[float64]string{ahBitcoin: "AmericanHodl",
-		dcaBitcoin:           "Daily-DCA",
-		antiHomeMinerBitcoin: "Anti-Miner",
-	}*/
 
+	(*returnPayload).AhData, (*returnPayload).DcaBitcoin = c.DailyDCABuy((*returnPayload).TotalDollarsSpent, unixDaysSinceStart, priceData)
+	(*returnPayload).DcaData, (*returnPayload).AhBitcoin = c.AmericanHodlSlamBuy((*returnPayload).TotalDollarsSpent, priceData[0], len(priceData))
+	(*returnPayload).AntiHomeMinerData, (*returnPayload).AntiHomeMinerBitcoin = c.AntiHomeMiner((*returnPayload).FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
+
+	c.Logger.Info("Percentage comparison of strategies versus mining. \n\n")
+	rankings := map[float64]string{(*returnPayload).AhBitcoin: "AmericanHodl",
+		(*returnPayload).DcaBitcoin:           "Daily-DCA",
+		(*returnPayload).AntiHomeMinerBitcoin: "Anti-Miner",
+	}
+	(*returnPayload).Rankings = c.CompareStrategies(requestPayload.BitcoinMined, rankings)
 	return returnPayload, nil
 }
 
 func (c *Client) GenerateImage(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error) {
-	price, err := externalData.GetBitcoinPrice()
+	returnPayload, err := c.GenerateStats(requestPayload, externalData, utils)
 	if err != nil {
-		c.Logger.Error("error getting bitcoin price: %w", err)
-		return nil, fmt.Errorf("error getting bitcoin price: %w", err)
+		return nil, fmt.Errorf("error generating stats: %w", err)
 	}
-
-	c.Logger.Info("Bicoin current price: $%s\n", fmt.Sprintf("%.2f", price))
-	daysSinceStart, err := c.DaysSinceStart(requestPayload.StartDate)
-	if err != nil {
-		c.Logger.Error("error calculating days since start: %w", err)
-		return nil, fmt.Errorf("error calculating days since start: %w", err)
-	}
-	c.Logger.Info("Days since start: %s\n", fmt.Sprintf("%.2f", daysSinceStart))
-
-	if requestPayload.SlushToken != "default-token" {
-		requestPayload.BitcoinMined, err = externalData.GetUserMinedCoinsTotal(requestPayload.SlushToken)
-		if err != nil {
-			c.Logger.Error("Error GetUseRMinedCoinsTotal: %w\n", err.Error())
-			return nil, fmt.Errorf("error GetUseRMinedCoinsTotal: %w", err)
-		}
-	}
-	c.Logger.Info("Average coins per day: %s\n", fmt.Sprintf("%.8f", c.AverageCoinsPerDay(daysSinceStart, requestPayload.BitcoinMined)))
-	dollarinosEarned := c.DollarinosEarned(requestPayload.BitcoinMined, price)
-	c.Logger.Info("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
-	if requestPayload.ElectricCosts == 0 {
-		requestPayload.ElectricCosts = c.ElectricCosts(requestPayload.KwhPrice, requestPayload.UptimePercent, daysSinceStart, requestPayload.Watts)
-	}
-	c.Logger.Info("Total electric costs: $%s\n", fmt.Sprintf("%.2f", requestPayload.ElectricCosts))
-	percentPaidOff := c.PercentPaidOff(dollarinosEarned, requestPayload.FixedCosts, requestPayload.ElectricCosts)
-	c.Logger.Info("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
-	c.Logger.Info("Bitcoin percentage increase needed to be breakeven: %s%%\n", fmt.Sprintf("%.2f", ((100/percentPaidOff)-1)*100))
-	breakevenPrice := c.BreakEvenPrice(percentPaidOff, price)
-	c.Logger.Info("Breakeven price: $%s\n", fmt.Sprintf("%.2f", breakevenPrice))
-	daysUntilBreakeven := c.DaysUntilBreakeven(daysSinceStart, percentPaidOff)
-	c.Logger.Info("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
-	c.Logger.Info("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+daysSinceStart))
-	futureDate, err := c.DateFromDaysNow(daysUntilBreakeven)
-	if err != nil {
-		c.Logger.Error("error with DateFromDaysNow: %w", err)
-		return nil, fmt.Errorf("error with DateFromDaysNow: %w", err)
-	}
-	c.Logger.Info("Expected breakeven date: %s\n", futureDate)
-	c.Logger.Info("\n\n------------------------------------------------\n\n")
-	dailyElectricCost := requestPayload.ElectricCosts / daysSinceStart
-	c.Logger.Info("Electric costs per day: $%s\n", fmt.Sprintf("%.2f", dailyElectricCost))
-	unixTimeStampStart, err := utils.DateToUnixTimestamp(requestPayload.StartDate)
-	if err != nil {
-		c.Logger.Error("error with DateToUnixTimestamp: %w", err)
-		return nil, fmt.Errorf("error with DateToUnixTimestamp: %w", err)
-	}
-	priceData := externalData.GetPriceDataFromDateRange(unixTimeStampStart)
-	totalDollarsSpent := requestPayload.ElectricCosts + requestPayload.FixedCosts
-	unixDaysSinceStart, err := utils.RegularDateToUnix(requestPayload.StartDate)
-	if err != nil {
-		fmt.Printf("error with RegularDateToUnix: %s\n", err)
-	}
-	// fmt.Printf("a: %v\n", a)
-	// daysSinceStartUnix, err := DaysSinceStartUnixTimestamp("")
-	// if err != nil {
-	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
-	// }
-	c.Logger.Info("bitcoin mined: %v\n", requestPayload.BitcoinMined)
-	dcaData, dcaBitcoin := c.DailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
-	ahData, ahBitcoin := c.AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
-	c.Logger.Info("AmericanHodl: %v\n", ahBitcoin)
-	c.Logger.Info("Daily-DCA: %v\n", dcaBitcoin)
-	// MessariData(messariApiKey)
-	antiHomeMinerData, antiHomeMinerBitcoin := c.AntiHomeMiner(requestPayload.FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
-	c.Logger.Info("Anti-Miner: %v\n", antiHomeMinerBitcoin)
-	return c.MakePlot(ahData, dcaData, antiHomeMinerData, requestPayload.BitcoinMined, requestPayload.HideBitcoinOnGraph)
+	return c.MakePlot(returnPayload.AhData, returnPayload.DcaData, (*returnPayload).AntiHomeMinerData, requestPayload.BitcoinMined, requestPayload.HideBitcoinOnGraph)
 }
 
 func (c *Client) AverageCoinsPerDay(days, coins float64) (averageCoinsPerDay float64) {
@@ -357,6 +299,39 @@ func (c *Client) CompareData() error {
 	return nil
 }
 
+func (c *Client) CompareStrategies(bitcoinMined float64, m map[float64]string) map[string]float64 {
+
+	results := make(map[float64]float64, len(m))
+	keys := make([]float64, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Float64s(keys)
+
+	// reverse the order so its in decreasing order
+	for i, j := 0, len(keys)-1; i < j; i, j = i+1, j-1 {
+		keys[i], keys[j] = keys[j], keys[i]
+	}
+
+	for _, k := range keys {
+		percentage := k / bitcoinMined
+		switch {
+		case percentage < 1:
+			percentage = -(1 - percentage)
+		case percentage > 1:
+			percentage = percentage - 1
+		}
+		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
+		results[k] = percentage * 100
+	}
+	rankingResults := make(map[string]float64, len(m))
+	for _, k := range results {
+		keyName := m[k]
+		rankingResults[keyName] = results[k]
+	}
+	return rankingResults
+}
+
 func (c *Client) MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64) {
 	minedData = []float64{}
 	for range ahData {
@@ -407,29 +382,4 @@ func (c *Client) plotData(bitcoinData []float64) plotter.XYs {
 		pts[index].Y = bitcoin
 	}
 	return pts
-}
-
-func (c *Client) CompareStrategies(bitcoinMined float64, m map[float64]string) {
-	keys := make([]float64, 0, len(m))
-	for k := range m {
-		keys = append(keys, k)
-	}
-	sort.Float64s(keys)
-
-	// reverse the order so its in decreasing order
-	for i, j := 0, len(keys)-1; i < j; i, j = i+1, j-1 {
-		keys[i], keys[j] = keys[j], keys[i]
-	}
-
-	for _, k := range keys {
-		percentage := k / bitcoinMined
-		switch {
-		case percentage < 1:
-			percentage = -(1 - percentage)
-		case percentage > 1:
-			percentage = percentage - 1
-		}
-		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
-
-	}
 }

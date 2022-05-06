@@ -56,13 +56,21 @@ func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.Requ
 
 	}
 
-	_, err := h.actx.Calc.GenerateStats(*requestPayload, h.actx.ExternalData, h.actx.Utils)
+	stats, err := h.actx.Calc.GenerateStats(*requestPayload, h.actx.ExternalData, h.actx.Utils)
 	if err != nil {
 		h.actx.Logger.WithError(err).Error("error must send either slush api token or bitcoinMined")
 		w.WriteHeader(http.StatusInternalServerError)
 		_, _ = w.Write([]byte(err.Error()))
 	}
+
+	byteRes, err := json.Marshal(stats)
+	if err != nil {
+		h.actx.Logger.WithError(err).Error("error must send either slush api token or bitcoinMined")
+		w.WriteHeader(http.StatusInternalServerError)
+		_, _ = w.Write([]byte(err.Error()))
+	}
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	//	_, _ = w.Write([]byte(results))
+	_, _ = w.Write(byteRes)
 
 }
