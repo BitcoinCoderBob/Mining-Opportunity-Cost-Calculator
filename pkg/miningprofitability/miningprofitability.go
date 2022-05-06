@@ -6,20 +6,8 @@ import (
 	"net/http"
 
 	"Mining-Profitability/pkg/appcontext"
+	"Mining-Profitability/pkg/calc"
 )
-
-type RequestPayload struct {
-	Token              string  `json:"token"`
-	StartDate          string  `json:"startDate"`
-	KwhPrice           int     `json:"kwhPrice"`
-	Watts              int     `json:"watts"`
-	ElectricCosts      float64 `json:"electicCosts"`
-	UptimePercent      int     `json:"updtimePercent"`
-	FixedCosts         float64 `json:"fixedCosts"`
-	BitcoinMined       float64 `json:"bitcoinMined"`
-	MessariApiKey      string  `json:"messariApiKey"`
-	HideBitcoinOnGraph bool    `json:"hideBitcoinOnGraph"`
-}
 
 type Handler struct {
 	actx *appcontext.AppContext
@@ -46,7 +34,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var requestPayload RequestPayload
+	var requestPayload calc.RequestPayload
 	dec := json.NewDecoder(r.Body)
 	if err := dec.Decode(&requestPayload); err != nil {
 		h.actx.Logger.WithError(err).Error("error parsing the request body into requestpayload struct")
@@ -59,6 +47,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	h.handleRequest(w, nil)
 }
 
-func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *RequestPayload) {
+func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.RequestPayload) {
 	//TODO: handle post request to calculate here
+
 }

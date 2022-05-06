@@ -25,6 +25,7 @@ type Interface interface {
 	MessariData(apiKey string)
 	GetBitcoinPrice() (price float64, err error)
 	GetUserMinedCoinsTotal(token string) (coins float64, err error)
+	GetPriceDataFromDateRange(start string) (priceData []float64)
 }
 
 func New(cfg *config.Config) *Client {

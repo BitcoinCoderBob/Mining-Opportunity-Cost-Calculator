@@ -4,7 +4,7 @@ import (
 	"Mining-Profitability/pkg/calc"
 	"Mining-Profitability/pkg/config"
 	"Mining-Profitability/pkg/externaldata"
-	util "Mining-Profitability/pkg/utils"
+	"Mining-Profitability/pkg/utils"
 	"context"
 
 	"github.com/sirupsen/logrus"
@@ -13,16 +13,16 @@ import (
 type AppContext struct {
 	Logger       *logrus.Logger
 	Calc         calc.Interface
-	Utils        util.Interface
+	Utils        utils.Interface
 	ExternalData externaldata.Interface
 	Ctx          context.Context
 }
 
 func New(cfg *config.Config, logger *logrus.Logger) (*AppContext, context.CancelFunc, error) {
 	logger.Debug("setting up context")
-	calc := calc.New(cfg)
+	calc := calc.New(cfg, logger)
 	externalData := externaldata.New(cfg)
-	utils := util.New()
+	utils := utils.New()
 	ctx, cancel := context.WithCancel(context.Background())
 
 	return &AppContext{
