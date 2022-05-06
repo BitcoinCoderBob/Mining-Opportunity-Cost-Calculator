@@ -37,7 +37,8 @@ func main() {
 		logger.Fatalf("error creating the app context: %s", err)
 	}
 
-	router.Handle("/mining-calc", miningprofitability.NewHandler(appContext))
+	router.Handle("/chart", miningprofitability.NewImageHandler(appContext))
+	router.Handle("/data", miningprofitability.NewDataHandler(appContext))
 
 	signals := make(chan os.Signal, 1)
 	signal.Notify(signals, syscall.SIGINT, syscall.SIGKILL)
