@@ -28,15 +28,6 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	_, err := io.ReadAll(r.Body)
-	if err != nil {
-		h.actx.Logger.WithError(err).Error("error reading the request body")
-		w.WriteHeader(http.StatusBadRequest)
-		_, _ = w.Write([]byte("error reading body"))
-
-		return
-	}
-
 	a, err := io.ReadAll(r.Body)
 	if err != nil {
 		h.actx.Logger.WithError(err).Error("error reading the request body")
