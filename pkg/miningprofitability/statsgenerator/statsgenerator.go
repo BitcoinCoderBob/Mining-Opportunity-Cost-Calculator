@@ -61,6 +61,11 @@ func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.Requ
 		w.WriteHeader(http.StatusInternalServerError)
 		_, _ = w.Write([]byte(err.Error()))
 	}
+	if !requestPayload.ShowStrategyData {
+		stats.AhData = make([]float64, 0)
+		stats.AntiHomeMinerData = make([]float64, 0)
+		stats.DcaData = make([]float64, 0)
+	}
 
 	byteRes, err := json.Marshal(stats)
 	if err != nil {

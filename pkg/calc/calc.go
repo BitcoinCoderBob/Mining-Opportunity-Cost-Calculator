@@ -34,6 +34,7 @@ type RequestPayload struct {
 	BitcoinMined       float64  `json:"bitcoinMined"`
 	MessariApiKey      string   `json:"messariApiKey"`
 	HideBitcoinOnGraph bool     `json:"hideBitcoinOnGraph"`
+	ShowStrategyData   bool     `json:"showStrategyData"`
 }
 
 type ReturnPayload struct {
