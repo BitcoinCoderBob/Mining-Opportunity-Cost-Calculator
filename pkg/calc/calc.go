@@ -52,7 +52,8 @@ func New(cfg *config.Config, logger *logrus.Logger) *Client {
 }
 
 type Interface interface {
-	Drive(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (map[float64]string, error)
+	GenerateImage(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error)
+	GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error)
 	AverageCoinsPerDay(days, coins float64) (averageCoinsPerDay float64)
 	DollarinosEarned(coins, price float64) (dollarinos float64)
 	ElectricCosts(kwhPrice, uptimePercentage, uptimeDays, watts float64) (electricCosts float64)
@@ -69,8 +70,88 @@ type Interface interface {
 	MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64)
 }
 
-func (c *Client) Drive(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (map[float64]string, error) {
+func (c *Client) GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error) {
 
+	price, err := externalData.GetBitcoinPrice()
+	if err != nil {
+		c.Logger.Error("error getting bitcoin price: %w", err)
+		return nil, fmt.Errorf("error getting bitcoin price: %w", err)
+	}
+
+	c.Logger.Info("Bicoin current price: $%s\n", fmt.Sprintf("%.2f", price))
+	daysSinceStart, err := c.DaysSinceStart(requestPayload.StartDate)
+	if err != nil {
+		c.Logger.Error("error calculating days since start: %w", err)
+		return nil, fmt.Errorf("error calculating days since start: %w", err)
+	}
+	c.Logger.Info("Days since start: %s\n", fmt.Sprintf("%.2f", daysSinceStart))
+
+	if requestPayload.SlushToken != "default-token" {
+		requestPayload.BitcoinMined, err = externalData.GetUserMinedCoinsTotal(requestPayload.SlushToken)
+		if err != nil {
+			c.Logger.Error("Error GetUseRMinedCoinsTotal: %w\n", err.Error())
+			return nil, fmt.Errorf("error GetUseRMinedCoinsTotal: %w", err)
+		}
+	}
+	c.Logger.Info("Average coins per day: %s\n", fmt.Sprintf("%.8f", c.AverageCoinsPerDay(daysSinceStart, requestPayload.BitcoinMined)))
+	dollarinosEarned := c.DollarinosEarned(requestPayload.BitcoinMined, price)
+	c.Logger.Info("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
+	if requestPayload.ElectricCosts == 0 {
+		requestPayload.ElectricCosts = c.ElectricCosts(requestPayload.KwhPrice, requestPayload.UptimePercent, daysSinceStart, requestPayload.Watts)
+	}
+	c.Logger.Info("Total electric costs: $%s\n", fmt.Sprintf("%.2f", requestPayload.ElectricCosts))
+	percentPaidOff := c.PercentPaidOff(dollarinosEarned, requestPayload.FixedCosts, requestPayload.ElectricCosts)
+	c.Logger.Info("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
+	c.Logger.Info("Bitcoin percentage increase needed to be breakeven: %s%%\n", fmt.Sprintf("%.2f", ((100/percentPaidOff)-1)*100))
+	breakevenPrice := c.BreakEvenPrice(percentPaidOff, price)
+	c.Logger.Info("Breakeven price: $%s\n", fmt.Sprintf("%.2f", breakevenPrice))
+	daysUntilBreakeven := c.DaysUntilBreakeven(daysSinceStart, percentPaidOff)
+	c.Logger.Info("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
+	c.Logger.Info("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+daysSinceStart))
+	futureDate, err := c.DateFromDaysNow(daysUntilBreakeven)
+	if err != nil {
+		c.Logger.Error("error with DateFromDaysNow: %w", err)
+		return nil, fmt.Errorf("error with DateFromDaysNow: %w", err)
+	}
+	c.Logger.Info("Expected breakeven date: %s\n", futureDate)
+	c.Logger.Info("\n\n------------------------------------------------\n\n")
+	dailyElectricCost := requestPayload.ElectricCosts / daysSinceStart
+	c.Logger.Info("Electric costs per day: $%s\n", fmt.Sprintf("%.2f", dailyElectricCost))
+	unixTimeStampStart, err := utils.DateToUnixTimestamp(requestPayload.StartDate)
+	if err != nil {
+		c.Logger.Error("error with DateToUnixTimestamp: %w", err)
+		return nil, fmt.Errorf("error with DateToUnixTimestamp: %w", err)
+	}
+	priceData := externalData.GetPriceDataFromDateRange(unixTimeStampStart)
+	totalDollarsSpent := requestPayload.ElectricCosts + requestPayload.FixedCosts
+	unixDaysSinceStart, err := utils.RegularDateToUnix(requestPayload.StartDate)
+	if err != nil {
+		fmt.Printf("error with RegularDateToUnix: %s\n", err)
+	}
+	// fmt.Printf("a: %v\n", a)
+	// daysSinceStartUnix, err := DaysSinceStartUnixTimestamp("")
+	// if err != nil {
+	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
+	// }
+	c.Logger.Info("bitcoin mined: %v\n", requestPayload.BitcoinMined)
+	_, dcaBitcoin := c.DailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
+	_, ahBitcoin := c.AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
+	c.Logger.Info("AmericanHodl: %v\n", ahBitcoin)
+	c.Logger.Info("Daily-DCA: %v\n", dcaBitcoin)
+	// MessariData(messariApiKey)
+	_, antiHomeMinerBitcoin := c.AntiHomeMiner(requestPayload.FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
+	c.Logger.Info("Anti-Miner: %v\n", antiHomeMinerBitcoin)
+	c.Logger.Info("\n\n------------------------------------------------\n\n")
+	c.Logger.Info("Percentage comparison of strategies versus mining. \n\n")
+	/*rankings := map[float64]string{ahBitcoin: "AmericanHodl",
+		dcaBitcoin:           "Daily-DCA",
+		antiHomeMinerBitcoin: "Anti-Miner",
+	}*/
+	stub := ""
+	return &stub, nil
+}
+
+func (c *Client) GenerateImage(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*string, error) {
 	price, err := externalData.GetBitcoinPrice()
 	if err != nil {
 		c.Logger.Error("error getting bitcoin price: %w", err)
@@ -140,15 +221,7 @@ func (c *Client) Drive(requestPayload RequestPayload, externalData externaldata.
 	// MessariData(messariApiKey)
 	antiHomeMinerData, antiHomeMinerBitcoin := c.AntiHomeMiner(requestPayload.FixedCosts, requestPayload.ElectricCosts, unixDaysSinceStart, priceData)
 	c.Logger.Info("Anti-Miner: %v\n", antiHomeMinerBitcoin)
-	c.MakePlot(ahData, dcaData, antiHomeMinerData, requestPayload.BitcoinMined, requestPayload.HideBitcoinOnGraph)
-	c.Logger.Info("\n\n------------------------------------------------\n\n")
-	c.Logger.Info("Percentage comparison of strategies versus mining. \n\n")
-	rankings := map[float64]string{ahBitcoin: "AmericanHodl",
-		dcaBitcoin:           "Daily-DCA",
-		antiHomeMinerBitcoin: "Anti-Miner",
-	}
-
-	return rankings, nil
+	return c.MakePlot(ahData, dcaData, antiHomeMinerData, requestPayload.BitcoinMined, requestPayload.HideBitcoinOnGraph)
 }
 
 func (c *Client) AverageCoinsPerDay(days, coins float64) (averageCoinsPerDay float64) {
@@ -286,7 +359,7 @@ func (c *Client) MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (m
 	return
 }
 
-func (c *Client) MakePlot(ahData, dcaData, antiMinerData []float64, minedBitcoin float64, hideAxis bool) {
+func (c *Client) MakePlot(ahData, dcaData, antiMinerData []float64, minedBitcoin float64, hideAxis bool) (*string, error) {
 	minedBitcoinData := c.MakeMinedBitcoinData(ahData, minedBitcoin)
 	p := plot.New()
 	// p.Y.Tick.Label
@@ -309,13 +382,16 @@ func (c *Client) MakePlot(ahData, dcaData, antiMinerData []float64, minedBitcoin
 		"Anti-Miner", c.plotData(antiMinerData),
 		"Mined", c.plotData(minedBitcoinData))
 	if err != nil {
-		panic(err)
+		return nil, fmt.Errorf("error making plot: %w", err)
 	}
 
 	// Save the plot to a PNG file.
-	if err := p.Save(4*vg.Inch, 4*vg.Inch, "points.png"); err != nil {
-		panic(err)
+	var fileName = fmt.Sprintf("%d-points.png", time.Now().UnixNano())
+
+	if err := p.Save(4*vg.Inch, 4*vg.Inch, fileName); err != nil {
+		return nil, fmt.Errorf("error saving plot: %w", err)
 	}
+	return &fileName, nil
 }
 
 func (c *Client) plotData(bitcoinData []float64) plotter.XYs {

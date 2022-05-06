@@ -1,5 +1,4 @@
-package miningprofitability
-package miningprofitability
+package statsgenerator
 
 import (
 	"encoding/json"
@@ -14,7 +13,7 @@ type Handler struct {
 	actx *appcontext.AppContext
 }
 
-func NewHandler(actx *appcontext.AppContext) *Handler {
+func NewDataHandler(actx *appcontext.AppContext) *Handler {
 	return &Handler{actx}
 }
 
@@ -57,7 +56,7 @@ func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.Requ
 
 	}
 
-	_, err := h.actx.Calc.Drive(*requestPayload, h.actx.ExternalData, h.actx.Utils)
+	_, err := h.actx.Calc.GenerateStats(*requestPayload, h.actx.ExternalData, h.actx.Utils)
 	if err != nil {
 		h.actx.Logger.WithError(err).Error("error must send either slush api token or bitcoinMined")
 		w.WriteHeader(http.StatusInternalServerError)

@@ -4,7 +4,8 @@ import (
 	"Mining-Profitability/pkg/appcontext"
 	"Mining-Profitability/pkg/applog"
 	"Mining-Profitability/pkg/config"
-	"Mining-Profitability/pkg/miningprofitability"
+	"Mining-Profitability/pkg/miningprofitability/imagedownload"
+	"Mining-Profitability/pkg/miningprofitability/statsgenerator"
 	"context"
 	"flag"
 	"log"
@@ -37,8 +38,8 @@ func main() {
 		logger.Fatalf("error creating the app context: %s", err)
 	}
 
-	router.Handle("/chart", miningprofitability.NewImageHandler(appContext))
-	router.Handle("/data", miningprofitability.NewDataHandler(appContext))
+	router.Handle("/chart", imagedownload.NewImageHandler(appContext))
+	router.Handle("/data", statsgenerator.NewDataHandler(appContext))
 
 	signals := make(chan os.Signal, 1)
 	signal.Notify(signals, syscall.SIGINT, syscall.SIGKILL)
