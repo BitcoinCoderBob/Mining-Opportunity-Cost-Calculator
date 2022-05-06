@@ -14,7 +14,6 @@ Flags
 <li><code>-electricCosts</code> if you know your total amount spent on electric, can use it here instead of kwhPrice and watts and uptimePercent</li>
 <li><code>-uptimePercent</code> percent of time mining operation is online (expressed as an integer)</li>
 <li><code>-fixedCosts</code> total costs of miners, hardware, and other operational fixed costs</li>
-<li><code>-startDate</code> date of mining operation start</li>
 <li><code>-bitcoinMined</code> amount of bitcoin mined (whole bitcoin units not sats)</li>
 <li><code>-messariApiKey</code> api key from messari.io for historical price data</li>
 <li><code>-hideBitcoinOnGraph</code> Will hide bitcoin on y-axis of graph, good for opsec when sharing the image. <code>true</code> to hide, <code>false</code> to keep the figure displayed</li>
