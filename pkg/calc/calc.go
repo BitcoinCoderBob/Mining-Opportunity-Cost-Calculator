@@ -24,7 +24,7 @@ import (
 )
 
 type RequestPayload struct {
-	SlushToken         string  `json:"slushToken"`
+	SlushToken         *string `json:"slushToken"`
 	StartDate          string  `json:"startDate"`
 	KwhPrice           float64 `json:"kwhPrice"`
 	Watts              float64 `json:"watts"`
@@ -110,10 +110,10 @@ func (c *Client) GenerateStats(requestPayload RequestPayload, externalData exter
 		c.Logger.Error("error calculating days since start: %w", err)
 		return nil, fmt.Errorf("error calculating days since start: %w", err)
 	}
-	if requestPayload.SlushToken != "default-token" {
-		requestPayload.BitcoinMined, err = externalData.GetUserMinedCoinsTotal(requestPayload.SlushToken)
+	if requestPayload.SlushToken != nil {
+		requestPayload.BitcoinMined, err = externalData.GetUserMinedCoinsTotal(*requestPayload.SlushToken)
 		if err != nil {
-			c.Logger.Error("Error GetUseRMinedCoinsTotal: %w\n", err.Error())
+			c.Logger.Error("Error GetUseRMinedCoinsTotal: %w\n", err)
 			return nil, fmt.Errorf("error GetUseRMinedCoinsTotal: %w", err)
 		}
 	}
@@ -325,10 +325,11 @@ func (c *Client) CompareStrategies(bitcoinMined float64, m map[float64]string) m
 		results[k] = percentage * 100
 	}
 	rankingResults := make(map[string]float64, len(m))
-	for _, k := range results {
+	for _, k := range keys {
 		keyName := m[k]
 		rankingResults[keyName] = results[k]
 	}
+
 	return rankingResults
 }
 
