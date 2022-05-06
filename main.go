@@ -9,6 +9,7 @@ import (
 	"math"
 	"net/http"
 	"os"
+	"sort"
 	"strconv"
 	"time"
 
@@ -24,7 +25,7 @@ import (
 
 func main() {
 	var slushToken, messariApiKey, startDate string
-	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined float64
+	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined, electricCosts float64
 	var hideBitcoinOnGraph bool
 	flag.StringVar(&slushToken, "slushToken", "default-token", "Specify Slush Pool token.")
 	flag.Float64Var(&kwhPrice, "kwhPrice", 0.15, "Specify price paid per kilowatt hour.")
@@ -32,6 +33,7 @@ func main() {
 	flag.Float64Var(&uptimePercent, "uptimePercent", 100.0, "Specify percent uptime of your miners.")
 	flag.Float64Var(&fixedCosts, "fixedCosts", 6295.55, "Specify mining setup fix costs.")
 	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not bitcoin).")
+	flag.Float64Var(&electricCosts, "electricCosts", 0, "Specify total amount spent on electricity")
 	flag.StringVar(&startDate, "startDate", "01/01/2022", "Specify start date of mining operation.")
 	flag.StringVar(&messariApiKey, "messariApiKey", "default", "Specify Messari API Key")
 	flag.BoolVar(&hideBitcoinOnGraph, "hideBitcoinOnGraph", false, "Will hide bitcoin on y-axis of graph, good for opsec when sharing the image. true to hide, false to keep the figure displayed")
@@ -62,7 +64,9 @@ func main() {
 	fmt.Printf("Average coins per day: %s\n", fmt.Sprintf("%.8f", AverageCoinsPerDay(daysSinceStart, bitcoinMined)))
 	dollarinosEarned := DollarinosEarned(bitcoinMined, price)
 	fmt.Printf("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
-	electricCosts := ElectricCosts(kwhPrice, uptimePercent, daysSinceStart, watts)
+	if electricCosts == 0 {
+		electricCosts = ElectricCosts(kwhPrice, uptimePercent, daysSinceStart, watts)
+	}
 	fmt.Printf("Total electric costs: $%s\n", fmt.Sprintf("%.2f", electricCosts))
 	percentPaidOff := PercentPaidOff(dollarinosEarned, fixedCosts, electricCosts)
 	fmt.Printf("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
@@ -105,6 +109,13 @@ func main() {
 	antiHomeMinerData, antiHomeMinerBitcoin := AntiHomeMiner(fixedCosts, electricCosts, unixDaysSinceStart, priceData)
 	fmt.Printf("Anti-Miner: %v\n", antiHomeMinerBitcoin)
 	MakePlot(ahData, dcaData, antiHomeMinerData, bitcoinMined, hideBitcoinOnGraph)
+	fmt.Printf("\n\n------------------------------------------------\n\n")
+	fmt.Printf("Percentage comparison of strategies versus mining. \n\n")
+	rankings := map[float64]string{ahBitcoin: "AmericanHodl",
+		dcaBitcoin:           "Daily-DCA",
+		antiHomeMinerBitcoin: "Anti-Miner",
+	}
+	CompareStrategies(bitcoinMined, rankings)
 
 }
 
@@ -442,4 +453,30 @@ func plotMined(mined float64, days int) plotter.XYs {
 	pts[0].Y = mined
 
 	return pts
+}
+
+func CompareStrategies(bitcoinMined float64, m map[float64]string) {
+	keys := make([]float64, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Float64s(keys)
+
+	// reverse the order so its in decreasing order
+	for i, j := 0, len(keys)-1; i < j; i, j = i+1, j-1 {
+		keys[i], keys[j] = keys[j], keys[i]
+	}
+
+	for _, k := range keys {
+		percentage := k / bitcoinMined
+		switch {
+		case percentage < 1:
+			percentage = -(1 - percentage)
+		case percentage > 1:
+			percentage = percentage - 1
+		case percentage == 1:
+			percentage = percentage
+		}
+		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
+	}
 }

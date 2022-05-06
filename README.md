@@ -11,6 +11,7 @@ Flags
 <li><code>-startDate</code> mm/dd/yyyy format for start date of mining operation</li>
 <li><code>-kwhPrice</code> price paid per kilowatt-hour</li>
 <li><code>-watts</code> watts used by the miers</li>
+<li><code>-electricCosts</code> if you know your total amount spent on electric, can use it here instead of kwhPrice and watts and uptimePercent</li>
 <li><code>-uptimePercent</code> percent of time mining operation is online (expressed as an integer)</li>
 <li><code>-fixedCosts</code> total costs of miners, hardware, and other operational fixed costs</li>
 <li><code>-startDate</code> date of mining operation start</li>
