@@ -1,5 +1,6 @@
 package main
 
+<<<<<<< HEAD
 import (
 	"flag"
 	"fmt"
@@ -23,6 +24,9 @@ import (
 	"gonum.org/v1/plot/vg/draw"
 )
 
+=======
+/*
+>>>>>>> d69b7cb (Breaks main.go into cmd and pkg folders, adds configuration file)
 func main() {
 	var slushToken, messariApiKey, startDate string
 	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined, electricCosts float64
@@ -118,6 +122,7 @@ func main() {
 	CompareStrategies(bitcoinMined, rankings)
 
 }
+<<<<<<< HEAD
 
 func DateToUnixTimestamp(start string) (timestamp string, err error) {
 	t, err := time.Parse("01/02/2006", start)
@@ -480,3 +485,6 @@ func CompareStrategies(bitcoinMined float64, m map[float64]string) {
 		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
 	}
 }
+=======
+*/
+>>>>>>> d69b7cb (Breaks main.go into cmd and pkg folders, adds configuration file)
