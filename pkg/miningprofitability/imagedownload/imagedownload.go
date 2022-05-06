@@ -28,7 +28,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	_, err := io.ReadAll(r.Body)
+	a, err := io.ReadAll(r.Body)
 	if err != nil {
 		h.actx.Logger.WithError(err).Error("error reading the request body")
 		w.WriteHeader(http.StatusBadRequest)
@@ -38,8 +38,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var requestPayload calc.RequestPayload
-	dec := json.NewDecoder(r.Body)
-	if err := dec.Decode(&requestPayload); err != nil {
+	if err := json.Unmarshal(a, &requestPayload); err != nil {
 		h.actx.Logger.WithError(err).Error("error parsing the request body into requestpayload struct")
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte("error unmarshaling body"))
@@ -47,12 +46,12 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	h.handleRequest(w, nil)
+	h.handleRequest(w, &requestPayload)
 }
 
 func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.RequestPayload) {
 
-	if requestPayload.SlushToken == "default-token" && requestPayload.BitcoinMined == 0 {
+	if requestPayload.SlushToken == nil && requestPayload.BitcoinMined == 0 {
 		h.actx.Logger.Error("error must send either slush api token or bitcoinMined")
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte("error must send either slush api token or bitcoinMined"))

@@ -23,17 +23,17 @@ type Client struct {
 
 type Interface interface {
 	MessariData(apiKey string)
-	GetBitcoinPrice() (price float64, err error)
+	GetBitcoinPrice() (*float64, error)
 	GetUserMinedCoinsTotal(token string) (coins float64, err error)
 	GetPriceDataFromDateRange(start string) (priceData []float64)
 }
 
 func New(cfg *config.Config) *Client {
 	return &Client{
-		PriceDataKrakenPath: cfg.PriceDataKrakenPath, // "PriceDataKraken.json",
-		MessariUrl:          cfg.MessariUrl,          //  "https://data.messari.io/api/v1/markets/kraken-btc-usd/metrics/price/time-series?start=2021-08-17&end=2021-08-19&interval=1d",
-		BlockchainInfoUrl:   cfg.BlockchainInfoUrl,   // "https://blockchain.info/tobtc?currency=USD&value=500",
-		SlushPoolUrl:        cfg.SlushPoolUrl,        //  "https://slushpool.com/accounts/profile/json/btc/",
+		PriceDataKrakenPath: cfg.PriceDataKrakenPath,
+		MessariUrl:          cfg.MessariUrl,
+		BlockchainInfoUrl:   cfg.BlockchainInfoUrl,
+		SlushPoolUrl:        cfg.SlushPoolUrl,
 		httpClient: &http.Client{
 			Timeout: time.Second * 600,
 		},
@@ -59,34 +59,24 @@ func (c *Client) MessariData(apiKey string) {
 		log.Fatalln(err)
 	}
 	defer response.Body.Close()
-	// data := map[int]float64{}
+
 	vals := gjson.GetBytes(body, "data.values").Array()
 	fmt.Printf("num vals: %d\n", len(vals))
 	for _, v := range vals {
 		timestamp := v.Array()[0].String()[0:10]
 		openPrice := v.Array()[1].String()
-		// i, err := strconv.ParseInt(timestamp, 10, 64)
-		// if err != nil {
-		// 	return
-		// }
-		// tm := time.Unix(i, 0)
-		// // fmt.Printf("%v\n", tm)
-		// fmt.Printf("timestamp: %s\n", fmt.Sprintf("%v\n", tm))
 		fmt.Printf("timestamp: %s openPrice: %s\n", timestamp, openPrice)
-
 	}
 }
 
-func (c *Client) GetBitcoinPrice() (price float64, err error) {
+func (c *Client) GetBitcoinPrice() (*float64, error) {
 	req, err := http.NewRequest("GET", c.BlockchainInfoUrl, nil)
 	if err != nil {
-		fmt.Printf("Got error %s", err.Error())
-		return
+		return nil, fmt.Errorf("Got error %w", err)
 	}
 	response, err := c.httpClient.Do(req)
 	if err != nil {
-		fmt.Printf("Got error %s", err.Error())
-		return
+		return nil, fmt.Errorf("Got error %w", err)
 	}
 	body, err := ioutil.ReadAll(response.Body)
 	if err != nil {
@@ -95,10 +85,10 @@ func (c *Client) GetBitcoinPrice() (price float64, err error) {
 	defer response.Body.Close()
 	s, err := strconv.ParseFloat(string(body), 64)
 	if err != nil {
-		return
+		return nil, err
 	}
-	price = 500 / s
-	return
+	priceVal := 500 / s
+	return &priceVal, nil
 }
 
 func (c *Client) GetUserMinedCoinsTotal(token string) (coins float64, err error) {
@@ -146,15 +136,8 @@ func (c *Client) GetPriceDataFromDateRange(start string) (priceData []float64) {
 			foundStart = true
 		}
 		if foundStart {
-			// i, err := strconv.ParseInt(v.Get("timestamp").String(), 10, 64)
-			// if err != nil {
-			// 	return
-			// }
-			// tm := time.Unix(i, 0)
-			// fmt.Printf("%v\n", tm)
 			priceData = append(priceData, price)
 		}
-		// fmt.Printf("timestamp: %s price: %v\n", timestamp, price)
 	}
-	return
+	return priceData
 }
