@@ -31,7 +31,7 @@ type Interface interface {
 func New(cfg *config.Config) *Client {
 	return &Client{
 		PriceDataKrakenPath: cfg.PriceDataKrakenPath, // "PriceDataKraken.json",
-		MessariUrl:          cfg.MessariUrl,          //  "https://data.messari.io/api/v1/markets/coinbase-btc-usd/metrics/price/time-series?start=2021-08-17&end=2021-08-19&interval=1d",
+		MessariUrl:          cfg.MessariUrl,          //  "https://data.messari.io/api/v1/markets/kraken-btc-usd/metrics/price/time-series?start=2021-08-17&end=2021-08-19&interval=1d",
 		BlockchainInfoUrl:   cfg.BlockchainInfoUrl,   // "https://blockchain.info/tobtc?currency=USD&value=500",
 		SlushPoolUrl:        cfg.SlushPoolUrl,        //  "https://slushpool.com/accounts/profile/json/btc/",
 		httpClient: &http.Client{

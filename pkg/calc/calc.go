@@ -8,6 +8,7 @@ import (
 	"image/color"
 	"math"
 	"os"
+	"sort"
 	"strconv"
 	"time"
 
@@ -36,7 +37,7 @@ type RequestPayload struct {
 }
 
 type ReturnPayload struct {
-	BitcoinPrice float64 `json:"bitcoinPrice`
+	BitcoinPrice float64 `json:"bitcoinPrice"`
 }
 
 type Client struct {
@@ -72,6 +73,7 @@ type Interface interface {
 	AntiHomeMiner(fixedCosts, electricCosts, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64)
 	CompareData() error
 	MakeMinedBitcoinData(ahData []float64, minedBitcoin float64) (minedData []float64)
+	CompareStrategies(bitcoinMined float64, m map[float64]string)
 }
 
 func (c *Client) GenerateStats(requestPayload RequestPayload, externalData externaldata.Interface, utils utils.Interface) (*ReturnPayload, error) {
@@ -407,10 +409,27 @@ func (c *Client) plotData(bitcoinData []float64) plotter.XYs {
 	return pts
 }
 
-func (c *Client) plotMined(mined float64, days int) plotter.XYs {
-	pts := make(plotter.XYs, 1)
-	pts[0].X = float64(days)
-	pts[0].Y = mined
+func (c *Client) CompareStrategies(bitcoinMined float64, m map[float64]string) {
+	keys := make([]float64, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Float64s(keys)
 
-	return pts
+	// reverse the order so its in decreasing order
+	for i, j := 0, len(keys)-1; i < j; i, j = i+1, j-1 {
+		keys[i], keys[j] = keys[j], keys[i]
+	}
+
+	for _, k := range keys {
+		percentage := k / bitcoinMined
+		switch {
+		case percentage < 1:
+			percentage = -(1 - percentage)
+		case percentage > 1:
+			percentage = percentage - 1
+		}
+		fmt.Printf("%s: %.2f%%\n", m[k], percentage*100)
+
+	}
 }

@@ -2,8 +2,10 @@ environment: "development"
 address: ":8080"
 
 priceDataKrakenPath: "PriceDataKraken.json"
-messariUrl: "https://data.messari.io/api/v1/markets/coinbase-btc-usd/metrics/price/time-series?start=2021-08-17&end=2021-08-19&interval=1d"
+messariUrl: "https://data.messari.io/api/v1/markets/kraken-btc-usd/metrics/price/time-series?start=2021-08-17&end=2021-08-19&interval=1d"
 blockchainInfoUrl: "https://blockchain.info/tobtc?currency=USD&value=500"
 slushPoolUrl: "https://slushpool.com/accounts/profile/json/btc/"
+priceDataKrakenPath: "PriceDataKraken.json"
 priceDataCoinbasePath: "PriceDataCoinbase.json"
+
 dataPlotFileName: "points.png"
