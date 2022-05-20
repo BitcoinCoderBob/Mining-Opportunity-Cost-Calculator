@@ -74,6 +74,6 @@ func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.Requ
 	w.Header().Set("Content-Type", "application/octet-stream")
 	w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=%q", fn))
 	io.Copy(w, file)
-	defer os.Remove(*fileName)
+	// defer os.Remove(*fileName)
 	file.Close()
 }

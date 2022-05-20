@@ -9259,6 +9259,62 @@
     {
       "timestamp": 1651795200,
       "openPrice": 36548.6
+    },
+    {
+      "openPrice": 36033,
+      "timestamp": 1651881600
+    },
+    {
+      "openPrice": 35448.5,
+      "timestamp": 1651968000
+    },
+    {
+      "openPrice": 34068.7,
+      "timestamp": 1652054400
+    },
+    {
+      "openPrice": 30135.5,
+      "timestamp": 1652140800
+    },
+    {
+      "openPrice": 30990.4,
+      "timestamp": 1652227200
+    },
+    {
+      "openPrice": 29063.7,
+      "timestamp": 1652313600
+    },
+    {
+      "openPrice": 28908.5,
+      "timestamp": 1652400000
+    },
+    {
+      "openPrice": 29232.9,
+      "timestamp": 1652486400
+    },
+    {
+      "openPrice": 30045.1,
+      "timestamp": 1652572800
+    },
+    {
+      "openPrice": 31256.9,
+      "timestamp": 1652659200
+    },
+    {
+      "openPrice": 29862,
+      "timestamp": 1652745600
+    },
+    {
+      "openPrice": 30408.4,
+      "timestamp": 1652832000
+    },
+    {
+      "openPrice": 28765.3,
+      "timestamp": 1652918400
+    },
+    {
+      "openPrice": 30255.6,
+      "timestamp": 1653004800
     }
   ]
 }
