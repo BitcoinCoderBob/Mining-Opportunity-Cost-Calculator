@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JavaScript Todo App</title>
+</head>
+
+<body class="container">
+  <h1>Bitcoin Mining Opportunity Cost Comparison Tool</h1>
+  <style type="text/css">
+    textarea.html-text-box {
+      background-color: ffffff;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border-width: 1;
+      border-style: solid;
+      border-color: cccccc;
+      font-family: Arial;
+      font-size: 8pt;
+      color: 000000;
+    }
+
+    input.html-text-box {
+      background-color: ffffff;
+      font-family: Arial;
+      font-size: 8pt;
+      color: 000000;
+    }
+  </style>
+  <form name="myForm" method="post">
+    <label for="startDate">Start Date (mm/dd/yyyy):</label><br>
+    <input type="text" id="startDate" name="startDate" value="04/01/2021"><br><br>
+    <label for="kwh">KwH price (expressed in dollars):</label><br>
+    <input type="text" id="kwh" name="kwhPrice" value=0.10628><br><br>
+    <label for="watts">Watts:</label><br>
+    <input type="text" id="watts" name="watts" value=3205><br><br>
+    <label for="electricCosts">Total Electric Costs (optional):</label><br>
+    <input type="text" id="electricCosts" name="electricCosts"><br><br>
+    <label for="uptime">Uptime Percentage (0 - 100):</label><br>
+    <input type="text" id="uptime" name="uptimePercent"><br><br>
+    <label for="fixedCosts">Fixed Costs:</label><br>
+    <input type="text" id="fixedCosts" name="fixedCosts" value=5638><br><br>
+    <label for="bitcoinMined">Bitcoin Mined (Whole bitcoin units):</label><br>
+    <input type="text" id="bitcoinMined" name="bitcoinMined" value=0.165><br><br>
+    <p><input type="submit" name="submit" class="html-text-box" onclick="doSubmit()"><input type="reset" value="Reset"
+        class="html-text-box"></p>
+
+    <script type="text/javascript">
+      function doSubmit() {
+        console.log("here")
+
+        var formData = JSON.stringify($("#myForm").serializeArray());
+        console.log(formData)
+        var http = new XMLHttpRequest();
+        var url = 'http://ec2-18-215-175-235.compute-1.amazonaws.com:8080/data';
+        // var params = 'orem=ipsum&name=binny';
+        http.open('POST', url, true);
+
+        //Send the proper header information along with the request
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+        http.onreadystatechange = function () {//Call a function when the state changes.
+          if (http.readyState == 4 && http.status == 200) {
+            alert(http.responseText);
+          }
+        }
+        http.send(formData);
+      }
+    </script>
+
+  </form>
+  <!-- <script type="text/javascript" src="app.js"></script> -->
+  <p><i>this website uses vanilla Javascript and HTML and REST, absolutely no framework scams</i></p>
+</body>
+
+</html>
+
+<!--  action="http://ec2-18-215-175-235.compute-1.amazonaws.com:8080/data" -->
