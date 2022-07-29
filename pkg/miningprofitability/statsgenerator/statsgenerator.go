@@ -18,7 +18,7 @@ func NewDataHandler(actx *appcontext.AppContext) *Handler {
 }
 
 func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
+	if r.Method != http.MethodOptions {
 		h.actx.Logger.Debug("endpoint only accepts POST")
 		w.WriteHeader(http.StatusMethodNotAllowed)
 
@@ -47,7 +47,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) handleRequest(w http.ResponseWriter, requestPayload *calc.RequestPayload) {
-
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	if requestPayload.SlushToken == nil && requestPayload.BitcoinMined == 0 {
 		h.actx.Logger.Error("error must send either slush api token or bitcoinMined")
 		w.WriteHeader(http.StatusBadRequest)

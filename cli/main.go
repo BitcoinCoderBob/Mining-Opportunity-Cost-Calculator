@@ -24,8 +24,8 @@ import (
 )
 
 func main() {
-	var slushToken, messariApiKey, startDate string
-	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined, electricCosts float64
+	var slushToken, messariApiKey, startDate, endedDate string
+	var kwhPrice, watts, uptimePercent, fixedCosts, bitcoinMined, electricCosts, salePrice float64
 	var hideBitcoinOnGraph bool
 	flag.StringVar(&slushToken, "slushToken", "default-token", "Specify Slush Pool token.")
 	flag.Float64Var(&kwhPrice, "kwhPrice", 0.15, "Specify price paid per kilowatt hour.")
@@ -35,6 +35,8 @@ func main() {
 	flag.Float64Var(&bitcoinMined, "bitcoinMined", 0, "Specify total bitcoin mined (use whole bitcoin units not bitcoin).")
 	flag.Float64Var(&electricCosts, "electricCosts", 0, "Specify total amount spent on electricity")
 	flag.StringVar(&startDate, "startDate", "01/01/2022", "Specify start date of mining operation.")
+	flag.StringVar(&endedDate, "endedDate", "01/01/2022", "Specify ended date of mining operation.")
+	flag.Float64Var(&salePrice, "salePrice", 0, "Price from sales of hardware")
 	flag.StringVar(&messariApiKey, "messariApiKey", "default", "Specify Messari API Key")
 	flag.BoolVar(&hideBitcoinOnGraph, "hideBitcoinOnGraph", false, "Will hide bitcoin on y-axis of graph, good for opsec when sharing the image. true to hide, false to keep the figure displayed")
 
@@ -48,61 +50,63 @@ func main() {
 		return
 	}
 	fmt.Printf("Bicoin current price: $%s\n", fmt.Sprintf("%.2f", price))
-	daysSinceStart, err := DaysSinceStart(startDate)
+
+	operationalDays, err := OperationDays(startDate, endedDate)
 	if err != nil {
-		fmt.Printf("Error calculating days since start: %s\n", err.Error())
+		fmt.Printf("Error calculating operation days start: %s\n", err.Error())
 		return
 	}
-	fmt.Printf("Days since start: %s\n", fmt.Sprintf("%.2f", daysSinceStart))
+
+	fmt.Printf("Operational Days: %s\n", fmt.Sprintf("%.2f", operationalDays))
 
 	if slushToken != "default-token" {
 		bitcoinMined, err = GetUserMinedCoinsTotal(slushToken)
 		if err != nil {
-			fmt.Printf("Error GetUseRMinedCoinsTotal: %s\n", err.Error())
+			fmt.Printf("Error GetUserMinedCoinsTotal: %s\n", err.Error())
 		}
 	}
-	fmt.Printf("Average coins per day: %s\n", fmt.Sprintf("%.8f", AverageCoinsPerDay(daysSinceStart, bitcoinMined)))
+	fmt.Printf("Average coins per day: %s\n", fmt.Sprintf("%.8f", AverageCoinsPerDay(operationalDays, bitcoinMined)))
 	dollarinosEarned := DollarinosEarned(bitcoinMined, price)
-	fmt.Printf("Dollarinos earned: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
+	fmt.Printf("Dollar value of bitcoin mined: $%s\n", fmt.Sprintf("%.2f", dollarinosEarned))
 	if electricCosts == 0 {
-		electricCosts = ElectricCosts(kwhPrice, uptimePercent, daysSinceStart, watts)
+		electricCosts = ElectricCosts(kwhPrice, uptimePercent, operationalDays, watts)
 	}
 	fmt.Printf("Total electric costs: $%s\n", fmt.Sprintf("%.2f", electricCosts))
-	percentPaidOff := PercentPaidOff(dollarinosEarned, fixedCosts, electricCosts)
+	percentPaidOff := PercentPaidOff(dollarinosEarned, fixedCosts, electricCosts, salePrice)
 	fmt.Printf("Percent paid off: %s%%\n", fmt.Sprintf("%.2f", percentPaidOff))
 	fmt.Printf("Bitcoin percentage increase needed to be breakeven: %s%%\n", fmt.Sprintf("%.2f", ((100/percentPaidOff)-1)*100))
 	breakevenPrice := BreakEvenPrice(percentPaidOff, price)
 	fmt.Printf("Breakeven price: $%s\n", fmt.Sprintf("%.2f", breakevenPrice))
-	daysUntilBreakeven := DaysUntilBreakeven(daysSinceStart, percentPaidOff)
-	fmt.Printf("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
-	fmt.Printf("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+daysSinceStart))
-	futureDate, err := DateFromDaysNow(daysUntilBreakeven)
-	if err != nil {
-		fmt.Printf("Error with DateFromDaysNow. Error: %s\n", err.Error())
-		return
+	daysUntilBreakeven := DaysUntilBreakeven(operationalDays, percentPaidOff)
+	if endedDate == "" {
+		fmt.Printf("Expected more days until breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven))
+		fmt.Printf("Total mining days (past + future) to breakeven: %s\n", fmt.Sprintf("%.2f", daysUntilBreakeven+operationalDays))
+		futureDate, err := DateFromDaysNow(daysUntilBreakeven)
+		if err != nil {
+			fmt.Printf("Error with DateFromDaysNow. Error: %s\n", err.Error())
+			return
+		}
+		if endedDate != "" {
+			fmt.Printf("Expected breakeven date: %s\n", futureDate)
+		}
 	}
-	fmt.Printf("Expected breakeven date: %s\n", futureDate)
 	fmt.Printf("\n\n------------------------------------------------\n\n")
-	dailyElectricCost := electricCosts / daysSinceStart
+	dailyElectricCost := electricCosts / operationalDays
 	fmt.Printf("Electric costs per day: $%s\n", fmt.Sprintf("%.2f", dailyElectricCost))
 	unixTimeStampStart, err := DateToUnixTimestamp(startDate)
 	if err != nil {
 		fmt.Printf("Error with DateToUnixTimestamp: %s\n", err.Error())
 	}
 	priceData := GetPriceDataFromDateRange(unixTimeStampStart)
-	totalDollarsSpent := electricCosts + fixedCosts
-	unixDaysSinceStart, err := RegularDateToUnix(startDate)
+	fiatMoney := electricCosts + fixedCosts - salePrice
+	unixDaysSinceStart, err := RegularDateToUnix(startDate, endedDate)
 	if err != nil {
 		fmt.Printf("error with RegularDateToUnix: %s\n", err)
 	}
-	// fmt.Printf("a: %v\n", a)
-	// daysSinceStartUnix, err := DaysSinceStartUnixTimestamp("")
-	// if err != nil {
-	// 	fmt.Printf("error with unix timestmap: %s\n", err.Error())
-	// }
+
 	fmt.Printf("bitcoin mined: %v\n", bitcoinMined)
-	dcaData, dcaBitcoin := DailyDCABuy(totalDollarsSpent, unixDaysSinceStart, priceData)
-	ahData, ahBitcoin := AmericanHodlSlamBuy(totalDollarsSpent, priceData[0], len(priceData))
+	dcaData, dcaBitcoin := DailyDCABuy(fiatMoney, unixDaysSinceStart, priceData)
+	ahData, ahBitcoin := AmericanHodlSlamBuy(fiatMoney, priceData[0], len(priceData))
 	fmt.Printf("AmericanHodl: %v\n", ahBitcoin)
 	fmt.Printf("Daily-DCA: %v\n", dcaBitcoin)
 	// MessariData(messariApiKey)
@@ -208,8 +212,15 @@ func ElectricCosts(kwhPrice, uptimePercentage, uptimeDays, watts float64) (elect
 	return
 }
 
-func PercentPaidOff(dollarinosEarned, fixedCosts, variableCosts float64) (percentPaidOff float64) {
-	return dollarinosEarned / (fixedCosts + variableCosts) * 100
+func PercentPaidOff(dollarinosEarned, fixedCosts, variableCosts, salePrice float64) (percentPaidOff float64) {
+	return dollarinosEarned / (fixedCosts + variableCosts - salePrice) * 100
+}
+
+func OperationDays(start, end string) (float64, error) {
+	if end != "" {
+		return DaysBetweenDates(start, end)
+	}
+	return DaysSinceStart(start)
 }
 
 func DaysSinceStart(startDate string) (days float64, err error) {
@@ -222,31 +233,50 @@ func DaysSinceStart(startDate string) (days float64, err error) {
 	return
 }
 
-func RegularDateToUnix(start string) (days float64, err error) {
-	t, err := time.Parse("01/02/2006", start)
+func DaysBetweenDates(start, end string) (days float64, err error) {
+	startTime, err := time.Parse("01/02/2006", start)
 	if err != nil {
 		return
 	}
-	b := t.Unix()
-	tm := time.Unix(b, 0)
-	durationSinceStart := time.Since(tm)
+
+	endTime, err := time.Parse("01/02/2006", end)
+	if err != nil {
+		return
+	}
+	durationSinceStart := endTime.Sub(startTime)
 	days = durationSinceStart.Hours() / 24
-	return math.Floor(days), err
+	return
 }
 
-func DaysSinceStartUnixTimestamp(startDate string) (days float64, err error) {
-	i, err := strconv.ParseInt(startDate, 10, 64)
-	if err != nil {
-		return
+func RegularDateToUnix(start, end string) (float64, error) {
+	if end != "" {
+		startTime, err := time.Parse("01/02/2006", start)
+		if err != nil {
+			return 0, err
+		}
+
+		endTime, err := time.Parse("01/02/2006", end)
+		if err != nil {
+			return 0, err
+		}
+		startUnixSeconds := startTime.Unix()
+		endUnixSeconds := endTime.Unix()
+		startUnixTine := time.Unix(startUnixSeconds, 0)
+		endUnixTime := time.Unix(endUnixSeconds, 0)
+		durationSinceStart := endUnixTime.Sub(startUnixTine)
+		days := durationSinceStart.Hours() / 24
+		return math.Floor(days), err
+	} else {
+		t, err := time.Parse("01/02/2006", start)
+		if err != nil {
+			return 0, err
+		}
+		b := t.Unix()
+		tm := time.Unix(b, 0)
+		durationSinceStart := time.Since(tm)
+		days := durationSinceStart.Hours() / 24
+		return math.Floor(days), err
 	}
-	tm := time.Unix(i, 0)
-	// t, err := time.Parse("1136239445", "1405544146")
-	// if err != nil {
-	// 	return
-	// }
-	durationSinceStart := time.Since(tm)
-	days = durationSinceStart.Hours() / 24
-	return math.Floor(days), err
 }
 
 func BreakEvenPrice(percentPaidOff, bitcoinPrice float64) (breakevenPrice float64) {
@@ -342,9 +372,9 @@ func AmericanHodlSlamBuy(dollarsAvailable, openPrice float64, numberDays int) (c
 	return
 }
 
-func DailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
-	dollarsToSpendPerDay := dollarsAvialble / daysSinceStart
-	// fmt.Printf("number of days to stack: %v   lenPriceData: %d\n", daysSinceStart, len(priceData))
+func DailyDCABuy(dollarsAvialble, operationalDays float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
+	dollarsToSpendPerDay := dollarsAvialble / operationalDays
+	// fmt.Printf("number of days to stack: %v   lenPriceData: %d\n", operationalDays, len(priceData))
 	for _, val := range priceData {
 		bitcoinAcquired += dollarsToSpendPerDay / val
 		cumulativeTotal = append(cumulativeTotal, bitcoinAcquired)
@@ -352,10 +382,10 @@ func DailyDCABuy(dollarsAvialble, daysSinceStart float64, priceData []float64) (
 	return
 }
 
-func AntiHomeMiner(fixedCosts, electricCosts, daysSinceStart float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
+func AntiHomeMiner(fixedCosts, electricCosts, operationalDays float64, priceData []float64) (cumulativeTotal []float64, bitcoinAcquired float64) {
 	bitcoinAcquired += fixedCosts / priceData[0]
 	cumulativeTotal = append(cumulativeTotal, bitcoinAcquired)
-	dollarsToSpendPerDay := electricCosts / daysSinceStart
+	dollarsToSpendPerDay := electricCosts / operationalDays
 	for _, val := range priceData {
 		bitcoinAcquired += dollarsToSpendPerDay / val
 		cumulativeTotal = append(cumulativeTotal, bitcoinAcquired)
